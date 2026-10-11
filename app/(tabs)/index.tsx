@@ -1,6 +1,6 @@
 import { router } from "expo-router";
 import { useEffect, useState } from "react";
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { BaglantiSatiri } from "../../src/components/BaglantiSatiri";
 import { DateStrip } from "../../src/components/DateStrip";
@@ -13,13 +13,13 @@ import { oyAnahtari } from "../../src/degerlendirme/DegerlendirmeProvider";
 import { OySatiri } from "../../src/degerlendirme/OySatiri";
 import { useGun } from "../../src/gun/GunProvider";
 import { selamlama } from "../../src/lib/selam";
-import { ayAnahtari, ayinGunleri, gunEkle, kisaTarih, turkceTarih } from "../../src/lib/tarih";
+import { ayAnahtari, ayinGunleri, gunEkle, kisaTarih, tarihParcalari } from "../../src/lib/tarih";
 import { useMenuDeposu } from "../../src/menu/MenuProvider";
 import { OGUN_BASLIK } from "../../src/menu/ogun";
 import { ogunMetni, ogunVar } from "../../src/menu/ozet";
 import { PaylasDugmesi } from "../../src/paylas/PaylasDugmesi";
 import { useTercih } from "../../src/tercih/TercihProvider";
-import { bosluk } from "../../src/theme/tokens";
+import { bosluk, yaricap } from "../../src/theme/tokens";
 import { useTema } from "../../src/theme/ThemeProvider";
 
 export default function MenuEkrani() {
@@ -40,6 +40,7 @@ export default function MenuEkrani() {
     if (tercih.il) depo.izle(tercih.il, ay);
   }, [ay, depo.izle, tercih.il]);
 
+  const parca = tarihParcalari(gun.tarih);
   const yarin = gunEkle(gun.bugun, 1);
   const ustBaslik =
     gun.tarih === gun.bugun
@@ -51,25 +52,46 @@ export default function MenuEkrani() {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: tema.bg }} edges={["top"]}>
       {/* Ayarlar sekmede duruyor; üstte ikinci bir giriş eklenmedi. */}
-      <View style={{ minHeight: 48, paddingHorizontal: bosluk.x4, justifyContent: "center" }}>
+      <View style={{ paddingHorizontal: bosluk.x4, paddingTop: bosluk.x2, flexDirection: "row", alignItems: "center" }}>
         <Pressable
           accessibilityRole="button"
           accessibilityLabel="İl değiştir"
           onPress={() => router.push("/il")}
-          style={{ minHeight: 44, flexDirection: "row", alignItems: "center", gap: bosluk.x1 }}
+          style={{
+            minHeight: 40,
+            flexDirection: "row",
+            alignItems: "center",
+            gap: bosluk.x2,
+            paddingLeft: bosluk.x3,
+            paddingRight: bosluk.x2,
+            borderRadius: yaricap.tam,
+            borderWidth: StyleSheet.hairlineWidth,
+            borderColor: tema.kenar,
+            backgroundColor: tema.yuzey,
+          }}
         >
-          <Text style={{ color: tema.metin, fontSize: 17 }}>{il?.ad ?? "İl seç"}</Text>
-          <Ikon ad="chevron-down" boyut={16} renk={tema.soluk} />
+          <Ikon ad="location-outline" boyut={15} renk={tema.aksan} />
+          <Text style={{ color: tema.metin, fontSize: 15 }}>{il?.ad ?? "İl seç"}</Text>
+          <Ikon ad="chevron-down" boyut={15} renk={tema.soluk} />
         </Pressable>
       </View>
 
-      <View style={{ paddingHorizontal: bosluk.x4, paddingBottom: bosluk.x2 }}>
-        {ustBaslik ? <Text style={{ color: tema.aksan, fontSize: 13, letterSpacing: 0.4 }}>{ustBaslik.toLocaleUpperCase("tr-TR")}</Text> : null}
-        <Text style={{ color: tema.metin, fontSize: 26, lineHeight: 34 }}>{turkceTarih(gun.tarih)}</Text>
+      <View style={{ paddingHorizontal: bosluk.x4, paddingTop: bosluk.x3, paddingBottom: bosluk.x2 }}>
+        {ustBaslik ? (
+          <Text style={{ color: tema.aksan, fontSize: 12, letterSpacing: 1, marginBottom: 2 }}>
+            {ustBaslik.toLocaleUpperCase("tr-TR")}
+          </Text>
+        ) : null}
+        <View style={{ flexDirection: "row", alignItems: "baseline", gap: bosluk.x2, flexWrap: "wrap" }}>
+          <Text style={{ color: tema.metin, fontSize: 30, lineHeight: 36, fontWeight: "600", letterSpacing: -0.5 }}>
+            {parca.gunAy}
+          </Text>
+          <Text style={{ color: tema.soluk, fontSize: 17, lineHeight: 24 }}>{parca.gunAdi}</Text>
+        </View>
       </View>
 
       <DateStrip gunler={ayinGunleri(ay)} secili={gun.tarih} bugun={gun.bugun} onSec={gun.tarihSec} />
-      <View style={{ height: bosluk.x3 }} />
+      <View style={{ height: bosluk.x2 }} />
       <MealToggle secili={gun.ogun} onSec={gun.ogunSec} />
 
       <ScrollView contentContainerStyle={{ paddingTop: bosluk.x3, paddingBottom: bosluk.x6 }}>
@@ -116,7 +138,7 @@ export default function MenuEkrani() {
           </View>
         ) : null}
 
-        <Text style={{ color: tema.soluk, fontSize: 12, lineHeight: 18, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x3 }}>
+        <Text style={{ color: tema.soluk, fontSize: 12, lineHeight: 18, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x2 }}>
           {dosya ? `Son güncelleme: ${kisaTarih(dosya.guncellenmeTarihi)}. ` : ""}
           Resmî uygulama değildir. Yemekhanedeki ilan esastır.
         </Text>

@@ -65,6 +65,18 @@ export function turkceTarih(isoGun: string): string {
   }).format(new Date(Date.UTC(yil, ay - 1, gun)));
 }
 
+/** Başlıkta büyük tarih ve altında gün adı ayrı satır olarak kullanılıyor. */
+export function tarihParcalari(isoGun: string): { gunAy: string; gunAdi: string } {
+  const [yil, ay, gun] = isoGun.split("-").map(Number);
+  const tarih = new Date(Date.UTC(yil, ay - 1, gun));
+  const bicim = (secenek: Intl.DateTimeFormatOptions) =>
+    new Intl.DateTimeFormat("tr-TR", { timeZone: "UTC", ...secenek }).format(tarih);
+  return {
+    gunAy: bicim({ day: "numeric", month: "long" }),
+    gunAdi: bicim({ weekday: "long" }),
+  };
+}
+
 export function kisaTarih(isoGun: string): string {
   const [yil, ay, gun] = isoGun.split("-").map(Number);
   return new Intl.DateTimeFormat("tr-TR", {

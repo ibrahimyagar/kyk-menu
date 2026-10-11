@@ -1,5 +1,7 @@
-export const bosluk = { x1: 4, x2: 8, x3: 12, x4: 16, x6: 24, x8: 32 } as const;
-export const yaricap = { kucuk: 12, orta: 16, buyuk: 24 } as const;
+import type { ViewStyle } from "react-native";
+
+export const bosluk = { x1: 4, x2: 8, x3: 12, x4: 16, x5: 20, x6: 24, x8: 32 } as const;
+export const yaricap = { kucuk: 12, orta: 16, buyuk: 24, tam: 999 } as const;
 
 export interface Renkler {
   ad: "gunduz" | "gece";
@@ -13,6 +15,21 @@ export interface Renkler {
   aksanMetin: string;
   /** Vurgunun yüzeye yakın, yazı taşımayan tonu: şerit ve seçili arka plan. */
   aksanZemin: string;
+}
+
+/**
+ * Kart gölgesi. Gündüz paletinde kağıt hissi için hafif, gece paletinde
+ * gölge görünmediği için daha koyu ve geniş.
+ */
+export function golge(renkler: Renkler): ViewStyle {
+  const gece = renkler.ad === "gece";
+  return {
+    shadowColor: "#000000",
+    shadowOpacity: gece ? 0.35 : 0.06,
+    shadowRadius: gece ? 16 : 12,
+    shadowOffset: { width: 0, height: gece ? 8 : 4 },
+    elevation: gece ? 6 : 3,
+  };
 }
 
 export const gunduz: Renkler = {

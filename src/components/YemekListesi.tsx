@@ -1,14 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import { bosluk } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import type { Grup } from "../types/domain";
 
-/** "Ana yemek" ve "Hamur işi" en uzun etiketler; 13 punto ile buraya sığıyor. */
-const ETIKET_GENISLIGI = 80;
-
 /**
- * Grup başına tek satır: solda etiket, sağda yemekler. Kalori burada yazmaz;
- * kart altındaki şerit toplamı, detay sayfası dağılımı gösteriyor.
+ * Grup başına tek satır. Grup etiketi ("Yumurta", "Hamur işi") yazılmaz;
+ * yemeğin adı neyi yediğini zaten söylüyor, etiket satırı daraltıyordu.
+ * Kalori de burada değil: kart altındaki şerit toplamı, detay sayfası
+ * dağılımı gösteriyor.
  */
 export function YemekListesi({ gruplar }: { gruplar: Grup[] }) {
   const tema = useTema();
@@ -18,25 +17,26 @@ export function YemekListesi({ gruplar }: { gruplar: Grup[] }) {
       {gruplar.map((grup, index) => (
         <View
           key={`${grup.baslik ?? "grup"}-${index}`}
-          style={{
-            flexDirection: "row",
-            alignItems: "flex-start",
-            gap: bosluk.x3,
-            paddingVertical: bosluk.x2,
-            borderTopWidth: index === 0 ? 0 : StyleSheet.hairlineWidth,
-            borderTopColor: tema.kenar,
-          }}
+          style={{ flexDirection: "row", alignItems: "flex-start", gap: bosluk.x3, paddingVertical: bosluk.x2 }}
         >
-          {grup.baslik ? (
-            <Text style={{ width: ETIKET_GENISLIGI, color: tema.soluk, fontSize: 13, lineHeight: 22 }}>
-              {grup.baslik}
-            </Text>
-          ) : null}
-          <Text style={{ flex: 1, color: tema.metin, fontSize: 16, lineHeight: 22 }}>
+          {/* Satır ritmi için nokta; hizası ilk satırın orta yüksekliğinde. */}
+          <View
+            style={{
+              width: 5,
+              height: 5,
+              borderRadius: 3,
+              backgroundColor: tema.aksan,
+              opacity: 0.45,
+              marginTop: 10,
+            }}
+          />
+          <Text style={{ flex: 1, color: tema.metin, fontSize: 17, lineHeight: 24 }}>
             {grup.secenekler.map((secenek, sira) => (
               <Text key={`${secenek.ad}-${sira}`}>
                 {sira > 0 ? (
-                  <Text style={{ color: tema.soluk }}>{grup.secim === "biri" ? " veya " : ", "}</Text>
+                  <Text style={{ color: tema.soluk, fontSize: 15 }}>
+                    {grup.secim === "biri" ? " veya " : ", "}
+                  </Text>
                 ) : null}
                 {secenek.ad}
               </Text>

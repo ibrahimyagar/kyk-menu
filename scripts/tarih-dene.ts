@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { acilisGorunumu, ayAnahtari, ayinGunleri, gunEkle } from "../src/lib/tarih.ts";
+import { acilisGorunumu, ayAnahtari, ayinGunleri, gunEkle, tarihParcalari } from "../src/lib/tarih.ts";
 
 const sabah = acilisGorunumu(new Date("2026-10-01T06:00:00+03:00"));
 assert.equal(sabah.tarih, "2026-10-01");
@@ -33,5 +33,9 @@ assert.equal(ayinGunleri("2026-12").at(-1), "2026-12-31");
 
 assert.equal(gunEkle("2026-12-31", 1), "2027-01-01");
 assert.equal(gunEkle("2027-01-01", -1), "2026-12-31");
+
+// Başlık iki parçaya bölünüyor: büyük "28 Ekim", altında "Çarşamba".
+assert.deepEqual(tarihParcalari("2026-10-28"), { gunAy: "28 Ekim", gunAdi: "Çarşamba" });
+assert.deepEqual(tarihParcalari("2026-01-01"), { gunAy: "1 Ocak", gunAdi: "Perşembe" });
 
 console.log("tarih gecti");

@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { Ikon } from "../components/Ikon";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
@@ -47,9 +47,9 @@ export function PaylasDugmesi({ onUyari, ...kart }: Props & { onUyari?: (metin: 
           flexDirection: "row",
           alignItems: "center",
           gap: bosluk.x2,
-          paddingHorizontal: bosluk.x3,
-          borderRadius: yaricap.kucuk,
-          borderWidth: 1,
+          paddingHorizontal: bosluk.x4,
+          borderRadius: yaricap.tam,
+          borderWidth: StyleSheet.hairlineWidth,
           borderColor: tema.kenar,
           backgroundColor: tema.yuzey,
           opacity: mesgul ? 0.6 : 1,

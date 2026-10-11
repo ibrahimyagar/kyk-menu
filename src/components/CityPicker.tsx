@@ -8,6 +8,7 @@ import type { Il } from "../types/domain";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import { BaglantiSatiri } from "./BaglantiSatiri";
+import { Ikon } from "./Ikon";
 
 interface Props {
   onSelect: (slug: string) => void;
@@ -31,7 +32,17 @@ export function CityPicker({ onSelect }: Props) {
 
   return (
     <View style={{ flex: 1, backgroundColor: tema.bg }}>
-      <Text style={{ color: tema.metin, fontSize: 28, lineHeight: 36, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x6 }}>
+      <Text
+        style={{
+          color: tema.metin,
+          fontSize: 30,
+          lineHeight: 38,
+          fontWeight: "600",
+          letterSpacing: -0.5,
+          paddingHorizontal: bosluk.x4,
+          paddingTop: bosluk.x6,
+        }}
+      >
         Hangi ilde yurtta kalıyorsun?
       </Text>
       <Text style={{ color: tema.soluk, fontSize: 15, lineHeight: 22, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x2, paddingBottom: bosluk.x4 }}>
@@ -96,8 +107,12 @@ function IlSatiri({ il, onSelect }: { il: Il; onSelect: (slug: string) => void }
       onPress={() => onSelect(il.slug)}
       style={{ minHeight: 52, paddingHorizontal: bosluk.x4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}
     >
-      <Text style={{ color: tema.metin, fontSize: 17 }}>{il.ad}</Text>
-      {varMi ? null : <Text style={{ color: tema.soluk, fontSize: 13 }}>Yakında</Text>}
+      <Text style={{ color: varMi ? tema.metin : tema.soluk, fontSize: 17 }}>{il.ad}</Text>
+      {varMi ? (
+        <Ikon ad="chevron-forward" boyut={16} renk={tema.soluk} />
+      ) : (
+        <Text style={{ color: tema.soluk, fontSize: 13 }}>Yakında</Text>
+      )}
     </Pressable>
   );
 }

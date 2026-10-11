@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import { Text, View } from "react-native";
 import { YemekListesi } from "../components/YemekListesi";
-import { turkceTarih } from "../lib/tarih";
+import { tarihParcalari } from "../lib/tarih";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import type { Ogun } from "../types/domain";
@@ -18,6 +18,7 @@ interface Props {
 
 export const PaylasimKarti = forwardRef<View, Props>(function PaylasimKarti({ il, tarih, ogunAdi, ogun }, ref) {
   const tema = useTema();
+  const parca = tarihParcalari(tarih);
 
   return (
     <View
@@ -34,15 +35,18 @@ export const PaylasimKarti = forwardRef<View, Props>(function PaylasimKarti({ il
         <Text style={{ color: tema.soluk, fontSize: 14 }}>{il}</Text>
         <Text style={{ color: tema.aksan, fontSize: 14 }}>{ogunAdi}</Text>
       </View>
-      <Text style={{ color: tema.metin, fontSize: 24, lineHeight: 32 }}>{turkceTarih(tarih)}</Text>
+      <View style={{ flexDirection: "row", alignItems: "baseline", gap: bosluk.x2 }}>
+        <Text style={{ color: tema.metin, fontSize: 26, lineHeight: 32, fontWeight: "600" }}>{parca.gunAy}</Text>
+        <Text style={{ color: tema.soluk, fontSize: 16 }}>{parca.gunAdi}</Text>
+      </View>
       <View
         style={{
           backgroundColor: tema.yuzey,
-          borderRadius: yaricap.orta,
+          borderRadius: yaricap.buyuk,
           borderWidth: 1,
           borderColor: tema.kenar,
-          paddingHorizontal: bosluk.x4,
-          paddingBottom: bosluk.x2,
+          paddingHorizontal: bosluk.x5,
+          paddingVertical: bosluk.x2,
         }}
       >
         <YemekListesi gruplar={ogun.gruplar} />

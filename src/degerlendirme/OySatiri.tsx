@@ -1,4 +1,4 @@
-import { Pressable, View } from "react-native";
+import { Pressable, StyleSheet, View } from "react-native";
 import { Ikon, type IkonAdi } from "../components/Ikon";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
@@ -28,12 +28,12 @@ export function OySatiri({ anahtar }: { anahtar: string }) {
             accessibilityState={{ selected: aktif }}
             onPress={() => degerlendirme.oyVer(anahtar, secenek.oy)}
             style={{
-              width: 48,
+              width: 44,
               height: 44,
               alignItems: "center",
               justifyContent: "center",
-              borderRadius: yaricap.kucuk,
-              borderWidth: 1,
+              borderRadius: yaricap.tam,
+              borderWidth: StyleSheet.hairlineWidth,
               borderColor: aktif ? tema.aksan : tema.kenar,
               backgroundColor: aktif ? tema.aksanZemin : tema.yuzey,
             }}

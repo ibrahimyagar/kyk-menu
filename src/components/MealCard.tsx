@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
-import type { Ogun } from "../types/domain";
-import { bosluk, yaricap } from "../theme/tokens";
+import { bosluk, golge, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import type { Ogun } from "../types/domain";
 import { KaloriSeridi } from "./KaloriSeridi";
 import { YemekListesi } from "./YemekListesi";
 
@@ -13,19 +13,9 @@ export function MealCard({ ogun, onKalori }: { ogun: Ogun; onKalori?: () => void
   }
 
   return (
-    <View
-      style={{
-        marginHorizontal: bosluk.x4,
-        backgroundColor: tema.yuzey,
-        borderRadius: yaricap.orta,
-        borderWidth: 1,
-        borderColor: tema.kenar,
-        paddingHorizontal: bosluk.x4,
-        paddingVertical: bosluk.x2,
-      }}
-    >
+    <View style={[kart(tema.yuzey, tema.kenar), golge(tema)]}>
       <YemekListesi gruplar={ogun.gruplar} />
-      <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: tema.kenar, marginTop: bosluk.x1 }}>
+      <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: tema.kenar, marginTop: bosluk.x2 }}>
         <KaloriSeridi gruplar={ogun.gruplar} toplamKcal={ogun.toplamKcal} onBas={onKalori} />
       </View>
     </View>
@@ -35,7 +25,7 @@ export function MealCard({ ogun, onKalori }: { ogun: Ogun; onKalori?: () => void
 export function Bos({ metin }: { metin: string }) {
   const tema = useTema();
   return (
-    <View style={{ marginHorizontal: bosluk.x4, padding: bosluk.x6, borderRadius: yaricap.orta, backgroundColor: tema.yuzey, borderWidth: 1, borderColor: tema.kenar }}>
+    <View style={[kart(tema.yuzey, tema.kenar), golge(tema), { paddingVertical: bosluk.x6 }]}>
       <Text style={{ color: tema.metin, fontSize: 17, lineHeight: 24 }}>{metin}</Text>
     </View>
   );
@@ -44,10 +34,26 @@ export function Bos({ metin }: { metin: string }) {
 export function Iskelet() {
   const tema = useTema();
   return (
-    <View accessibilityLabel="Yükleniyor" style={{ gap: bosluk.x3, padding: bosluk.x4 }}>
-      {[0.7, 1, 0.85].map((genislik, index) => (
-        <View key={index} style={{ height: 18, width: `${genislik * 100}%`, borderRadius: yaricap.kucuk, backgroundColor: tema.yuzey2 }} />
+    <View accessibilityLabel="Yükleniyor" style={[kart(tema.yuzey, tema.kenar), { gap: bosluk.x4, paddingVertical: bosluk.x6 }]}>
+      {[0.7, 1, 0.85, 0.6].map((genislik, index) => (
+        <View
+          key={index}
+          style={{ height: 16, width: `${genislik * 100}%`, borderRadius: yaricap.kucuk, backgroundColor: tema.yuzey2 }}
+        />
       ))}
     </View>
   );
+}
+
+/** Üç durumun da aynı kart geometrisini kullanması için tek yerden. */
+function kart(yuzey: string, kenar: string) {
+  return {
+    marginHorizontal: bosluk.x4,
+    backgroundColor: yuzey,
+    borderRadius: yaricap.buyuk,
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: kenar,
+    paddingHorizontal: bosluk.x5,
+    paddingVertical: bosluk.x3,
+  } as const;
 }

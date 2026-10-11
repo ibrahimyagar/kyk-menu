@@ -1,6 +1,6 @@
 import { Pressable, Text, View } from "react-native";
 import type { OgunAdi } from "../lib/tarih";
-import { bosluk, yaricap } from "../theme/tokens";
+import { bosluk, golge, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import { Ikon, type IkonAdi } from "./Ikon";
 
@@ -14,8 +14,8 @@ export function MealToggle({ secili, onSec }: { secili: OgunAdi; onSec: (ogun: O
       style={{
         flexDirection: "row",
         backgroundColor: tema.yuzey2,
-        borderRadius: yaricap.orta,
-        padding: bosluk.x1,
+        borderRadius: yaricap.tam,
+        padding: 3,
         marginHorizontal: bosluk.x4,
       }}
     >
@@ -27,19 +27,24 @@ export function MealToggle({ secili, onSec }: { secili: OgunAdi; onSec: (ogun: O
             accessibilityRole="button"
             accessibilityState={{ selected: aktif }}
             onPress={() => onSec(ogun)}
-            style={{
-              flex: 1,
-              minHeight: 44,
-              flexDirection: "row",
-              gap: bosluk.x2,
-              borderRadius: yaricap.kucuk,
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: aktif ? tema.yuzey : "transparent",
-            }}
+            style={[
+              {
+                flex: 1,
+                minHeight: 42,
+                flexDirection: "row",
+                gap: bosluk.x2,
+                borderRadius: yaricap.tam,
+                alignItems: "center",
+                justifyContent: "center",
+                backgroundColor: aktif ? tema.yuzey : "transparent",
+              },
+              aktif ? golge(tema) : null,
+            ]}
           >
             <Ikon ad={simge[ogun]} boyut={16} renk={aktif ? tema.aksan : tema.soluk} />
-            <Text style={{ color: aktif ? tema.aksan : tema.soluk, fontSize: 16 }}>{etiket[ogun]}</Text>
+            <Text style={{ color: aktif ? tema.aksan : tema.soluk, fontSize: 16, fontWeight: aktif ? "600" : "400" }}>
+              {etiket[ogun]}
+            </Text>
           </Pressable>
         );
       })}

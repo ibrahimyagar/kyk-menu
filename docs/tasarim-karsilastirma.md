@@ -32,6 +32,26 @@ Ortak kalıp: şehir seçici, aylık kart listesi, koyu tema, bildirim. Üçünd
 
 **Hafta ekranı tarih seçiciye dönüştü.** Güne dokununca menü ekranı açılıyor; eskiden sadece seçim yapıp aynı ekranda kalıyordu. Bugünün satırında solda 3 px vurgu çizgisi, sağda günün toplam kalorisi var (iki öğünün de değeri varsa).
 
+## İkinci tur: "çok sade" geri bildirimi
+
+**Grup etiketleri kaldırıldı.** Solda "Yumurta", "Hamur işi", "Ana yemek" yazması hem satırı daraltıyordu hem de yemeğin adı zaten neyi yediğini söylüyor. Satırın başında yalnızca küçük bir vurgu noktası var; ritmi o kuruyor. Etiketler kalori detay sayfasında duruyor, orada sayının neye ait olduğunu açıklıyorlar.
+
+**Kart derinlik kazandı.** Yarıçap 24, yatay iç boşluk 20, kıl kalınlığında kenar ve tema başına ayarlı gölge (`golge()`); gece paletinde gölge görünmediği için daha koyu ve geniş. Boş durum ve iskelet aynı geometriyi tek `kart()` yardımcısından alıyor.
+
+**Tarih başlığı iki parçaya ayrıldı.** "28 Ekim" 30 punto yarı kalın, yanında "Çarşamba" soluk 17 punto. Üstünde selamlama küçük büyük harf ve vurgu renginde.
+
+**İl seçimi pill oldu.** Düz metin yerine kenarlı, yüzey renginde, konum simgesi taşıyan bir düğme; dokunulabilir olduğu belli.
+
+**Tarih şeridi hücreye döndü.** Daire yerine gün adı ve sayıyı birlikte taşıyan 52×62 hücre: seçili gün dolu vurgu, bugün soluk vurgu zemini, diğerleri boş.
+
+**Öğün seçici tam yuvarlak** oldu; aktif segment gölge taşıyor, yazısı yarı kalın.
+
+**Hafta ekranı kart listesi.** Her gün kendi kartında; solda gün sayısı bloğu (bugün dolu vurgu), sağda güneş/ay simgeleriyle iki öğün özeti ve günün kalorisi.
+
+**Ayarlar gruplandı.** Başlık kartın dışında küçük büyük harf, içerik yüzey kartında. İl satırı da kendi bölümüne girdi.
+
+Oy ve paylaş düğmeleri tam yuvarlak; dikey alan kazanmak için başlık ve şerit boşlukları birer kademe kısıldı.
+
 ## Ölçüler
 
 Tüm dokunma hedefleri en az 44 dp. Yemek listesi satırları dokunulmadığı için minimum yükseklik taşımıyor; menü kaydırmadan sığsın diye satır yüksekliği 22, dikey boşluk 8.
