@@ -8,7 +8,8 @@
     "newArchEnabled": true,
     "plugins": [
       "expo-router",
-      "expo-status-bar"
+      "expo-status-bar",
+      "expo-sharing"
     ],
     "ios": {
       "bundleIdentifier": "com.yurtmenu.app",

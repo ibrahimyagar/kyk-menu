@@ -4,7 +4,9 @@ import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import type { BildirimAyari } from "../../src/bildirim/plan";
 import { izinAl } from "../../src/bildirim/servis";
+import { BaglantiSatiri } from "../../src/components/BaglantiSatiri";
 import { BildirimSatiri } from "../../src/components/BildirimSatiri";
+import { MENU_FOTO_FORM, MENU_YANLIS_FORM } from "../../src/config/baglantilar";
 import { ilBul } from "../../src/data/iller";
 import type { OgunAdi } from "../../src/lib/tarih";
 import { useTercih, type TemaSecimi } from "../../src/tercih/TercihProvider";
@@ -82,6 +84,13 @@ export default function Ayarlar() {
               : "O günün menüsü seçtiğin saatte bildirim olarak gelir. Menü açıklanmamışsa bildirim gönderilmez."}
           </Text>
         </Bolum>
+
+        {MENU_FOTO_FORM.trim() || MENU_YANLIS_FORM.trim() ? (
+          <Bolum baslik="Katkı">
+            <BaglantiSatiri sablon={MENU_FOTO_FORM} degerler={{ il: il?.ad ?? "" }} etiket="Menü fotoğrafı gönder" />
+            <BaglantiSatiri sablon={MENU_YANLIS_FORM} degerler={{ il: il?.ad ?? "" }} etiket="Menü yanlış mı?" />
+          </Bolum>
+        ) : null}
 
         <Pressable accessibilityRole="button" onPress={() => router.push("/il")} style={{ minHeight: 52, justifyContent: "center" }}>
           <Text style={{ color: tema.soluk, fontSize: 13 }}>İl</Text>

@@ -2,6 +2,7 @@ import { Text, View } from "react-native";
 import type { Ogun } from "../types/domain";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import { YemekListesi } from "./YemekListesi";
 
 export function MealCard({ ogun, baslik }: { ogun: Ogun; baslik: string }) {
   const tema = useTema();
@@ -27,22 +28,7 @@ export function MealCard({ ogun, baslik }: { ogun: Ogun; baslik: string }) {
           <Text style={{ color: tema.soluk, fontSize: 13 }}>{ogun.toplamKcal} kcal</Text>
         ) : null}
       </View>
-      {ogun.gruplar.map((grup, index) => (
-        <View key={`${grup.baslik ?? "grup"}-${index}`} style={{ paddingVertical: bosluk.x3, borderTopWidth: index === 0 ? 0 : 1, borderTopColor: tema.kenar, marginTop: index === 0 ? bosluk.x2 : 0 }}>
-          {grup.baslik ? <Text style={{ color: tema.soluk, fontSize: 13, marginBottom: bosluk.x1 }}>{grup.baslik}</Text> : null}
-          {grup.secenekler.map((secenek, sira) => (
-            <View key={`${secenek.ad}-${sira}`}>
-              {sira > 0 && grup.secim === "biri" ? (
-                <Text style={{ color: tema.soluk, fontSize: 13, paddingVertical: bosluk.x1 }}>veya</Text>
-              ) : null}
-              <View style={{ minHeight: 44, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: bosluk.x3 }}>
-                <Text style={{ flex: 1, color: tema.metin, fontSize: 17, lineHeight: 24 }}>{secenek.ad}</Text>
-                {secenek.kcal != null ? <Text style={{ color: tema.soluk, fontSize: 13 }}>{secenek.kcal} kcal</Text> : null}
-              </View>
-            </View>
-          ))}
-        </View>
-      ))}
+      <YemekListesi gruplar={ogun.gruplar} />
     </View>
   );
 }

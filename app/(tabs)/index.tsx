@@ -2,11 +2,15 @@ import { router } from "expo-router";
 import { useEffect } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { BaglantiSatiri } from "../../src/components/BaglantiSatiri";
 import { DateStrip } from "../../src/components/DateStrip";
 import { Bos, Iskelet, MealCard } from "../../src/components/MealCard";
 import { MealToggle } from "../../src/components/MealToggle";
+import { MENU_YANLIS_FORM } from "../../src/config/baglantilar";
 import { ilBul } from "../../src/data/iller";
 import { useMenuDeposu } from "../../src/menu/MenuProvider";
+import { ogunVar } from "../../src/menu/ozet";
+import { PaylasDugmesi } from "../../src/paylas/PaylasDugmesi";
 import { useGun } from "../../src/gun/GunProvider";
 import { ayAnahtari, ayinGunleri, gunEkle, kisaTarih, turkceTarih } from "../../src/lib/tarih";
 import { useTercih } from "../../src/tercih/TercihProvider";
@@ -59,6 +63,21 @@ export default function MenuEkrani() {
         ) : (
           <MealCard ogun={gunKaydi[gun.ogun]} baslik={ogunBaslik[gun.ogun]} />
         )}
+        {gunKaydi && ogunVar(gunKaydi[gun.ogun]) ? (
+          <PaylasDugmesi
+            il={il?.ad ?? ""}
+            tarih={gun.tarih}
+            ogunAdi={ogunBaslik[gun.ogun]}
+            ogun={gunKaydi[gun.ogun]}
+          />
+        ) : null}
+        <View style={{ paddingHorizontal: bosluk.x4 }}>
+          <BaglantiSatiri
+            sablon={MENU_YANLIS_FORM}
+            degerler={{ il: il?.ad ?? "", tarih: gun.tarih, ogun: ogunBaslik[gun.ogun] }}
+            etiket="Menü yanlış mı?"
+          />
+        </View>
         <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x4 }}>
           {dosya ? `Son güncelleme: ${kisaTarih(dosya.guncellenmeTarihi)}. ` : ""}
           Resmî uygulama değildir. Yemekhanedeki ilan esastır.

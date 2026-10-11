@@ -6,9 +6,9 @@ Marka adı henüz seçilmedi. `app.json` içindeki "Yurt Menü" geçici bir baş
 
 ## Durum
 
-Çalışan: veri şeması ve doğrulama, statik yayın çıktısı, il seçimi, günün menüsü, hafta görünümü, tema, çevrimdışı kopya ve yerel hatırlatma.
+Çalışan: veri şeması ve doğrulama, statik yayın çıktısı, il seçimi, günün menüsü, hafta görünümü, tema, çevrimdışı kopya, yerel hatırlatma ve paylaşım görseli.
 
-Bekleyen: yayın adresi (hosting), geri bildirim formu bağlantıları, mağaza hazırlığı, paylaşım görseli.
+Bekleyen: yayın adresi (hosting), geri bildirim formu adresleri, marka adı, mağaza hazırlığı. Uygulama hiçbirini uydurmaz; tanımlı değilse ilgili yüzey çizilmez.
 
 ## Komutlar
 
@@ -33,4 +33,5 @@ Kaynakta olmayan öğün `durum: "aciklanmadi"` kalır, yemek ve kalori uydurulm
 - `docs/aylik-menu-giris.md` — aylık veri girişi rutini
 - `docs/veri-notlari.md` — İstanbul verisinde yapılan kararlar
 - `docs/bildirim-notlari.md` — hatırlatma davranışı ve sınırları
+- `docs/paylasim-notlari.md` — paylaşım görseli ve geri bildirim bağlantıları
 - `docs/tasarim-karsilastirma.md` — tasarım ve kontrast kararları
