@@ -2,9 +2,10 @@ import { router, useLocalSearchParams } from "expo-router";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ikon } from "../src/components/Ikon";
+import { YemekGorseli } from "../src/components/YemekGorseli";
 import { ilBul } from "../src/data/iller";
 import { ayAnahtari, turkceTarih, type OgunAdi } from "../src/lib/tarih";
-import { dilimSaydamligi, dilimToplami, kaloriDilimleri } from "../src/menu/kalori";
+import { dilimToplami, kaloriDilimleri } from "../src/menu/kalori";
 import { useMenuDeposu } from "../src/menu/MenuProvider";
 import { OGUN_BASLIK } from "../src/menu/ogun";
 import { grupMetni, ogunVar } from "../src/menu/ozet";
@@ -64,38 +65,45 @@ export default function KaloriEkrani() {
 
             <View style={{ borderRadius: yaricap.orta, backgroundColor: tema.yuzey, borderWidth: 1, borderColor: tema.kenar, paddingHorizontal: bosluk.x4, paddingVertical: bosluk.x2 }}>
               {dilimler.map((dilim, sira) => {
-                const grup = ogun?.gruplar.find((aday) => (aday.baslik ?? "Diğer") === dilim.baslik);
+                const grup = ogun?.gruplar.find(
+                  (aday) => (aday.baslik ?? dilim.kategori?.ad ?? "Diğer") === dilim.baslik,
+                );
+                const renk = dilim.kategori?.renk ?? tema.aksan;
                 return (
                   <View
                     key={`${dilim.baslik}-${sira}`}
                     style={{
+                      flexDirection: "row",
+                      gap: bosluk.x3,
                       paddingVertical: bosluk.x3,
                       borderTopWidth: sira === 0 ? 0 : StyleSheet.hairlineWidth,
                       borderTopColor: tema.kenar,
-                      gap: bosluk.x2,
                     }}
                   >
-                    <View style={{ flexDirection: "row", alignItems: "baseline", gap: bosluk.x3 }}>
-                      <Text style={{ flex: 1, color: tema.metin, fontSize: 16, lineHeight: 22 }}>
-                        {dilim.baslik}
-                      </Text>
-                      <Text style={{ color: tema.metin, fontSize: 16 }}>{dilim.kcal}</Text>
-                      <Text style={{ color: tema.soluk, fontSize: 12, width: 38, textAlign: "right" }}>
-                        %{Math.round((dilim.kcal / hesaplanan) * 100)}
-                      </Text>
-                    </View>
-                    {grup ? (
-                      <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 19 }}>{grupMetni(grup)}</Text>
-                    ) : null}
-                    <View style={{ height: 6, borderRadius: 3, backgroundColor: tema.aksanZemin, overflow: "hidden" }}>
-                      <View
-                        style={{
-                          width: `${enBuyuk > 0 ? (dilim.kcal / enBuyuk) * 100 : 0}%`,
-                          height: 6,
-                          backgroundColor: tema.aksan,
-                          opacity: dilimSaydamligi(sira, dilimler.length),
-                        }}
-                      />
+                    <YemekGorseli kategori={dilim.kategori} boyut={40} />
+                    <View style={{ flex: 1, gap: bosluk.x2 }}>
+                      <View style={{ flexDirection: "row", alignItems: "baseline", gap: bosluk.x3 }}>
+                        <Text style={{ flex: 1, color: tema.metin, fontSize: 16, lineHeight: 22 }}>
+                          {dilim.baslik}
+                        </Text>
+                        <Text style={{ color: tema.metin, fontSize: 16 }}>{dilim.kcal}</Text>
+                        <Text style={{ color: tema.soluk, fontSize: 12, width: 38, textAlign: "right" }}>
+                          %{Math.round((dilim.kcal / hesaplanan) * 100)}
+                        </Text>
+                      </View>
+                      {grup ? (
+                        <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 19 }}>{grupMetni(grup)}</Text>
+                      ) : null}
+                      <View style={{ height: 6, borderRadius: 3, backgroundColor: tema.yuzey2, overflow: "hidden" }}>
+                        <View
+                          style={{
+                            width: `${enBuyuk > 0 ? (dilim.kcal / enBuyuk) * 100 : 0}%`,
+                            height: 6,
+                            borderRadius: 3,
+                            backgroundColor: renk,
+                          }}
+                        />
+                      </View>
                     </View>
                   </View>
                 );

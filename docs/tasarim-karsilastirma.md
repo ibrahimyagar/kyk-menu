@@ -52,6 +52,16 @@ Ortak kalıp: şehir seçici, aylık kart listesi, koyu tema, bildirim. Üçünd
 
 Oy ve paylaş düğmeleri tam yuvarlak; dikey alan kazanmak için başlık ve şerit boşlukları birer kademe kısıldı.
 
+## Üçüncü tur: renk ve çizimler
+
+**Her satırda kategori çizimi.** Grup etiketini kaldırınca boşalan sol kolon, yemeğin kategorisini anlatan 36 dp'lik düz illüstrasyona verildi. Çizimler temsilidir, fotoğraf değil; ayrıntı ve üretim hattı `docs/gorsel-notlari.md` içinde. Rakiplerin hiçbirinde tutarlı bir görsel dil yok; biri fotoğraf koyuyor, o da kullanıcıya yanlış söz veriyor.
+
+**Renk artık veriden geliyor.** 14 kategorinin her birinin bir rengi var (`src/menu/kategori.ts`). Kalori şeridinin dilimleri ve detay sayfasındaki çubuklar tek kırmızı ton yerine kendi kategori renginde. Böylece şerit dekoratif olmaktan çıkıp okunur hâle geldi: hangi dilimin ne olduğu renkten anlaşılıyor.
+
+**Hafta listesi renklendi.** Güneş/ay simgelerinin yerini öğünü temsil eden 22 dp'lik çizim aldı; gün satırı tek bakışta "bugün ne var" sorusuna renkle cevap veriyor.
+
+Eşleme veri odaklı: başlık haritası tutmazsa yemek adındaki anahtar kelimeye bakılıyor, ikisi de tutmazsa görsel uydurulmuyor. `scripts/kategori-dene.ts` gerçek verideki 448 grubun tamamının bir kategoriye düştüğünü doğruluyor.
+
 ## Ölçüler
 
 Tüm dokunma hedefleri en az 44 dp. Yemek listesi satırları dokunulmadığı için minimum yükseklik taşımıyor; menü kaydırmadan sığsın diye satır yüksekliği 22, dikey boşluk 8.

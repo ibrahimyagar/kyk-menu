@@ -165,7 +165,7 @@ export default function Ayarlar() {
 
         <View style={{ gap: bosluk.x2, paddingHorizontal: bosluk.x1 }}>
           <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 19 }}>
-            Bu uygulama Gençlik ve Spor Bakanlığı veya KYK'nın resmî uygulaması değildir. Menüler yurtlarda ilan edilen listelerden derlenir; hatalı veya eksik olabilir, yemekhanedeki ilan esastır.
+            Bu uygulama Gençlik ve Spor Bakanlığı veya KYK'nın resmî uygulaması değildir. Menüler yurtlarda ilan edilen listelerden derlenir; hatalı veya eksik olabilir, yemekhanedeki ilan esastır. Yemek çizimleri temsilidir, o günkü yemeğin fotoğrafı değildir.
           </Text>
           <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 19 }}>
             Şimdilik yüklü menüsü olan il İstanbul. Diğer iller eklendikçe burada açılır. Uygulama adı henüz seçilmedi.

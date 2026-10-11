@@ -1,8 +1,10 @@
 import type { Grup } from "../types/domain";
+import { kategoriBul, type Kategori } from "./kategori";
 
 export interface KaloriDilimi {
   baslik: string;
   kcal: number;
+  kategori: Kategori | null;
 }
 
 /**
@@ -27,7 +29,8 @@ export function kaloriDilimleri(gruplar: Grup[]): KaloriDilimi[] {
   for (const grup of gruplar) {
     const kcal = grupKcal(grup);
     if (kcal == null || kcal <= 0) continue;
-    dilimler.push({ baslik: grup.baslik ?? "Diğer", kcal });
+    const kategori = kategoriBul(grup);
+    dilimler.push({ baslik: grup.baslik ?? kategori?.ad ?? "Diğer", kcal, kategori });
   }
   return dilimler;
 }
@@ -36,7 +39,7 @@ export function dilimToplami(dilimler: KaloriDilimi[]): number {
   return dilimler.reduce((toplam, dilim) => toplam + dilim.kcal, 0);
 }
 
-/** Dilim tonları: tek vurgu rengi üzerinde azalan doygunluk. */
+/** Kategorisi bilinmeyen dilimler için sırayla azalan doygunluk. */
 export function dilimSaydamligi(sira: number, adet: number): number {
   if (adet <= 1) return 1;
   const enAz = 0.45;

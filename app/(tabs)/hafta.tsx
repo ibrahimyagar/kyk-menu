@@ -3,8 +3,10 @@ import { useEffect } from "react";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ikon, type IkonAdi } from "../../src/components/Ikon";
+import { YemekGorseli } from "../../src/components/YemekGorseli";
 import { useGun } from "../../src/gun/GunProvider";
 import { ayAnahtari, ayinGunleri, tarihParcalari } from "../../src/lib/tarih";
+import { ogunKategorisi, type Kategori } from "../../src/menu/kategori";
 import { useMenuDeposu } from "../../src/menu/MenuProvider";
 import { ogunOzeti, ogunVar } from "../../src/menu/ozet";
 import { useTercih } from "../../src/tercih/TercihProvider";
@@ -23,12 +25,21 @@ function gunKcal(kayit: GunMenu | undefined): number | null {
   return (degerler as number[]).reduce((toplam, kcal) => toplam + kcal, 0);
 }
 
-/** Güneş/ay simgesi öğünü söylüyor; "Kahvaltı:" etiketi satırı daraltıyordu. */
-function OgunOzeti({ ikon, metin }: { ikon: IkonAdi; metin: string }) {
+/**
+ * "Kahvaltı:" etiketi satırı daraltıyordu. Yerine öğünün kategori çizimi;
+ * çizim yoksa güneş/ay simgesi. Listede renk de buradan geliyor.
+ */
+function OgunOzeti({ ikon, kategori, metin }: { ikon: IkonAdi; kategori: Kategori | null; metin: string }) {
   const tema = useTema();
   return (
     <View style={{ flexDirection: "row", alignItems: "center", gap: bosluk.x2 }}>
-      <Ikon ad={ikon} boyut={13} renk={tema.soluk} />
+      {kategori ? (
+        <YemekGorseli kategori={kategori} boyut={22} />
+      ) : (
+        <View style={{ width: 22, alignItems: "center" }}>
+          <Ikon ad={ikon} boyut={13} renk={tema.soluk} />
+        </View>
+      )}
       <Text style={{ flex: 1, color: tema.metin, fontSize: 14, lineHeight: 19 }} numberOfLines={1}>
         {metin}
       </Text>
@@ -103,8 +114,12 @@ export default function Hafta() {
                 </Text>
               </View>
               <View style={{ flex: 1, gap: 3 }}>
-                <OgunOzeti ikon="sunny-outline" metin={ozet(kayit?.kahvalti)} />
-                <OgunOzeti ikon="moon-outline" metin={ozet(kayit?.aksam)} />
+                <OgunOzeti
+                  ikon="sunny-outline"
+                  kategori={ogunKategorisi(kayit?.kahvalti)}
+                  metin={ozet(kayit?.kahvalti)}
+                />
+                <OgunOzeti ikon="moon-outline" kategori={ogunKategorisi(kayit?.aksam)} metin={ozet(kayit?.aksam)} />
                 {kcal != null ? (
                   <Text style={{ color: tema.soluk, fontSize: 11, marginTop: 1 }} accessibilityLabel={`${kcal} kalori`}>
                     {kcal} kcal

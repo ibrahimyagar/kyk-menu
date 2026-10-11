@@ -1,13 +1,15 @@
 import { Text, View } from "react-native";
+import { kategoriBul } from "../menu/kategori";
 import { bosluk } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import type { Grup } from "../types/domain";
+import { YemekGorseli } from "./YemekGorseli";
 
 /**
- * Grup başına tek satır. Grup etiketi ("Yumurta", "Hamur işi") yazılmaz;
- * yemeğin adı neyi yediğini zaten söylüyor, etiket satırı daraltıyordu.
- * Kalori de burada değil: kart altındaki şerit toplamı, detay sayfası
- * dağılımı gösteriyor.
+ * Grup başına tek satır: solda kategori çizimi, sağda yemekler. Grup etiketi
+ * ("Yumurta", "Hamur işi") yazılmaz; çizim ve yemeğin adı onu zaten söylüyor.
+ * Kalori de burada değil: kart altındaki şerit toplamı, detay sayfası dağılımı
+ * gösteriyor. Görsel 36 piksel ve dikey boşluk 4; menü tek ekrana sığsın diye.
  */
 export function YemekListesi({ gruplar }: { gruplar: Grup[] }) {
   const tema = useTema();
@@ -17,20 +19,10 @@ export function YemekListesi({ gruplar }: { gruplar: Grup[] }) {
       {gruplar.map((grup, index) => (
         <View
           key={`${grup.baslik ?? "grup"}-${index}`}
-          style={{ flexDirection: "row", alignItems: "flex-start", gap: bosluk.x3, paddingVertical: bosluk.x2 }}
+          style={{ flexDirection: "row", alignItems: "center", gap: bosluk.x3, paddingVertical: bosluk.x1 }}
         >
-          {/* Satır ritmi için nokta; hizası ilk satırın orta yüksekliğinde. */}
-          <View
-            style={{
-              width: 5,
-              height: 5,
-              borderRadius: 3,
-              backgroundColor: tema.aksan,
-              opacity: 0.45,
-              marginTop: 10,
-            }}
-          />
-          <Text style={{ flex: 1, color: tema.metin, fontSize: 17, lineHeight: 24 }}>
+          <YemekGorseli kategori={kategoriBul(grup)} boyut={36} />
+          <Text style={{ flex: 1, color: tema.metin, fontSize: 16, lineHeight: 22 }}>
             {grup.secenekler.map((secenek, sira) => (
               <Text key={`${secenek.ad}-${sira}`}>
                 {sira > 0 ? (

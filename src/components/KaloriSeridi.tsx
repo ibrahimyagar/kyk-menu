@@ -12,8 +12,9 @@ interface Props {
 }
 
 /**
- * Kartın imza öğesi: grupların kalori payı tek bir ince şeritte. Rakiplerde
- * kalori ya hiç yok ya da her satırda rozet olarak tekrarlanıyor.
+ * Kartın imza öğesi: grupların kalori payı tek bir şeritte, her dilim kendi
+ * yemek kategorisinin renginde. Rakiplerde kalori ya hiç yok ya da her satırda
+ * tekrar eden rozet olarak duruyor.
  */
 export function KaloriSeridi({ gruplar, toplamKcal, onBas }: Props) {
   const tema = useTema();
@@ -32,14 +33,15 @@ export function KaloriSeridi({ gruplar, toplamKcal, onBas }: Props) {
   const govde = (
     <View style={{ gap: bosluk.x2, paddingVertical: bosluk.x2 }}>
       {dilimler.length > 0 ? (
-        <View style={{ flexDirection: "row", height: 6, borderRadius: 3, overflow: "hidden", backgroundColor: tema.aksanZemin }}>
+        <View style={{ flexDirection: "row", height: 8, borderRadius: 4, overflow: "hidden", gap: 2 }}>
           {dilimler.map((dilim, sira) => (
             <View
               key={`${dilim.baslik}-${sira}`}
               style={{
                 flex: dilim.kcal,
-                backgroundColor: tema.aksan,
-                opacity: dilimSaydamligi(sira, dilimler.length),
+                borderRadius: 4,
+                backgroundColor: dilim.kategori?.renk ?? tema.aksan,
+                opacity: dilim.kategori ? 1 : dilimSaydamligi(sira, dilimler.length),
               }}
             />
           ))}

@@ -37,6 +37,12 @@ assert.deepEqual(
 );
 assert.equal(dilimToplami(dilimler), 340);
 
+// Başlıktan kategori bulunuyorsa dilim o kategorinin rengini taşır.
+assert.equal(dilimler[0]?.kategori?.kimlik, "corba");
+assert.equal(dilimler[1]?.kategori?.kimlik, "ekmekSu");
+// Başlığı ve adı tanınmayan grup kategorisiz kalır; uydurma görsel çizilmez.
+assert.equal(dilimler[2]?.kategori, null);
+
 // Kalorisi hiç olmayan ay: şerit çizilmez, tahmin üretilmez.
 assert.deepEqual(kaloriDilimleri([grup("biri", "Çorba", [undefined, undefined])]), []);
 assert.equal(dilimToplami([]), 0);

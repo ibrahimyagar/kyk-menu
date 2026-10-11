@@ -8,10 +8,12 @@
     "validate": "node --experimental-strip-types scripts/validate.ts",
     "build:data": "node --experimental-strip-types scripts/build-data.ts",
     "test": "node scripts/test.mjs",
+    "gorsel": "node scripts/gorsel-kucult.mjs assets/kaynak-gorsel",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.scripts.json"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "sharp": "^0.35.5",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",
     "zod": "^4.1.5"
