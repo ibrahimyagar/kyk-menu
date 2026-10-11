@@ -34,4 +34,7 @@ Kaynakta olmayan öğün `durum: "aciklanmadi"` kalır, yemek ve kalori uydurulm
 - `docs/veri-notlari.md` — İstanbul verisinde yapılan kararlar
 - `docs/bildirim-notlari.md` — hatırlatma davranışı ve sınırları
 - `docs/paylasim-notlari.md` — paylaşım görseli ve geri bildirim bağlantıları
+- `docs/gizlilik-politikasi.md` — yayımlanacak gizlilik metni
+- `docs/magaza-metinleri.md` — mağaza başlığı, açıklama, anahtar kelimeler
+- `docs/yayin-kontrol-listesi.md` — yayın öncesi yapılacaklar ve cihaz testleri
 - `docs/tasarim-karsilastirma.md` — tasarım ve kontrast kararları
