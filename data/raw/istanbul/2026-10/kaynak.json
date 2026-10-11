@@ -1,0 +1,194 @@
+{
+  "sehir": "İstanbul",
+  "ay": "Ekim",
+  "yil": 2026,
+  "kaynak": "https://kykyemek.com/",
+  "menu": [
+    {
+      "tarih": "2026-10-01",
+      "gun": "Perşembe",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kavurması", "Karışık Pizza", "Krem Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": ["Ezogelin Çorba/Yayla Çorbası", "Tavuk Pirzola+Patates Kızartma/Zeytinyağlı Taze Fasulye", "Soslu Makarna", "Çoban Salata", "500 ml Su", "Çeyrek Ekmek"]
+    },
+    {
+      "tarih": "2026-10-02",
+      "gun": "Cuma",
+      "kahvalti": ["Menemen", "Patates Kızartması", "Çikolatalı Milföy Börek", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-03",
+      "gun": "Cumartesi",
+      "kahvalti": ["Haşlanmış Yumurta", "Karışık Kızartma", "Simit", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-04",
+      "gun": "Pazar",
+      "kahvalti": ["Sade Omlet", "Salçalı Sosis", "Peynirli/Ispanaklı Börek", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-05",
+      "gun": "Pazartesi",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kızartması", "Zeytinli/Peynirli Açma", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-06",
+      "gun": "Salı",
+      "kahvalti": ["Kaşarlı Omlet", "Patates Salatası", "Dere Otlu Poğaça", "Labne Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-07",
+      "gun": "Çarşamba",
+      "kahvalti": ["Haşlanmış Yumurta", "Sosis Kızartması", "Peynirli/Ispanaklı Börek", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-08",
+      "gun": "Perşembe",
+      "kahvalti": ["Sucuklu Yumurta", "Karışık Kızartma", "Kakaolu Kek", "Yöresel Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-09",
+      "gun": "Cuma",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kızartması", "Pankek+Bal+Tereyağ", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-10",
+      "gun": "Cumartesi",
+      "kahvalti": ["Peynirli Omlet", "Patates Kavurması", "Sosisli Milföy Böreği", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-11",
+      "gun": "Pazar",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kroket", "Karışık Pizza", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-12",
+      "gun": "Pazartesi",
+      "kahvalti": ["Sade Omlet", "Patates Kızartması", "Çikolatalı Milföy Börek", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-13",
+      "gun": "Salı",
+      "kahvalti": ["Haşlanmış Yumurta", "Salçalı Sosis", "Sade Poğaça", "Yöresel Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-14",
+      "gun": "Çarşamba",
+      "kahvalti": ["Kaşarlı Omlet", "Karışık Kızartma", "Zeytinli/Peynirli Açma", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-15",
+      "gun": "Perşembe",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Salatası", "Pankek+Sürülebilir Çikolata", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-16",
+      "gun": "Cuma",
+      "kahvalti": ["Menemen", "Patates Kızartması", "Simit", "Krem Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-17",
+      "gun": "Cumartesi",
+      "kahvalti": ["Haşlanmış Yumurta", "Pişi+Reçel", "Peynirli/Ispanaklı Börek", "Yöresel Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-18",
+      "gun": "Pazar",
+      "kahvalti": ["Sucuklu Omlet", "Patates Kavurması", "Dere Otlu Poğaça", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-19",
+      "gun": "Pazartesi",
+      "kahvalti": ["Haşlanmış Yumurta", "Sosis Kızartması", "Pişi+Reçel", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-20",
+      "gun": "Salı",
+      "kahvalti": ["Peynirli Omlet", "Patates Kroket", "Karışık Pizza", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-21",
+      "gun": "Çarşamba",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kızartması", "Sade Poğaça", "Labne Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-22",
+      "gun": "Perşembe",
+      "kahvalti": ["Sade Omlet", "Patates Salatası", "Çikolatalı Milföy Börek", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-23",
+      "gun": "Cuma",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kızartması", "Peynirli/Ispanaklı Börek", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-24",
+      "gun": "Cumartesi",
+      "kahvalti": ["Kaşarlı Omlet", "Karışık Kızartma", "Yumurtalı Ekmek", "Yöresel Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-25",
+      "gun": "Pazar",
+      "kahvalti": ["Haşlanmış Yumurta", "Pişi+Reçel", "Simit", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-26",
+      "gun": "Pazartesi",
+      "kahvalti": ["Mantarlı Omlet", "Patates Salatası", "Dere Otlu Poğaça", "Krem Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-27",
+      "gun": "Salı",
+      "kahvalti": ["Haşlanmış Yumurta", "Patates Kızartması", "Pankek+Bal+Tereyağ", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-28",
+      "gun": "Çarşamba",
+      "kahvalti": ["Sucuklu Omlet", "Patates Kavurması", "Zeytinli/Peynirli Açma", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-29",
+      "gun": "Perşembe",
+      "kahvalti": ["Haşlanmış Yumurta", "Menemen", "Mozaik Kek", "Beyaz Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-30",
+      "gun": "Cuma",
+      "kahvalti": ["Sade Omlet", "Patates Kroket", "Simit", "Yöresel Peynir", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    },
+    {
+      "tarih": "2026-10-31",
+      "gun": "Cumartesi",
+      "kahvalti": ["Haşlanmış Yumurta", "Salçalı Sosis", "Peynirli/Ispanaklı Börek", "Kaşar Peyniri", "Siyah/Yeşil Zeytin", "500 ml Su", "Çeyrek Ekmek"],
+      "aksam": null
+    }
+  ]
+}

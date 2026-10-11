@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Yurt Menü",
+    "slug": "kyk-menu",
+    "scheme": "kykmenu",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-status-bar"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.yurtmenu.app",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.yurtmenu.app"
+    }
+  }
+}
