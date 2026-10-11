@@ -19,7 +19,10 @@ export function DateStrip({ gunler, secili, bugun, onSec }: Props) {
       key={gunler[0] ?? "bos"}
       horizontal
       showsHorizontalScrollIndicator={false}
-      contentContainerStyle={{ paddingHorizontal: bosluk.x4, gap: bosluk.x2 }}
+      /* ScrollView varsayılanı flexGrow/flexShrink 1; sütun içinde kardeş
+         listeyle yarışıp şeridi kırpıyordu. İçerik yüksekliği kalsın. */
+      style={{ flexGrow: 0, flexShrink: 0 }}
+      contentContainerStyle={{ paddingHorizontal: bosluk.x4, gap: bosluk.x2, alignItems: "center" }}
       contentOffset={{ x: Math.max(0, baslangic * 56 - 16), y: 0 }}
     >
       {gunler.map((gun) => {
@@ -32,7 +35,7 @@ export function DateStrip({ gunler, secili, bugun, onSec }: Props) {
             accessibilityLabel={`${parca.gun} ${parca.hafta}${gun === bugun ? ", bugün" : ""}`}
             accessibilityState={{ selected: seciliMi }}
             onPress={() => onSec(gun)}
-            style={{ width: 48, minHeight: 64, alignItems: "center", justifyContent: "center" }}
+            style={{ width: 48, minHeight: 56, alignItems: "center", justifyContent: "center" }}
           >
             <Text style={{ color: tema.soluk, fontSize: 13, marginBottom: bosluk.x1 }}>{parca.hafta}</Text>
             <View

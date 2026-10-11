@@ -45,7 +45,7 @@ export const PaylasimKarti = forwardRef<View, Props>(function PaylasimKarti({ il
           paddingBottom: bosluk.x2,
         }}
       >
-        <YemekListesi gruplar={ogun.gruplar} kompakt kcalGoster={false} />
+        <YemekListesi gruplar={ogun.gruplar} kcalGoster={false} />
       </View>
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
         {ogun.toplamKcal != null ? (

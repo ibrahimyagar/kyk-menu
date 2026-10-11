@@ -1,3 +1,4 @@
+import Constants from "expo-constants";
 import { Platform } from "react-native";
 import type { BildirimIsi } from "./plan";
 
@@ -5,28 +6,40 @@ type Modul = typeof import("expo-notifications");
 
 const KANAL = "menu";
 
+/**
+ * expo-notifications içe aktarıldığı anda cihaz push kaydını kurmaya çalışıyor
+ * ve Expo Go bunu SDK 53'te kaldırdığı için hata atıyor. Metro bu hatayı
+ * ölümcül olarak bildirdiği için try/catch kurtarmıyor; modüle hiç
+ * dokunmamak gerekiyor.
+ *
+ * `executionEnvironment` Expo Go ile geliştirme derlemesini ayırt etmiyor
+ * (ikisi de "storeClient"), bu yüzden kullanımdan kaldırılmış da olsa
+ * `appOwnership` tek güvenilir ayraç.
+ */
+const EXPO_GO = Constants.appOwnership === "expo";
+
 let yukleme: Promise<Modul | null> | null = null;
 
-/**
- * expo-notifications içe aktarıldığı anda kendini kurmaya çalışır ve bazı
- * ortamlarda (örneğin Expo Go) hata atar. Bu yüzden modül uygulama
- * açılışında değil, yalnızca gerektiğinde ve korumalı yükleniyor.
- */
 function modul(): Promise<Modul | null> {
+  if (EXPO_GO) return Promise.resolve(null);
   if (!yukleme) {
-    yukleme = import("expo-notifications")
-      .then((gelen) => {
-        gelen.setNotificationHandler({
-          handleNotification: async () => ({
-            shouldShowBanner: true,
-            shouldShowList: true,
-            shouldPlaySound: false,
-            shouldSetBadge: false,
-          }),
-        });
-        return gelen;
-      })
-      .catch(() => null);
+    try {
+      yukleme = Promise.resolve(import("expo-notifications"))
+        .then((gelen) => {
+          gelen.setNotificationHandler({
+            handleNotification: async () => ({
+              shouldShowBanner: true,
+              shouldShowList: true,
+              shouldPlaySound: false,
+              shouldSetBadge: false,
+            }),
+          });
+          return gelen;
+        })
+        .catch(() => null);
+    } catch {
+      yukleme = Promise.resolve(null);
+    }
   }
   return yukleme;
 }

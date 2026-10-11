@@ -37,7 +37,7 @@ export default function MenuEkrani() {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: tema.bg }} edges={["top"]}>
-      <View style={{ minHeight: 52, paddingHorizontal: bosluk.x4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+      <View style={{ minHeight: 48, paddingHorizontal: bosluk.x4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
         <Pressable accessibilityRole="button" accessibilityLabel="İl değiştir" onPress={() => router.push("/il")} style={{ minHeight: 44, justifyContent: "center" }}>
           <Text style={{ color: tema.metin, fontSize: 17 }}>{il?.ad ?? "İl seç"} ▾</Text>
         </Pressable>
@@ -45,11 +45,11 @@ export default function MenuEkrani() {
           <Text style={{ color: tema.soluk, fontSize: 20 }}>⚙</Text>
         </Pressable>
       </View>
-      <Text style={{ color: tema.metin, fontSize: 22, lineHeight: 30, paddingHorizontal: bosluk.x4, paddingBottom: bosluk.x3 }}>{baslikTarih}</Text>
+      <Text style={{ color: tema.metin, fontSize: 22, lineHeight: 30, paddingHorizontal: bosluk.x4, paddingBottom: bosluk.x2 }}>{baslikTarih}</Text>
       <DateStrip gunler={ayinGunleri(ay)} secili={gun.tarih} bugun={gun.bugun} onSec={gun.tarihSec} />
-      <View style={{ height: bosluk.x4 }} />
+      <View style={{ height: bosluk.x3 }} />
       <MealToggle secili={gun.ogun} onSec={gun.ogunSec} />
-      <ScrollView contentContainerStyle={{ paddingTop: bosluk.x4, paddingBottom: bosluk.x8 }}>
+      <ScrollView contentContainerStyle={{ paddingTop: bosluk.x3, paddingBottom: bosluk.x6 }}>
         {gorunum === "bekliyor" ? (
           <Iskelet />
         ) : gorunum === "internet" ? (
@@ -61,7 +61,7 @@ export default function MenuEkrani() {
         ) : !gunKaydi ? (
           <Bos metin="Bu gün için menü yok." />
         ) : (
-          <MealCard ogun={gunKaydi[gun.ogun]} baslik={ogunBaslik[gun.ogun]} />
+          <MealCard ogun={gunKaydi[gun.ogun]} />
         )}
         {gunKaydi && ogunVar(gunKaydi[gun.ogun]) ? (
           <PaylasDugmesi
