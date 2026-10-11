@@ -1,27 +1,29 @@
 import * as Linking from "expo-linking";
-import { Pressable, Text } from "react-native";
-import { baglantiKur } from "../config/baglantilar";
+import { Pressable, Text, View } from "react-native";
+import { bosluk } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import { Ikon, type IkonAdi } from "./Ikon";
 
 interface Props {
-  sablon: string;
-  degerler?: Record<string, string>;
+  adres: string | null;
   etiket: string;
+  ikon?: IkonAdi;
 }
 
-/** Şablon tanımlı değilse hiçbir şey çizmez. */
-export function BaglantiSatiri({ sablon, degerler = {}, etiket }: Props) {
+/** Adres yoksa hiçbir şey çizmez; kullanıcı ölü bağlantı görmez. */
+export function BaglantiSatiri({ adres, etiket, ikon }: Props) {
   const tema = useTema();
-  const adres = baglantiKur(sablon, degerler);
   if (!adres) return null;
 
   return (
     <Pressable
       accessibilityRole="link"
       onPress={() => void Linking.openURL(adres)}
-      style={{ minHeight: 44, justifyContent: "center" }}
+      style={{ minHeight: 44, flexDirection: "row", alignItems: "center", gap: bosluk.x2 }}
     >
-      <Text style={{ color: tema.aksan, fontSize: 15 }}>{etiket}</Text>
+      {ikon ? <Ikon ad={ikon} boyut={18} renk={tema.aksan} /> : null}
+      <Text style={{ flex: 1, color: tema.aksan, fontSize: 15 }}>{etiket}</Text>
+      <Ikon ad="chevron-forward" boyut={16} renk={tema.soluk} />
     </Pressable>
   );
 }

@@ -2,8 +2,10 @@ import { Pressable, Text, View } from "react-native";
 import type { OgunAdi } from "../lib/tarih";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import { Ikon, type IkonAdi } from "./Ikon";
 
 const etiket: Record<OgunAdi, string> = { kahvalti: "Kahvaltı", aksam: "Akşam" };
+const simge: Record<OgunAdi, IkonAdi> = { kahvalti: "sunny-outline", aksam: "moon-outline" };
 
 export function MealToggle({ secili, onSec }: { secili: OgunAdi; onSec: (ogun: OgunAdi) => void }) {
   const tema = useTema();
@@ -28,12 +30,15 @@ export function MealToggle({ secili, onSec }: { secili: OgunAdi; onSec: (ogun: O
             style={{
               flex: 1,
               minHeight: 44,
+              flexDirection: "row",
+              gap: bosluk.x2,
               borderRadius: yaricap.kucuk,
               alignItems: "center",
               justifyContent: "center",
               backgroundColor: aktif ? tema.yuzey : "transparent",
             }}
           >
+            <Ikon ad={simge[ogun]} boyut={16} renk={aktif ? tema.aksan : tema.soluk} />
             <Text style={{ color: aktif ? tema.aksan : tema.soluk, fontSize: 16 }}>{etiket[ogun]}</Text>
           </Pressable>
         );

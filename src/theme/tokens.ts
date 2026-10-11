@@ -11,6 +11,8 @@ export interface Renkler {
   soluk: string;
   aksan: string;
   aksanMetin: string;
+  /** Vurgunun yüzeye yakın, yazı taşımayan tonu: şerit ve seçili arka plan. */
+  aksanZemin: string;
 }
 
 export const gunduz: Renkler = {
@@ -23,6 +25,7 @@ export const gunduz: Renkler = {
   soluk: "#5E666D",
   aksan: "#A33E38",
   aksanMetin: "#FFFFFF",
+  aksanZemin: "#F0DEDA",
 };
 
 export const gece: Renkler = {
@@ -35,4 +38,5 @@ export const gece: Renkler = {
   soluk: "#B7C0C7",
   aksan: "#E99086",
   aksanMetin: "#14171A",
+  aksanZemin: "#3A2B2A",
 };

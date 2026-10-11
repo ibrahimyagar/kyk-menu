@@ -1,15 +1,16 @@
 import { router } from "expo-router";
 import { useEffect, useState, type ReactNode } from "react";
-import { Pressable, ScrollView, Text, View } from "react-native";
+import { Pressable, ScrollView, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import type { BildirimAyari } from "../../src/bildirim/plan";
 import { bildirimKullanilabilir, izinAl } from "../../src/bildirim/servis";
 import { BaglantiSatiri } from "../../src/components/BaglantiSatiri";
 import { BildirimSatiri } from "../../src/components/BildirimSatiri";
-import { MENU_FOTO_FORM, MENU_YANLIS_FORM } from "../../src/config/baglantilar";
+import { menuGonderAdresi, sehirTalebiMektubu } from "../../src/config/baglantilar";
 import { ilBul } from "../../src/data/iller";
+import { useDegerlendirme } from "../../src/degerlendirme/DegerlendirmeProvider";
 import type { OgunAdi } from "../../src/lib/tarih";
-import { useTercih, type TemaSecimi } from "../../src/tercih/TercihProvider";
+import { AD_EN_FAZLA, useTercih, type TemaSecimi } from "../../src/tercih/TercihProvider";
 import { bosluk, yaricap } from "../../src/theme/tokens";
 import { useTema } from "../../src/theme/ThemeProvider";
 
@@ -28,6 +29,8 @@ export default function Ayarlar() {
   const tema = useTema();
   const tercih = useTercih();
   const il = ilBul(tercih.il ?? "");
+  const { sayim } = useDegerlendirme();
+  const [ad, setAd] = useState(tercih.ad);
   const [izinYok, setIzinYok] = useState(false);
   const [bildirimVar, setBildirimVar] = useState(true);
 
@@ -60,6 +63,35 @@ export default function Ayarlar() {
     <SafeAreaView style={{ flex: 1, backgroundColor: tema.bg }} edges={["top"]}>
       <ScrollView contentContainerStyle={{ padding: bosluk.x4, paddingBottom: bosluk.x8, gap: bosluk.x6 }}>
         <Text style={{ color: tema.metin, fontSize: 28, lineHeight: 36 }}>Ayarlar</Text>
+
+        <Bolum baslik="Takma ad">
+          <TextInput
+            value={ad}
+            onChangeText={setAd}
+            onBlur={() => void tercih.adSec(ad)}
+            onSubmitEditing={() => void tercih.adSec(ad)}
+            placeholder="Örn. Yafes"
+            placeholderTextColor={tema.soluk}
+            accessibilityLabel="Takma ad"
+            autoCorrect={false}
+            maxLength={AD_EN_FAZLA}
+            returnKeyType="done"
+            style={{
+              minHeight: 48,
+              borderRadius: yaricap.orta,
+              borderWidth: 1,
+              borderColor: tema.kenar,
+              backgroundColor: tema.yuzey,
+              color: tema.metin,
+              fontSize: 17,
+              paddingHorizontal: bosluk.x4,
+            }}
+          />
+          <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>
+            Menü ekranında seni adınla selamlamak için. Yalnızca bu telefonda tutulur, hesap
+            açılmaz, kimseye gönderilmez.
+          </Text>
+        </Bolum>
 
         <Bolum baslik="Görünüm">
           <View style={{ flexDirection: "row", backgroundColor: tema.yuzey2, borderRadius: yaricap.orta, padding: bosluk.x1 }}>
@@ -99,12 +131,22 @@ export default function Ayarlar() {
           </Text>
         </Bolum>
 
-        {MENU_FOTO_FORM.trim() || MENU_YANLIS_FORM.trim() ? (
-          <Bolum baslik="Katkı">
-            <BaglantiSatiri sablon={MENU_FOTO_FORM} degerler={{ il: il?.ad ?? "" }} etiket="Menü fotoğrafı gönder" />
-            <BaglantiSatiri sablon={MENU_YANLIS_FORM} degerler={{ il: il?.ad ?? "" }} etiket="Menü yanlış mı?" />
-          </Bolum>
-        ) : null}
+        <Bolum baslik="Katkı">
+          <BaglantiSatiri adres={menuGonderAdresi(il?.ad ?? "", tercih.ad)} etiket="Yurdumun menüsünü gönder" ikon="mail-outline" />
+          <BaglantiSatiri adres={sehirTalebiMektubu("", tercih.ad)} etiket="Şehrim listede yok" ikon="location-outline" />
+          <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>
+            Yurdundaki aylık listenin fotoğrafını gönderirsen o ili ekleyebiliriz. Gelen liste
+            kontrol edilmeden yayınlanmaz.
+          </Text>
+        </Bolum>
+
+        <Bolum baslik="Beğenilerim">
+          <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>
+            {sayim.begendi + sayim.begenmedi === 0
+              ? "Henüz öğün puanlamadın. Menü ekranındaki başparmaklarla beğendiğin öğünleri işaretleyebilirsin."
+              : `${sayim.begendi} beğeni, ${sayim.begenmedi} beğenmeme. Bu notlar yalnızca bu telefonda tutulur, kimseyle paylaşılmaz.`}
+          </Text>
+        </Bolum>
 
         <Pressable accessibilityRole="button" onPress={() => router.push("/il")} style={{ minHeight: 52, justifyContent: "center" }}>
           <Text style={{ color: tema.soluk, fontSize: 13 }}>İl</Text>

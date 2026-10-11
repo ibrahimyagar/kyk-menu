@@ -4,6 +4,7 @@ import { StatusBar } from "expo-status-bar";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { BildirimPlanlayici } from "../src/bildirim/BildirimPlanlayici";
+import { DegerlendirmeProvider } from "../src/degerlendirme/DegerlendirmeProvider";
 import { MenuProvider } from "../src/menu/MenuProvider";
 import { TercihProvider } from "../src/tercih/TercihProvider";
 import { ThemeProvider, useTema } from "../src/theme/ThemeProvider";
@@ -25,7 +26,9 @@ export default function Root() {
         <TercihProvider>
           <MenuProvider>
             <ThemeProvider>
-              <Cerceve />
+              <DegerlendirmeProvider>
+                <Cerceve />
+              </DegerlendirmeProvider>
             </ThemeProvider>
             <BildirimPlanlayici />
           </MenuProvider>

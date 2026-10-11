@@ -9,8 +9,12 @@ export type TemaSecimi = "sistem" | "gunduz" | "gece";
 
 export type BildirimAyarlari = Record<OgunAdi, BildirimAyari>;
 
+/** Takma ad yalnızca cihazda durur: selamlama ve e-posta imzası için. */
+export const AD_EN_FAZLA = 24;
+
 interface Kayit {
   il: string | null;
+  ad: string;
   tema: TemaSecimi;
   bildirim: BildirimAyarlari;
 }
@@ -18,12 +22,14 @@ interface Kayit {
 interface Tercih extends Kayit {
   hazir: boolean;
   ilSec: (il: string) => Promise<void>;
+  adSec: (ad: string) => Promise<void>;
   temaSec: (tema: TemaSecimi) => Promise<void>;
   bildirimAyarla: (ogun: OgunAdi, ayar: BildirimAyari) => Promise<void>;
 }
 
 const varsayilan: Kayit = {
   il: null,
+  ad: "",
   tema: "sistem",
   bildirim: {
     kahvalti: { acik: false, dakika: 7 * 60 },
@@ -48,6 +54,7 @@ function kayitOku(ham: string | null): Kayit {
     const bildirim = json.bildirim as Partial<BildirimAyarlari> | undefined;
     return {
       il: typeof json.il === "string" ? json.il : null,
+      ad: typeof json.ad === "string" ? json.ad.slice(0, AD_EN_FAZLA) : "",
       tema,
       bildirim: {
         kahvalti: ayarOku(bildirim?.kahvalti, varsayilan.bildirim.kahvalti),
@@ -80,6 +87,7 @@ export function TercihProvider({ children }: { children: ReactNode }) {
       ...kayit,
       hazir,
       ilSec: (il) => yaz({ ...kayit, il }),
+      adSec: (ad) => yaz({ ...kayit, ad: ad.trim().slice(0, AD_EN_FAZLA) }),
       temaSec: (tema) => yaz({ ...kayit, tema }),
       bildirimAyarla: (ogun, ayar) => yaz({ ...kayit, bildirim: { ...kayit.bildirim, [ogun]: ayar } }),
     }),

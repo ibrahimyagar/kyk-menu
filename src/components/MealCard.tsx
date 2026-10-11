@@ -2,10 +2,11 @@ import { StyleSheet, Text, View } from "react-native";
 import type { Ogun } from "../types/domain";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import { KaloriSeridi } from "./KaloriSeridi";
 import { YemekListesi } from "./YemekListesi";
 
 /** Öğün adını yazmaz; üstteki seçici onu zaten söylüyor. */
-export function MealCard({ ogun }: { ogun: Ogun }) {
+export function MealCard({ ogun, onKalori }: { ogun: Ogun; onKalori?: () => void }) {
   const tema = useTema();
   if (ogun.durum === "aciklanmadi" || ogun.gruplar.length === 0) {
     return <Bos metin="Bu öğün için menü açıklanmadı." />;
@@ -24,21 +25,9 @@ export function MealCard({ ogun }: { ogun: Ogun }) {
       }}
     >
       <YemekListesi gruplar={ogun.gruplar} />
-      {ogun.toplamKcal != null ? (
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
-            borderTopWidth: StyleSheet.hairlineWidth,
-            borderTopColor: tema.kenar,
-            paddingTop: bosluk.x2,
-            marginTop: bosluk.x1,
-          }}
-        >
-          <Text style={{ color: tema.soluk, fontSize: 13 }}>Toplam</Text>
-          <Text style={{ color: tema.soluk, fontSize: 13 }}>{ogun.toplamKcal} kcal</Text>
-        </View>
-      ) : null}
+      <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: tema.kenar, marginTop: bosluk.x1 }}>
+        <KaloriSeridi gruplar={ogun.gruplar} toplamKcal={ogun.toplamKcal} onBas={onKalori} />
+      </View>
     </View>
   );
 }

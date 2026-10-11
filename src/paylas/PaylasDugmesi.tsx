@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Pressable, Text, View } from "react-native";
+import { Ikon } from "../components/Ikon";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import type { Ogun } from "../types/domain";
@@ -18,43 +19,45 @@ const uyariMetni = {
   hata: "Görsel hazırlanamadı. Tekrar dene.",
 };
 
-export function PaylasDugmesi(props: Props) {
+export function PaylasDugmesi({ onUyari, ...kart }: Props & { onUyari?: (metin: string | null) => void }) {
   const tema = useTema();
-  const kart = useRef<View>(null);
+  const kartRef = useRef<View>(null);
   const [mesgul, setMesgul] = useState(false);
-  const [uyari, setUyari] = useState<keyof typeof uyariMetni | null>(null);
 
   const bas = () => {
     if (mesgul) return;
     setMesgul(true);
-    setUyari(null);
+    onUyari?.(null);
     void (async () => {
-      const sonuc = await gorselPaylas(kart.current);
-      if (sonuc !== "tamam") setUyari(sonuc);
+      const sonuc = await gorselPaylas(kartRef.current);
+      if (sonuc !== "tamam") onUyari?.(uyariMetni[sonuc]);
       setMesgul(false);
     })();
   };
 
   return (
-    <View style={{ paddingHorizontal: bosluk.x4, paddingTop: bosluk.x4, gap: bosluk.x2 }}>
+    <>
       <Pressable
         accessibilityRole="button"
+        accessibilityLabel="Menüyü görsel olarak paylaş"
         accessibilityState={{ busy: mesgul }}
         onPress={bas}
         style={{
-          minHeight: 48,
+          minHeight: 44,
+          flexDirection: "row",
           alignItems: "center",
-          justifyContent: "center",
-          borderRadius: yaricap.orta,
+          gap: bosluk.x2,
+          paddingHorizontal: bosluk.x3,
+          borderRadius: yaricap.kucuk,
           borderWidth: 1,
           borderColor: tema.kenar,
           backgroundColor: tema.yuzey,
           opacity: mesgul ? 0.6 : 1,
         }}
       >
-        <Text style={{ color: tema.metin, fontSize: 16 }}>{mesgul ? "Hazırlanıyor…" : "Görsel olarak paylaş"}</Text>
+        <Ikon ad="share-outline" boyut={18} renk={tema.metin} />
+        <Text style={{ color: tema.metin, fontSize: 15 }}>{mesgul ? "Hazırlanıyor…" : "Paylaş"}</Text>
       </Pressable>
-      {uyari ? <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>{uyariMetni[uyari]}</Text> : null}
 
       {/* Ekran dışında durur; view-shot görünür olmasını gerektirmez. */}
       <View
@@ -63,8 +66,8 @@ export function PaylasDugmesi(props: Props) {
         importantForAccessibility="no-hide-descendants"
         style={{ position: "absolute", left: -10000, top: 0 }}
       >
-        <PaylasimKarti ref={kart} {...props} />
+        <PaylasimKarti ref={kartRef} {...kart} />
       </View>
-    </View>
+    </>
   );
 }

@@ -1,10 +1,13 @@
 import { useMemo, useState } from "react";
 import { FlatList, Pressable, Text, TextInput, View } from "react-native";
+import { sehirTalebiMektubu } from "../config/baglantilar";
 import { ILLER } from "../data/iller";
 import { useMenuDeposu } from "../menu/MenuProvider";
+import { useTercih } from "../tercih/TercihProvider";
 import type { Il } from "../types/domain";
 import { bosluk, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
+import { BaglantiSatiri } from "./BaglantiSatiri";
 
 interface Props {
   onSelect: (slug: string) => void;
@@ -13,6 +16,7 @@ interface Props {
 export function CityPicker({ onSelect }: Props) {
   const tema = useTema();
   const depo = useMenuDeposu();
+  const tercih = useTercih();
   const [sorgu, setSorgu] = useState("");
   const liste = useMemo(() => {
     const aranan = sorgu.trim().toLocaleLowerCase("tr-TR");
@@ -58,6 +62,24 @@ export function CityPicker({ onSelect }: Props) {
         keyExtractor={(il) => il.slug}
         keyboardShouldPersistTaps="handled"
         renderItem={({ item }) => <IlSatiri il={item} onSelect={onSelect} />}
+        ListEmptyComponent={
+          <Text style={{ color: tema.soluk, fontSize: 15, lineHeight: 22, paddingHorizontal: bosluk.x4, paddingBottom: bosluk.x3 }}>
+            "{sorgu.trim()}" için il bulunamadı.
+          </Text>
+        }
+        ListFooterComponent={
+          <View style={{ paddingHorizontal: bosluk.x4, paddingTop: bosluk.x4, paddingBottom: bosluk.x8, gap: bosluk.x1 }}>
+            <BaglantiSatiri
+              adres={sehirTalebiMektubu(sorgu.trim(), tercih.ad)}
+              etiket="Şehrini bulamadın mı? Bize yaz"
+              ikon="mail-outline"
+            />
+            <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>
+              Menüsü yüklü olmayan iller "Yakında" olarak görünür. Yurdundaki listeyi gönderirsen o
+              ili önce ekleriz.
+            </Text>
+          </View>
+        }
       />
     </View>
   );

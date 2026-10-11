@@ -8,18 +8,20 @@ Bu uygulama Gençlik ve Spor Bakanlığı veya Kredi ve Yurtlar Genel Müdürlü
 
 ## Kısa özet
 
-Hesap açmanıza gerek yok. Adınızı, e-postanızı, telefonunuzu, konumunuzu veya kişi listenizi istemiyoruz. Reklam ağı, analitik veya çökme takip aracı kullanmıyoruz. Yaptığınız seçimler yalnızca telefonunuzda kalır.
+Hesap açmanıza gerek yok. E-postanızı, telefonunuzu, konumunuzu veya kişi listenizi istemiyoruz. Reklam ağı, analitik veya çökme takip aracı kullanmıyoruz. Yaptığınız seçimler, yazdığınız takma ad ve öğün beğenileriniz yalnızca telefonunuzda kalır.
 
 ## Telefonunuzda saklananlar
 
 Uygulama şunları cihazın yerel deposunda tutar:
 
 - Seçtiğiniz il
+- Yazdıysanız takma adınız (yalnızca selamlamada ve yazdığınız e-postaların imzasında kullanılır)
+- Öğünlere verdiğiniz beğeni/beğenmeme notları
 - Görünüm tercihi (sistem, gündüz, gece)
 - Hatırlatma açık mı ve hangi saatte
 - İndirilen aylık menü dosyaları
 
-Bu kayıtlar telefondan dışarı çıkmaz. Uygulamayı silmeniz veya uygulama verisini temizlemeniz hepsini siler. Bunlara erişimimiz yoktur.
+Bu kayıtlar telefondan dışarı çıkmaz. Beğeniler bir sunucuya gönderilmez, ortak puan hesaplanmaz, başka kullanıcılar görmez. Uygulamayı silmeniz veya uygulama verisini temizlemeniz hepsini siler. Bunlara erişimimiz yoktur.
 
 ## Sunucuya giden istekler
 
@@ -44,6 +46,10 @@ Uygulamanın içinde reklam ağı, analitik aracı ve sosyal medya izleyicisi yo
 Uygulama mağazalar üzerinden dağıtıldığı için Apple App Store ve Google Play, indirme ve çökme gibi kendi ölçümlerini kendi politikaları kapsamında yapabilir. Bu ölçümler mağazanın kendi işleyişidir.
 
 İleride geri bildirim formu bağlantısı eklenirse, o forma yazdığınız bilgiler ilgili form hizmetinin politikasına tabi olur ve bağlantıya basmadığınız sürece hiçbir şey gönderilmez.
+
+## Bize e-posta yazdığınızda
+
+"Menü yanlış mı?", "Şehrim listede yok" ve "Yurdumun menüsünü gönder" düğmeleri telefonunuzun e-posta uygulamasını hazır bir mesajla açar. Mesaj siz gönder'e basmadan gönderilmez. Gönderdiğinizde e-posta adresinizi, yazdığınız metni ve eklediğiniz dosyaları görürüz; e-posta hizmeti sağlayıcımızın sunucusunda da saklanır. Bu mesajları yalnızca menüyü düzeltmek, yeni il eklemek ve size cevap vermek için kullanırız; pazarlama listesine eklenmezsiniz. Yazışmanın silinmesini istediğinizde silinir.
 
 ## Çocuklar
 

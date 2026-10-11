@@ -13,12 +13,14 @@ Amaç: öğrenci uygulamayı açınca, kayıt olmadan, bugün yurdunun kahvaltı
 - Gündüz, gece ve sistem teması
 - Telefonda yerel bildirim
 - Günün menüsünü görsel olarak paylaşma
-- "Menü yanlış" ve "menü fotoğrafı gönder" bağlantıları
+- Kalori şeridi ve kalori dağılımı detay sayfası
+- Cihazda kalan takma ad ve öğün beğenisi
+- "Menü yanlış", "şehrim yok" ve "menü gönder" e-posta bağlantıları
 
 ## v1'e girmeyenler
 
-- Yorum ve puan. Menü uygulamasını sohbete çevirir, veri girişi ve moderasyon ister.
-- Sosyal akış ve hesap. Login yasağıyla çelişir.
+- **Ortak puan ve yorum.** Beğeni cihazda kalıyor. Puanı herkese göstermek sunucu, kötüye kullanım koruması, moderasyon ve mağazaların kullanıcı içeriği kuralları demek; gizlilik metnini de baştan yazmak gerekir. Karar verilmeden sunucu yazılmayacak.
+- Sosyal akış ve hesap. Login yasağıyla çelişir. Takma ad hesap değil; yalnızca selamlama ve e-posta imzası.
 - Kalori hedefi takibi. Kaynakta kalori her ay yok; uydurulmayacak.
 - Konum izni. İl araması yeter, izin sürtünmesi ve gizlilik formu yükü getirir.
 - Ana ekran widget'ı. v1.1. Mağaza ret riskine karşı değerli, ilk sürümün çekirdeğini bekletmez.
