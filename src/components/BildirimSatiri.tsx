@@ -9,24 +9,26 @@ interface Props {
   baslik: string;
   ayar: BildirimAyari;
   onDegis: (ayar: BildirimAyari) => void;
+  kapali?: boolean;
 }
 
-export function BildirimSatiri({ baslik, ayar, onDegis }: Props) {
+export function BildirimSatiri({ baslik, ayar, onDegis, kapali = false }: Props) {
   const tema = useTema();
 
   return (
-    <View>
+    <View style={{ opacity: kapali ? 0.5 : 1 }}>
       <View style={{ minHeight: 48, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: bosluk.x4 }}>
         <Text style={{ flex: 1, color: tema.metin, fontSize: 17 }}>{baslik}</Text>
         <Switch
           value={ayar.acik}
           onValueChange={(acik) => onDegis({ ...ayar, acik })}
+          disabled={kapali}
           accessibilityLabel={`${baslik} bildirimi`}
           trackColor={{ false: tema.yuzey2, true: tema.aksan }}
           thumbColor={tema.yuzey}
         />
       </View>
-      {ayar.acik ? (
+      {ayar.acik && !kapali ? (
         <View style={{ flexDirection: "row", alignItems: "center", gap: bosluk.x3, paddingTop: bosluk.x2 }}>
           <Adim etiket="30 dakika geri" isaret="−" onBas={() => onDegis({ ...ayar, dakika: dakikaKaydir(ayar.dakika, -ADIM) })} />
           <Text

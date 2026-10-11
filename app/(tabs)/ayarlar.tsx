@@ -1,9 +1,9 @@
 import { router } from "expo-router";
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { Pressable, ScrollView, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import type { BildirimAyari } from "../../src/bildirim/plan";
-import { izinAl } from "../../src/bildirim/servis";
+import { bildirimKullanilabilir, izinAl } from "../../src/bildirim/servis";
 import { BaglantiSatiri } from "../../src/components/BaglantiSatiri";
 import { BildirimSatiri } from "../../src/components/BildirimSatiri";
 import { MENU_FOTO_FORM, MENU_YANLIS_FORM } from "../../src/config/baglantilar";
@@ -29,6 +29,17 @@ export default function Ayarlar() {
   const tercih = useTercih();
   const il = ilBul(tercih.il ?? "");
   const [izinYok, setIzinYok] = useState(false);
+  const [bildirimVar, setBildirimVar] = useState(true);
+
+  useEffect(() => {
+    let iptal = false;
+    void bildirimKullanilabilir().then((varMi) => {
+      if (!iptal) setBildirimVar(varMi);
+    });
+    return () => {
+      iptal = true;
+    };
+  }, []);
 
   const bildirimDegis = (ogun: OgunAdi, ayar: BildirimAyari) => {
     if (!ayar.acik) {
@@ -76,12 +87,15 @@ export default function Ayarlar() {
               baslik={ogun.ad}
               ayar={tercih.bildirim[ogun.id]}
               onDegis={(ayar) => bildirimDegis(ogun.id, ayar)}
+              kapali={!bildirimVar}
             />
           ))}
           <Text style={{ color: tema.soluk, fontSize: 13, lineHeight: 18 }}>
-            {izinYok
-              ? "Bildirim izni kapalı. Telefon ayarlarından izin verebilirsin."
-              : "O günün menüsü seçtiğin saatte bildirim olarak gelir. Menü açıklanmamışsa bildirim gönderilmez."}
+            {!bildirimVar
+              ? "Hatırlatma bu ortamda kurulamıyor. Expo Go yerine geliştirme derlemesi veya mağaza sürümü gerekiyor."
+              : izinYok
+                ? "Bildirim izni kapalı. Telefon ayarlarından izin verebilirsin."
+                : "O günün menüsü seçtiğin saatte bildirim olarak gelir. Menü açıklanmamışsa bildirim gönderilmez."}
           </Text>
         </Bolum>
 

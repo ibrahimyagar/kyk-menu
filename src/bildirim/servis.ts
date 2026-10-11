@@ -1,54 +1,85 @@
-import * as Notifications from "expo-notifications";
 import { Platform } from "react-native";
 import type { BildirimIsi } from "./plan";
 
+type Modul = typeof import("expo-notifications");
+
 const KANAL = "menu";
 
-Notifications.setNotificationHandler({
-  handleNotification: async () => ({
-    shouldShowBanner: true,
-    shouldShowList: true,
-    shouldPlaySound: false,
-    shouldSetBadge: false,
-  }),
-});
+let yukleme: Promise<Modul | null> | null = null;
 
-async function kanalKur(): Promise<void> {
+/**
+ * expo-notifications içe aktarıldığı anda kendini kurmaya çalışır ve bazı
+ * ortamlarda (örneğin Expo Go) hata atar. Bu yüzden modül uygulama
+ * açılışında değil, yalnızca gerektiğinde ve korumalı yükleniyor.
+ */
+function modul(): Promise<Modul | null> {
+  if (!yukleme) {
+    yukleme = import("expo-notifications")
+      .then((gelen) => {
+        gelen.setNotificationHandler({
+          handleNotification: async () => ({
+            shouldShowBanner: true,
+            shouldShowList: true,
+            shouldPlaySound: false,
+            shouldSetBadge: false,
+          }),
+        });
+        return gelen;
+      })
+      .catch(() => null);
+  }
+  return yukleme;
+}
+
+/** Bu ortamda yerel bildirim kurulabiliyor mu. */
+export async function bildirimKullanilabilir(): Promise<boolean> {
+  return (await modul()) !== null;
+}
+
+async function kanalKur(bildirim: Modul): Promise<void> {
   if (Platform.OS !== "android") return;
-  await Notifications.setNotificationChannelAsync(KANAL, {
+  await bildirim.setNotificationChannelAsync(KANAL, {
     name: "Menü hatırlatması",
-    importance: Notifications.AndroidImportance.DEFAULT,
+    importance: bildirim.AndroidImportance.DEFAULT,
     sound: null,
   });
 }
 
 /** İzin verilmişse true. Sorulmamışsa bir kez sorar. */
 export async function izinAl(): Promise<boolean> {
-  const mevcut = await Notifications.getPermissionsAsync();
+  const bildirim = await modul();
+  if (!bildirim) return false;
+  const mevcut = await bildirim.getPermissionsAsync();
   if (mevcut.granted) return true;
   if (!mevcut.canAskAgain) return false;
-  const sonuc = await Notifications.requestPermissionsAsync();
+  const sonuc = await bildirim.requestPermissionsAsync();
   return sonuc.granted;
 }
 
 export async function izinVarMi(): Promise<boolean> {
-  const mevcut = await Notifications.getPermissionsAsync();
+  const bildirim = await modul();
+  if (!bildirim) return false;
+  const mevcut = await bildirim.getPermissionsAsync();
   return mevcut.granted;
 }
 
 export async function tumunuIptal(): Promise<void> {
-  await Notifications.cancelAllScheduledNotificationsAsync();
+  const bildirim = await modul();
+  if (!bildirim) return;
+  await bildirim.cancelAllScheduledNotificationsAsync();
 }
 
 /** Eski planı silip yenisini kurar. Kısmi güncelleme yok; plan tek parça. */
 export async function planUygula(isler: BildirimIsi[]): Promise<void> {
-  await kanalKur();
-  await tumunuIptal();
+  const bildirim = await modul();
+  if (!bildirim) return;
+  await kanalKur(bildirim);
+  await bildirim.cancelAllScheduledNotificationsAsync();
   for (const is of isler) {
-    await Notifications.scheduleNotificationAsync({
+    await bildirim.scheduleNotificationAsync({
       identifier: is.kimlik,
       content: { title: is.baslik, body: is.govde, sound: false, data: { tarih: is.tarih, ogun: is.ogun } },
-      trigger: { type: Notifications.SchedulableTriggerInputTypes.DATE, date: is.an, channelId: KANAL },
+      trigger: { type: bildirim.SchedulableTriggerInputTypes.DATE, date: is.an, channelId: KANAL },
     });
   }
 }
