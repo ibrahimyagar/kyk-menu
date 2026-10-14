@@ -35,6 +35,14 @@ Dosya: `data/menus/istanbul/2026-09.json`
 - Protein, karbonhidrat, yağ ve puanlar JSON'a girmedi.
 - `publish/` üretilmedi.
 
+## kykyemek.com Ekim 2026 (19 il)
+
+Kullanıcı 14 Ekim 2026'da site sahibinin izin verdiğini bildirdi. Çekici: `npm run cek:kykyemek -- --ay 2026-10`.
+
+Site 19 il veriyor. İstanbul Eylül/Ekim kilitli olduğu için o çekim `data/taslak/istanbul/2026-10.json` altına yazıldı; `data/menus/istanbul/` değişmedi.
+
+Kaynakta kahvaltısı olmayan il (Edirne) ve akşamı olmayan il (Kayseri) `durum: "aciklanmadi"` ile duruyor; yemek uydurulmadı. 80 karakteri aşan yemek adlarında yalnızca parantez içi not düşürüldü.
+
 ## Doğrulama
 
 `node --experimental-strip-types scripts/validate.ts` → geçti. Eylül ve Ekim dosyaları, 0 uyarı.

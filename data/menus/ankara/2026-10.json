@@ -1,0 +1,4172 @@
+{
+  "sema": 1,
+  "il": "ankara",
+  "ay": "2026-10",
+  "surum": 1,
+  "kaynak": "https://kykyemek.com/ — site sahibinin verdiği izinle çekildi. Ham yanıt data/raw/kykyemek/ altında.",
+  "guncellenmeTarihi": "2026-10-14",
+  "gunler": {
+    "2026-10-01": {
+      "kahvalti": {
+        "toplamKcal": 600,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kavurması",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık pizza",
+                "kcal": 280
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Krem peynir",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba"
+              },
+              {
+                "ad": "Mısır çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk pirzola + sebze sote"
+              },
+              {
+                "ad": "Soslu karışık kızartma (kabak, patlıcan, biber)"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı makarna"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haydari"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-02": {
+      "kahvalti": {
+        "toplamKcal": 840,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Menemen",
+                "kcal": 106
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çikolatalı milföy börek",
+                "kcal": 240
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Düğün çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etsiz kuru fasulye"
+              },
+              {
+                "ad": "Karnabahar pane + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Muzlu magnolya"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-03": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık kızartma"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba"
+              },
+              {
+                "ad": "Kremalı mantar çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Et sote + küp patates"
+              },
+              {
+                "ad": "Tavuk sote + küp patates"
+              },
+              {
+                "ad": "Bamya yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "İçecek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ayran"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-04": {
+      "kahvalti": {
+        "toplamKcal": 879,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet",
+                "kcal": 115
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı sosis",
+                "kcal": 250
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Peynirli börek",
+                "kcal": 350
+              },
+              {
+                "ad": "Ispanaklı börek",
+                "kcal": 350
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Yeşil mercimek çorba"
+              },
+              {
+                "ad": "Yayla çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Köri soslu tavuk + elma dilim patates"
+              },
+              {
+                "ad": "Mücver"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Soslu makarna"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şekerpare"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-05": {
+      "kahvalti": {
+        "toplamKcal": 961,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Zeytinli açma",
+                "kcal": 381
+              },
+              {
+                "ad": "Peynirli açma",
+                "kcal": 381
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Havuç çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Karnıyarık"
+              },
+              {
+                "ad": "Taze fasulye yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kuru cacık"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-06": {
+      "kahvalti": {
+        "toplamKcal": 869,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşarlı omlet",
+                "kcal": 224
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates salatası",
+                "kcal": 271
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Dere otlu poğaça",
+                "kcal": 292
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Labne peynir",
+                "kcal": 42
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Terbiyeli şehriye çorba"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk şiş + köz domates, biber, soğan"
+              },
+              {
+                "ad": "Mantar sote"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mevsim salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-07": {
+      "kahvalti": {
+        "toplamKcal": 884,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sosis kızartması",
+                "kcal": 280
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Peynirli börek",
+                "kcal": 350
+              },
+              {
+                "ad": "Ispanaklı börek",
+                "kcal": 350
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba"
+              },
+              {
+                "ad": "Toyga çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Izgara köfte + patates kızartması"
+              },
+              {
+                "ad": "Tavuk külbastı"
+              },
+              {
+                "ad": "Ispanak kavurma"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Spagetti napoliten"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pembe sultan"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-08": {
+      "kahvalti": {
+        "toplamKcal": 844,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sucuklu yumurta",
+                "kcal": 214
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Peynirli, dereotlu, maydanozlu kaşık dökmesi",
+                "kcal": 300
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kakaolu kek",
+                "kcal": 170
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yöresel peynir",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba"
+              },
+              {
+                "ad": "Kremalı sebze çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Fırın tavuk but + patates salatası"
+              },
+              {
+                "ad": "Bezelye yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çikolatalı puding"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-09": {
+      "kahvalti": {
+        "toplamKcal": 1024,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pankek+bal+tereyağ",
+                "kcal": 440
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Köz biber çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Et tantuni + lavaş+sumaklı soğan"
+              },
+              {
+                "ad": "Tavuk tantuni + lavaş+sumaklı soğan"
+              },
+              {
+                "ad": "Mevsim türlü"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-10": {
+      "kahvalti": {
+        "toplamKcal": 714,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Peynirli omlet",
+                "kcal": 224
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kavurması",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sosisli milföy böreği",
+                "kcal": 180
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Kremalı mantar çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk şinitzel + rus salatası"
+              },
+              {
+                "ad": "Karışık dolma + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Penne napoliten"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Üzüm"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-11": {
+      "kahvalti": {
+        "toplamKcal": 654,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kroket",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık pizza",
+                "kcal": 280
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Şehriye çorbası"
+              },
+              {
+                "ad": "Etli düğün çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etsiz nohut yemeği"
+              },
+              {
+                "ad": "Kaşarlı sebze graten"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cevizli kadayıf-baklava"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-12": {
+      "kahvalti": {
+        "toplamKcal": 845,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet",
+                "kcal": 115
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çikolatalı milföy börek",
+                "kcal": 240
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba"
+              },
+              {
+                "ad": "Mısır çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etli sultan kebabı"
+              },
+              {
+                "ad": "Tavuklu sultan kebabı + patlıcan yemeği"
+              },
+              {
+                "ad": "Patlıcan yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mevsim salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-13": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı sosis"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade poğaça"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yöresel peynir"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Dereotlu kabak çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış tavuk fileto (dilimli)+mor lahana, havuç, turşu"
+              },
+              {
+                "ad": "Patates köftesi + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı nohutlu pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çikolatalı yaş pasta"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-14": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşarlı omlet"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık kızartma"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Zeytinli açma"
+              },
+              {
+                "ad": "Peynirli açma"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Tutmaç çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Hamburger"
+              },
+              {
+                "ad": "Halep dolma + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ayran"
+              },
+              {
+                "ad": "Meyve suyu"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-15": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates salatası"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pankek+sürülebilir çikolata"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba"
+              },
+              {
+                "ad": "Yayla çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk ızgara + köz domates, biber, soğan"
+              },
+              {
+                "ad": "Mantar sote"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Arpa şehriye pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-16": {
+      "kahvalti": {
+        "toplamKcal": 791,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Menemen",
+                "kcal": 106
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit",
+                "kcal": 275
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Krem peynir",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": 1188,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba",
+                "kcal": 170
+              },
+              {
+                "ad": "Etli düğün çorbası",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etsiz kuru fasulye",
+                "kcal": 270
+              },
+              {
+                "ad": "Karnabahar pane",
+                "kcal": 250
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı pirinç pilavı",
+                "kcal": 270
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Havuç tarator",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Revani",
+                "kcal": 348
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-17": {
+      "kahvalti": {
+        "toplamKcal": 900,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Domates soslu biber kızartma",
+                "kcal": 300
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Peynirli börek",
+                "kcal": 350
+              },
+              {
+                "ad": "Ispanaklı börek",
+                "kcal": 350
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yöresel peynir",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Terbiyeli şehriye çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Soya soslu tavuk + küp patates"
+              },
+              {
+                "ad": "Kabak kalye + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı makarna"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Armut"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-18": {
+      "kahvalti": {
+        "toplamKcal": 781,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sucuklu omlet",
+                "kcal": 175
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kavurması",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Dere otlu poğaça",
+                "kcal": 292
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Kremalı havuç çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Orman kebabı"
+              },
+              {
+                "ad": "Kuşbaşı tavuk tava"
+              },
+              {
+                "ad": "Taze fasulye yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cacık"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-19": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sosis kızartması"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pişi+reçel"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba"
+              },
+              {
+                "ad": "Toyga çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Fırın baget + köz sebze"
+              },
+              {
+                "ad": "Karışık dolma + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynirli makarna"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cevizli baklava-kadayıf"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-20": {
+      "kahvalti": {
+        "toplamKcal": 788,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Peynirli omlet",
+                "kcal": 224
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kroket",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık pizza",
+                "kcal": 280
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba"
+              },
+              {
+                "ad": "Kremalı mantar çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Soslu pideli köfte"
+              },
+              {
+                "ad": "Tavuk külbastı + patates kızartması"
+              },
+              {
+                "ad": "Mevsim türlü"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-21": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade poğaça"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Labne peynir"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Yayla çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk şinitzel + patates püresi"
+              },
+              {
+                "ad": "Ispanak graten"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Penne napoliten"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mısırlı havuçlu ayşberg salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-22": {
+      "kahvalti": {
+        "toplamKcal": 786,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet",
+                "kcal": 115
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates salatası",
+                "kcal": 271
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çikolatalı milföy börek",
+                "kcal": 240
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Şehriye çorbası"
+              },
+              {
+                "ad": "Düğün çorba"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etsiz nohut yemeği"
+              },
+              {
+                "ad": "İmam bayıldı"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kuru cacık"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Trileçe"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-23": {
+      "kahvalti": {
+        "toplamKcal": 934,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Peynirli börek",
+                "kcal": 350
+              },
+              {
+                "ad": "Ispanaklı börek",
+                "kcal": 350
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Kremalı sebze çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Sebzeli misket köfte"
+              },
+              {
+                "ad": "Tavuklu çiftlik kebabı"
+              },
+              {
+                "ad": "Tereyağlı kaşarlı tepsi kumpir (mısır, bezelye, zeytin, kornişon turşu)"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı makarna"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-24": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşarlı omlet"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık kızartma"
+              }
+            ]
+          },
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yumurtalı ekmek"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yöresel peynir"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Köz biber çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış tavuk fileto (dilimli)+mor lahana, havuç, turşu"
+              },
+              {
+                "ad": "Karnabahar pane + yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Nohutlu pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tulumba tatlısı"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-25": {
+      "kahvalti": {
+        "toplamKcal": 649,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kroket",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit",
+                "kcal": 275
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba"
+              },
+              {
+                "ad": "Kremalı kabak çorba"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Et çökertme"
+              },
+              {
+                "ad": "Tavuk çökertme"
+              },
+              {
+                "ad": "Bezelye yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mevsim salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-26": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mantarlı omlet"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates salatası"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Dere otlu poğaça"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Krem peynir"
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin"
+              },
+              {
+                "ad": "Yeşil zeytin"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba"
+              },
+              {
+                "ad": "Tutmaç çorba"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Çıtır tavuk burger"
+              },
+              {
+                "ad": "Kaşarlı sebze graten"
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ayran"
+              },
+              {
+                "ad": "Meyve suyu"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-27": {
+      "kahvalti": {
+        "toplamKcal": 1024,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması",
+                "kcal": 330
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pankek+bal+tereyağ",
+                "kcal": 440
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba"
+              },
+              {
+                "ad": "Etli düğün çorbası"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Etsiz kuru fasulye"
+              },
+              {
+                "ad": "Mücver"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yoğurt"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Islak kek"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-28": {
+      "kahvalti": {
+        "toplamKcal": 866,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sucuklu omlet",
+                "kcal": 175
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kavurması",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Zeytinli açma",
+                "kcal": 381
+              },
+              {
+                "ad": "Peynirli açma",
+                "kcal": 381
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Yoğurtlu yarma çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Et fajita + lavaş+sumaklı soğan"
+              },
+              {
+                "ad": "Tavuk fajita + lavaş+sumaklı soğan"
+              },
+              {
+                "ad": "Mantar sote"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı cevizli erişte"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-29": {
+      "kahvalti": {
+        "toplamKcal": 840,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Menemen",
+                "kcal": 106
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kalem börek",
+                "kcal": 400
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mozaik kek",
+                "kcal": 170
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 124
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": 745,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba",
+                "kcal": 170
+              },
+              {
+                "ad": "Mısır çorba",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk şiş + köz sebze"
+              },
+              {
+                "ad": "Patates yemeği",
+                "kcal": 180
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı",
+                "kcal": 240
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Havuç tarator",
+                "kcal": 150
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-30": {
+      "kahvalti": {
+        "toplamKcal": 670,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet",
+                "kcal": 115
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kroket",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit",
+                "kcal": 275
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yöresel peynir",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Şehriye çorbası"
+              },
+              {
+                "ad": "Havuç çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "İnegöl köfte + fasulye piyazı"
+              },
+              {
+                "ad": "Tavuk kavurma + küp patates"
+              },
+              {
+                "ad": "Halep dolma"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Yoğurtlu soslu mantı"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mevsim salata"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-10-31": {
+      "kahvalti": {
+        "toplamKcal": 850,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haşlanmış yumurta",
+                "kcal": 90
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı sosis",
+                "kcal": 250
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Peynirli börek",
+                "kcal": 350
+              },
+              {
+                "ad": "Ispanaklı börek",
+                "kcal": 350
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kaşar peyniri",
+                "kcal": 120
+              }
+            ]
+          },
+          {
+            "baslik": "Zeytin",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Siyah zeytin",
+                "kcal": 40
+              },
+              {
+                "ad": "Yeşil zeytin",
+                "kcal": 40
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası"
+              },
+              {
+                "ad": "Toyga çorba"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Terbiyeli et haşlama"
+              },
+              {
+                "ad": "Tavuk ızgara + soğan sote"
+              },
+              {
+                "ad": "Taze fasulye yemeği"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kadayıflı muhallebi"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "500 ml su"
+              },
+              {
+                "ad": "Çeyrek ekmek"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

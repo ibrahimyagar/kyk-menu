@@ -6,6 +6,7 @@
   "scripts": {
     "start": "expo start",
     "validate": "node --experimental-strip-types scripts/validate.ts",
+    "cek:kykyemek": "node --experimental-strip-types --import ./scripts/ts-kayit.mjs scripts/kykyemek-cek.ts",
     "build:data": "node --experimental-strip-types scripts/build-data.ts",
     "test": "node scripts/test.mjs",
     "gorsel": "node scripts/gorsel-kucult.mjs assets/kaynak-gorsel",

@@ -1,12 +1,138 @@
 {
   "sema": 1,
-  "uretimTarihi": "2026-10-01T22:05:44+03:00",
+  "uretimTarihi": "2026-10-14T22:45:35+03:00",
   "iller": {
+    "ankara": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "antalya": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "canakkale": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "edirne": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "erzincan": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "eskisehir": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "gaziantep": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "isparta": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
     "istanbul": {
       "aylar": {
         "2026-09": {
           "surum": 1
         },
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "izmir": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "kahramanmaras": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "kayseri": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "konya": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "nigde": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "sakarya": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "siirt": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "sivas": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "tokat": {
+      "aylar": {
+        "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "trabzon": {
+      "aylar": {
         "2026-10": {
           "surum": 1
         }
