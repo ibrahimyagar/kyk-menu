@@ -18,7 +18,7 @@ Etiketler: **Erişildi** = sayfa bu oturumda indirildi ve okundu. **Erişilemedi
 | 4 | yurtyemek.gsb.gov.tr | Erişilemedi (ENOTFOUND) | — | — | — | — | — | — |
 | 5 | yurtmenu.net | Erişildi | Sunucu tarafında üretilmiş HTML, il sayfası `/{il}` | 81 il listeli; veri ay ve ile göre değişiyor | Yok (il + ay) | `/api/` kapalı | **Otomatik istek ve toplu kopyalama yasak** | A |
 | 6 | resimlikykyemek.com (kykmenulistesi.com.tr buraya yönleniyor) | Erişildi | HTML + Supabase | Seçicide İstanbul, Ordu | Yok | `/admin`, `/auth`, `/notifications` kapalı | Hesap koşulları; toplu kullanım izni yok | A |
-| 7 | kykyemek.com | Erişildi | HTML, `data-foods` öznitelikleri | 19 il (ana sayfa seçicisi) | `/Dormitory/List` sayfası var, menü il bazlı | `Disallow:` boş | Koşul metni yok; Google ile giriş, AdSense | A (kahvaltı eşleşiyor) |
+| 7 | kykyemek.com | Erişildi | Sunucu HTML'i yalnızca varsayılan il (İstanbul) için; diğer iller `/Menu/GetDailyMenu/{il}` ile yükleniyor | 19 il (ana sayfa seçicisi) | `/Dormitory/List` sayfası var, menü il bazlı | `Disallow:` boş | Kopyalama yasağı yok, "Tüm hakları saklıdır"; **uç nokta doğrudan isteğe 401 döndürüyor** | A (kahvaltı eşleşiyor) |
 | 8 | kykyemekliste.com | Erişildi | HTML iskelet, menü istemci tarafında yükleniyor | Sitemap'te 54 il × 2 öğün; "81 il" iddiası | Yok | `/api/`, `/admin` kapalı | "Kamuya açık kaynaklardan derlenir" | bilinmiyor (menü HTML'de yok) |
 | 9 | github.com/alidnmz05/yurtmenu-public | Erişildi (GitHub API) | Next.js ön yüz kodu | — | — | — | **Lisans yok**, repoda veri dosyası yok | A ile aynı geliştirici (Varsayım) |
 | 10 | github.com/bulutsoft-dev/Yurtta-Ye-Mobile | Erişildi (GitHub API) | Flutter istemcisi, kendi API'si (yurttaye.onrender.com) | — | — | — | **Lisans yok**, repoda veri yok | bilinmiyor |
@@ -33,6 +33,17 @@ Hız sınırı: Hiçbir sitede yayınlanmış bir hız sınırı bulunamadı. yu
 ## Resmî kaynak neden kullanılamaz
 
 Sayfanın kendi JS dosyası (`yurtYemekTakip-*.js`) sorguyu yalnızca `localStorage.token` doluysa gönderiyor. Uç noktanın adı da "öğrencinin yemek listesini getir". Yani veri, giriş yapmış bir öğrenciye kendi yurdu için veriliyor. Plan kuralı 7 gereği bu uç nokta **çağrılmadı**; bir jetonla çağırmak hem kimlik doğrulamalı uç nokta kullanmak hem de başkasının hesabını otomasyona bağlamak olurdu.
+
+## Üçüncü taraf sitelerin tek tek durumu (ikinci tur)
+
+Kullanıcı rakip sitelerden izinsiz veri alınmasını istedi; her site kendi koşul ve teknik sınırına göre yeniden değerlendirildi:
+
+- **yurtmenu.net (81 il):** Koşulları otomatik isteği ve toplu kopyalamayı açıkça yasaklıyor. Çekilmedi.
+- **kykyemekliste.com:** Menü verisi robots.txt'nin kapattığı `/api/` yolunda. Çekilmedi.
+- **kykyemek.com (19 il):** robots izin veriyor, koşul metninde yasak yok. İl verisini taşıyan `/Menu/GetDailyMenu/{il}` (`mealType=false` kahvaltı, `true` akşam) tek bir kibar isteğe **401** döndürdü. Bu bilinçli bir erişim kısıtı; çerez veya oturum taklidiyle aşılmadı. Sunucu HTML'inde yalnızca İstanbul var, o da elimizde.
+- **resimlikykyemek.com:** robots ve koşullar engel değil, ama yalnızca İstanbul ve Ordu var. Veri Supabase'ten geliyor; sayfaya gömülü anahtarla veritabanını doğrudan sorgulamak, sitenin sunduğu arayüzün dışına çıkmak olduğu için yapılmadı.
+
+Sonuç değişmedi: kurallar içinde ≥10 il veren otomatik kaynak yok.
 
 ## İl mi, yurt mu?
 
