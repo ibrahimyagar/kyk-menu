@@ -1,0 +1,1899 @@
+{
+  "sema": 1,
+  "il": "sanliurfa",
+  "ay": "2026-09",
+  "surum": 1,
+  "kaynak": "https://yurtmenu.net/ — site sahibinin verdiği izinle herkese açık il sayfasından çekildi.",
+  "guncellenmeTarihi": "2026-10-14",
+  "gunler": {
+    "2026-09-14": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası",
+                "kcal": 178
+              },
+              {
+                "ad": "Anadolu çorba",
+                "kcal": 178
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Renkli biberli tavuk fajita",
+                "kcal": 301
+              },
+              {
+                "ad": "Patates graten",
+                "kcal": 301
+              },
+              {
+                "ad": "Mücver",
+                "kcal": 301
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı makarna 321 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Pembe sultan 140 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-15": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası 170 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Adana kebap + lavaş + közlenmiş domates biber"
+              },
+              {
+                "ad": "Meksika usulü tavuk + patates"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı 357 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-16": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası",
+                "kcal": 166
+              },
+              {
+                "ad": "Köylü çorba",
+                "kcal": 166
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Soslu ızgara köfte + köz biber + köz domates"
+              },
+              {
+                "ad": "Tavuk fajita"
+              },
+              {
+                "ad": "Biber dolma"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Meyhane pilavı 310 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kuru cacık 136 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              },
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-17": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Yayla çorbası",
+                "kcal": 155
+              },
+              {
+                "ad": "Domatesli şehriye çorba",
+                "kcal": 155
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tepsi kebabı",
+                "kcal": 388
+              },
+              {
+                "ad": "Tavuklu orman kebabı",
+                "kcal": 388
+              },
+              {
+                "ad": "Karışık dolma + yoğurt",
+                "kcal": 388
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sebzeli makarna 358 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Meyve 88 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-18": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba",
+                "kcal": 211
+              },
+              {
+                "ad": "Domates çorba + kaşar peyniri",
+                "kcal": 211
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Et",
+                "kcal": 326
+              },
+              {
+                "ad": "Tavuk hamburger",
+                "kcal": 326
+              },
+              {
+                "ad": "Biber dolma",
+                "kcal": 326
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması + ketçap + mayonez 433 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Karışık salata 108 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              },
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-19": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba",
+                "kcal": 146
+              },
+              {
+                "ad": "Mercimek çorbası",
+                "kcal": 146
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk kalamar",
+                "kcal": 346
+              },
+              {
+                "ad": "Sebzeli kabak sandal",
+                "kcal": 346
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Spagetti napoliten 371 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Rus salatası 211 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              },
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-20": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Şehriye çorbası",
+                "kcal": 158
+              },
+              {
+                "ad": "Düğün çorba",
+                "kcal": 158
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk tantuni + söğüş (soğanlı)",
+                "kcal": 313
+              },
+              {
+                "ad": "Çiftlik köfte",
+                "kcal": 313
+              },
+              {
+                "ad": "Tepsi mücver",
+                "kcal": 313
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tereyağlı bulgur pilavı 284 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Tatlı",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cevizli baklava 510 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              },
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-21": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Kaşarlı domates çorbası",
+                "kcal": 162
+              },
+              {
+                "ad": "Mantar çorba",
+                "kcal": 162
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Sebzeli et sote",
+                "kcal": 241
+              },
+              {
+                "ad": "Sebzeli tavuk sote",
+                "kcal": 241
+              },
+              {
+                "ad": "İmam bayıldı",
+                "kcal": 241
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Domates biberli bulgur pilavı 284 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Biber borani 118 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-22": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Sebzeli tel şehriye çorba",
+                "kcal": 147
+              },
+              {
+                "ad": "Mengen çorba",
+                "kcal": 147
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Hamburger (köfte + domates + marul)",
+                "kcal": 275
+              },
+              {
+                "ad": "Mevsim türlü",
+                "kcal": 275
+              },
+              {
+                "ad": "Ratatuy",
+                "kcal": 275
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Patates kızartması + ketçap + mayonez",
+                "kcal": 433
+              },
+              {
+                "ad": "Domatesli biberli bulgur pilavı",
+                "kcal": 433
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Haydari 174 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-23": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba",
+                "kcal": 148
+              },
+              {
+                "ad": "Salçalı şehriye çorba",
+                "kcal": 148
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Galeta unlu tavuk + garnitür",
+                "kcal": 373
+              },
+              {
+                "ad": "Bezelye yemeği",
+                "kcal": 373
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cevizli erişte 408 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Havuç tarator 172 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-24": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba + kaşar peynir",
+                "kcal": 210
+              },
+              {
+                "ad": "Tarhana çorba",
+                "kcal": 210
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tavuk çökertme",
+                "kcal": 564
+              },
+              {
+                "ad": "Et çökertme",
+                "kcal": 564
+              },
+              {
+                "ad": "Karnabahar kızartma + yoğurt",
+                "kcal": 564
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Napoliten soslu makarna 358 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kalburabastı 432 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              },
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-25": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Domates çorba",
+                "kcal": 136
+              },
+              {
+                "ad": "Terbiyeli şehriye çorba",
+                "kcal": 136
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Hünkar beğendi",
+                "kcal": 382
+              },
+              {
+                "ad": "Tavuk pirzola + garnitür",
+                "kcal": 382
+              },
+              {
+                "ad": "Taze fasulye yemeği",
+                "kcal": 382
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Salçalı bulgur pilavı 284 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezme 107 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-26": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası 170 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Kaşarlı köfte + patates kızartması, köz domates, biber"
+              },
+              {
+                "ad": "Köri soslu tavuk + b"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Cevizli erişte 408 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-27": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Düğün çorba",
+                "kcal": 149
+              },
+              {
+                "ad": "Salçalı şehriye çorba",
+                "kcal": 149
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tas kebabı",
+                "kcal": 278
+              },
+              {
+                "ad": "Tavuk şiş",
+                "kcal": 278
+              },
+              {
+                "ad": "Sebze graten",
+                "kcal": 278
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı 357 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Fındıklı şekerpare 393 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-28": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Tarhana çorba",
+                "kcal": 153
+              },
+              {
+                "ad": "Yayla çorbası",
+                "kcal": 153
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Kuru fasulye",
+                "kcal": 268
+              },
+              {
+                "ad": "Mevsim türlü",
+                "kcal": 268
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Tel şehriyeli pirinç pilavı 357 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Çoban salata 103 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Revani 428 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-29": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ezogelin çorba",
+                "kcal": 153
+              },
+              {
+                "ad": "Terbiyeli sebze çorbası",
+                "kcal": 153
+              }
+            ]
+          },
+          {
+            "baslik": "Sıcak",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Çıtır tavuk + elma dilim patates",
+                "kcal": 415
+              },
+              {
+                "ad": "İmam bayıldı",
+                "kcal": 415
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Şehriyeli pirinç pilavı 357 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Salata",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Kuru cacık 136 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ekmek ve su",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Ayran",
+                "kcal": 84
+              },
+              {
+                "ad": "Meyve suyu",
+                "kcal": 84
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026-09-30": {
+      "kahvalti": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Yumurta",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Sade omlet 187 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit 344 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Ezine peynir 153 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": null,
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Elma 100 kcal"
+              }
+            ]
+          }
+        ]
+      },
+      "aksam": {
+        "toplamKcal": null,
+        "gruplar": [
+          {
+            "baslik": "Çorba",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Mercimek çorbası 170 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Ana yemek",
+            "secim": "biri",
+            "secenekler": [
+              {
+                "ad": "Kıymalı alinazik kebabı"
+              },
+              {
+                "ad": "Tavuk pirzola + elma dilim patates, domates, biber"
+              }
+            ]
+          },
+          {
+            "baslik": "Yan yemek",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Meyhane pilavı 310 kcal"
+              }
+            ]
+          },
+          {
+            "baslik": "Yanında",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "200 ml bardak su 0 kcal"
+              },
+              {
+                "ad": "Çeyrek ekmek 129 kcal"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

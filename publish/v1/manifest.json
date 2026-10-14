@@ -1,9 +1,54 @@
 {
   "sema": 1,
-  "uretimTarihi": "2026-10-14T22:45:35+03:00",
+  "uretimTarihi": "2026-10-14T23:50:33+03:00",
   "iller": {
+    "adana": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "adiyaman": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "afyonkarahisar": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "agri": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "aksaray": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "amasya": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
     "ankara": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
           "surum": 1
         }
@@ -11,34 +56,189 @@
     },
     "antalya": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "ardahan": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "artvin": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "aydin": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "balikesir": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bartin": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "batman": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bayburt": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bilecik": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bingol": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bitlis": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bolu": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "burdur": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "bursa": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "canakkale": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "cankiri": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "corum": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "denizli": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "diyarbakir": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "duzce": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "edirne": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "elazig": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "erzincan": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "erzurum": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "eskisehir": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
           "surum": 1
         }
@@ -46,13 +246,54 @@
     },
     "gaziantep": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "giresun": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "gumushane": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "hakkari": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "hatay": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "igdir": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "isparta": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
           "surum": 1
         }
@@ -70,6 +311,9 @@
     },
     "izmir": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
           "surum": 1
         }
@@ -77,55 +321,254 @@
     },
     "kahramanmaras": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "karabuk": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "karaman": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kars": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kastamonu": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "kayseri": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "kilis": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kirikkale": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kirklareli": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kirsehir": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "kocaeli": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "konya": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "kutahya": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "malatya": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "manisa": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "mardin": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "mersin": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "mugla": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "mus": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "nevsehir": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "nigde": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "ordu": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "osmaniye": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "rize": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "sakarya": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "samsun": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "sanliurfa": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "siirt": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "sinop": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "sirnak": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "sivas": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "tekirdag": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }
     },
     "tokat": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
           "surum": 1
         }
@@ -133,7 +576,52 @@
     },
     "trabzon": {
       "aylar": {
+        "2026-09": {
+          "surum": 1
+        },
         "2026-10": {
+          "surum": 1
+        }
+      }
+    },
+    "tunceli": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "usak": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "van": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "yalova": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "yozgat": {
+      "aylar": {
+        "2026-09": {
+          "surum": 1
+        }
+      }
+    },
+    "zonguldak": {
+      "aylar": {
+        "2026-09": {
           "surum": 1
         }
       }

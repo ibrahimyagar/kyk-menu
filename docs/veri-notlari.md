@@ -43,6 +43,12 @@ Site 19 il veriyor. İstanbul Eylül/Ekim kilitli olduğu için o çekim `data/t
 
 Kaynakta kahvaltısı olmayan il (Edirne) ve akşamı olmayan il (Kayseri) `durum: "aciklanmadi"` ile duruyor; yemek uydurulmadı. 80 karakteri aşan yemek adlarında yalnızca parantez içi not düşürüldü.
 
+## yurtmenu.net Eylül 2026 (80 il)
+
+Kullanıcı 14 Ekim 2026'da yurtmenu.net, kykmenum.com, kykyemekmenu.com ve foursoftware.com.tr sahiplerinin de izin verdiğini bildirdi. Çekim yalnızca yurtmenu.net'in herkese açık `/{il}?date=` sayfalarından yapıldı (`/api/` yok).
+
+Eylül'de kaynak 14–30 arası 17 gün veriyor; 1–13 yazılmadı. Ekim 2026 bu sitede yalnızca 12 ilde var ve onların hepsi zaten kykyemek.com'dan dolu. kykmenum.com şehir sayfaları boş, kykyemekmenu.com tipik hafta metni (günlük menü değil), foursoftware.com.tr menü sitesi değil. Ekim'de hâlâ 62 il boş; uydurulmadı.
+
 ## Doğrulama
 
 `node --experimental-strip-types scripts/validate.ts` → geçti. Eylül ve Ekim dosyaları, 0 uyarı.

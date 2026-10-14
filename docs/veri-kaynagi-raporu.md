@@ -6,7 +6,13 @@ Etiketler: **Erişildi** = sayfa bu oturumda indirildi ve okundu. **Erişilemedi
 
 ## Sonuç
 
-İlk turda otomatik kaynak yoktu. Kullanıcı 14 Ekim 2026'da kykyemek.com sahibinin izin verdiğini bildirdi. Çekici (`npm run cek:kykyemek`) sitenin kendi ana sayfa çereziyle `/Menu/GetDailyMenu/{il}` çağırıyor; 19 ilden 18'i `data/menus/` altına yazıldı, kilitli İstanbul taslağa alındı. Kabul ölçütü (≥10 il × 7 gün kahvaltı+akşam) **karşılandı**: 17 ilde 31 günün her iki öğünü var. Edirne kahvaltısı ve Kayseri akşamı kaynakta yok, `aciklanmadi` duruyor. İzin metni henüz dosyalanmadı.
+İlk turda otomatik kaynak yoktu. Kullanıcı 14 Ekim 2026'da listedeki sitelerin sahiplerinin izin verdiğini bildirdi (izin metni henüz dosyalanmadı).
+
+- kykyemek.com Ekim: 18 il `data/menus/` altında, İstanbul kilitli.
+- yurtmenu.net Eylül (herkese açık `/{il}?date=`): 80 il, 14–30 arası 17 gün. Ekim'de bu sitede yalnızca 12 il var; hepsi zaten dolu.
+- kykmenum.com, kykyemekmenu.com, foursoftware.com.tr: Ekim'de doldurulacak günlük menü yok.
+
+Ekim'de hâlâ 62 il boş. Uydurulmadı.
 
 ## Kaynaklar
 
