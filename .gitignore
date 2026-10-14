@@ -8,5 +8,6 @@ ios/
 .env.*
 *.log
 *.tsbuildinfo
+data/raw/
 .DS_Store
 Thumbs.db
