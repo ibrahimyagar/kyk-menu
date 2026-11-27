@@ -9,7 +9,7 @@ const yayinKok = path.join(kok, "publish", "v1");
 
 const denetim = spawnSync(
   process.execPath,
-  ["--experimental-strip-types", path.join(kok, "scripts", "validate.ts")],
+  ["--experimental-strip-types", "--import", "./scripts/ts-kayit.mjs", "./scripts/validate.ts"],
   { cwd: kok, stdio: "inherit" },
 );
 

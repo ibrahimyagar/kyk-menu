@@ -2,9 +2,9 @@
   "sema": 1,
   "il": "hakkari",
   "ay": "2026-09",
-  "surum": 1,
+  "surum": 2,
   "kaynak": "https://yurtmenu.net/ — site sahibinin verdiği izinle herkese açık il sayfasından çekildi.",
-  "guncellenmeTarihi": "2026-10-14",
+  "guncellenmeTarihi": "2026-10-18",
   "gunler": {
     "2026-09-14": {
       "kahvalti": {
@@ -88,7 +88,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -226,7 +226,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -256,7 +256,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -364,7 +364,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -490,7 +490,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -511,7 +511,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": null,
             "secim": "hepsi",
             "secenekler": [
               {
@@ -520,7 +520,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -670,7 +670,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -811,7 +811,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -851,7 +851,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -928,7 +928,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1054,7 +1054,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1115,7 +1115,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1183,7 +1183,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1195,7 +1195,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1204,7 +1204,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Salata",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1213,7 +1213,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1321,7 +1321,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1447,7 +1447,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1471,7 +1471,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1511,7 +1511,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1579,7 +1579,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1612,7 +1612,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1723,7 +1723,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1852,7 +1852,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1984,7 +1984,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2036,7 +2036,7 @@
         "toplamKcal": null,
         "gruplar": [
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2242,7 +2242,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2275,7 +2275,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {

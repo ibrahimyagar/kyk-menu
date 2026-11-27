@@ -2,6 +2,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
+import { dilimToplami, kaloriDilimleri } from "../src/menu/kalori.ts";
 
 const kok = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const menuKok = path.join(kok, "data", "menus");
@@ -21,6 +22,14 @@ const ogunSemasi = z.object({
   // aciklanmadi: kaynak "menü henüz açıklanmadı" diyorsa. Yemek uydurulmaz, gruplar boş kalır.
   durum: z.enum(["var", "aciklanmadi"]).optional(),
   toplamKcal: z.number().nullable().optional(),
+  kcalAralik: z
+    .object({
+      min: z.number().int().min(0).max(4000),
+      max: z.number().int().min(0).max(4000),
+    })
+    .nullable()
+    .optional(),
+  kaynak: z.string().min(1).optional(),
   gruplar: z.array(grupSemasi),
 });
 
@@ -122,6 +131,9 @@ function ogunKontrol(dosya: string, gun: string, ad: string, ogun: z.infer<typeo
     if (ogun.toplamKcal != null) {
       hata(dosya, `${gun} ${ad}: açıklanmayan öğünün toplam kalorisi olamaz`);
     }
+    if (ogun.kcalAralik != null) {
+      hata(dosya, `${gun} ${ad}: açıklanmayan öğünün kalori aralığı olamaz`);
+    }
     return;
   }
   if (ogun.gruplar.length < 1) {
@@ -130,6 +142,13 @@ function ogunKontrol(dosya: string, gun: string, ad: string, ogun: z.infer<typeo
   // 0–2000 sınırı yemek kcal'i içindir. Öğün toplamı al-götür satırıyla 2000'i geçebilir.
   if (ogun.toplamKcal != null && (ogun.toplamKcal < 0 || ogun.toplamKcal > 4000)) {
     hata(dosya, `${gun} ${ad}: toplamKcal aralık dışında (${ogun.toplamKcal})`);
+  }
+  if (ogun.kcalAralik && ogun.kcalAralik.min > ogun.kcalAralik.max) {
+    hata(dosya, `${gun} ${ad}: kcalAralik min, max'tan büyük`);
+  }
+  const satirlardan = dilimToplami(kaloriDilimleri(ogun.gruplar));
+  if (ogun.toplamKcal != null && satirlardan > 0 && satirlardan !== ogun.toplamKcal) {
+    uyari(dosya, `${gun} ${ad}: kaynak toplam ${ogun.toplamKcal} kcal, satırların toplamı ${satirlardan}`);
   }
   for (const grup of ogun.gruplar) {
     if (grup.secenekler.length < 1) {

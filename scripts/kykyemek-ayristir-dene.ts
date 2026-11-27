@@ -66,6 +66,7 @@ const aksam = ogunAyristir(`
 `);
 
 assert.equal(aksam.toplamKcal, null);
+assert.deepEqual(aksam.kcalAralik, { min: 1100, max: 1500 });
 assert.equal(aksam.gruplar[0].baslik, "Çorba");
 assert.equal(aksam.gruplar[1].baslik, "Ana yemek");
 assert.equal(aksam.gruplar[0].secim, "biri");

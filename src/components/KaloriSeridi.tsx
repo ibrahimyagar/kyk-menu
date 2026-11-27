@@ -1,35 +1,38 @@
 import { Pressable, Text, View } from "react-native";
-import { dilimSaydamligi, dilimToplami, kaloriDilimleri } from "../menu/kalori";
+import { dilimSaydamligi, ogunKaloriOzeti } from "../menu/kalori";
 import { bosluk } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
-import type { Grup } from "../types/domain";
+import type { KcalAralik, Ogun } from "../types/domain";
 import { Ikon } from "./Ikon";
 
 interface Props {
-  gruplar: Grup[];
-  toplamKcal?: number | null;
+  ogun: Pick<Ogun, "gruplar" | "toplamKcal" | "kcalAralik">;
   onBas?: () => void;
 }
 
-/**
- * Kartın imza öğesi: grupların kalori payı tek bir şeritte, her dilim kendi
- * yemek kategorisinin renginde. Rakiplerde kalori ya hiç yok ya da her satırda
- * tekrar eden rozet olarak duruyor.
- */
-export function KaloriSeridi({ gruplar, toplamKcal, onBas }: Props) {
-  const tema = useTema();
-  const dilimler = kaloriDilimleri(gruplar);
-  const toplam = toplamKcal ?? (dilimler.length > 0 ? dilimToplami(dilimler) : null);
+function aralikMetni(aralik: KcalAralik): string {
+  return `${aralik.min}–${aralik.max} kcal`;
+}
 
-  if (toplam == null) {
+/**
+ * Kartın imza öğesi: grupların kalori payı tek bir şeritte. Kaynak aralık
+ * verdiyse aynı yerde aralık yazılır; orta değer uydurulmaz.
+ */
+export function KaloriSeridi({ ogun, onBas }: Props) {
+  const tema = useTema();
+  const { dilimler, toplam, aralik } = ogunKaloriOzeti(ogun);
+
+  if (toplam == null && !aralik) {
     return (
       <Text style={{ color: tema.soluk, fontSize: 12, paddingVertical: bosluk.x2 }}>
-        Kalori bilgisi bu ay yayınlanmadı
+        Kalori bilgisi bu öğün için yayınlanmadı
       </Text>
     );
   }
 
-  const acilir = Boolean(onBas) && dilimler.length > 0;
+  const acilir = Boolean(onBas) && (dilimler.length > 0 || aralik != null);
+  const etiket = toplam != null ? `Toplam ${toplam} kcal` : aralik ? aralikMetni(aralik) : "";
+
   const govde = (
     <View style={{ gap: bosluk.x2, paddingVertical: bosluk.x2 }}>
       {dilimler.length > 0 ? (
@@ -46,12 +49,14 @@ export function KaloriSeridi({ gruplar, toplamKcal, onBas }: Props) {
             />
           ))}
         </View>
-      ) : null}
+      ) : (
+        <View style={{ height: 8, borderRadius: 4, backgroundColor: tema.aksanZemin }} />
+      )}
       <View style={{ flexDirection: "row", alignItems: "center", gap: bosluk.x2 }}>
-        <Text style={{ flex: 1, color: tema.soluk, fontSize: 13 }}>Toplam {toplam} kcal</Text>
+        <Text style={{ flex: 1, color: tema.soluk, fontSize: 13 }}>{etiket}</Text>
         {acilir ? (
           <>
-            <Text style={{ color: tema.aksan, fontSize: 13 }}>Dağılım</Text>
+            <Text style={{ color: tema.aksan, fontSize: 13 }}>{dilimler.length > 0 ? "Dağılım" : "Kaynak"}</Text>
             <Ikon ad="chevron-forward" boyut={14} renk={tema.aksan} />
           </>
         ) : null}
@@ -64,7 +69,7 @@ export function KaloriSeridi({ gruplar, toplamKcal, onBas }: Props) {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`Kalori dağılımını aç, toplam ${toplam} kalori`}
+      accessibilityLabel={toplam != null ? `Kalori dağılımını aç, toplam ${toplam} kalori` : `Kalori kaynağını aç, ${etiket}`}
       onPress={onBas}
       style={{ minHeight: 44, justifyContent: "center" }}
     >

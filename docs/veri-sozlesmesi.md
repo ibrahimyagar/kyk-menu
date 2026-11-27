@@ -27,6 +27,7 @@ Menü il bazında tutulur. Tek doğruluk kaynağı `data/menus/{ilSlug}/{YYYY-MM
       "aksam": {
         "durum": "aciklanmadi",
         "toplamKcal": null,
+        "kcalAralik": null,
         "gruplar": []
       }
     }
@@ -36,6 +37,8 @@ Menü il bazında tutulur. Tek doğruluk kaynağı `data/menus/{ilSlug}/{YYYY-MM
 
 - `secim: "biri"` öğrenci gruptan birini seçer. `"hepsi"` grubun tamamı verilir.
 - `kcal` ve `toplamKcal` yalnızca kaynakta yazıyorsa girilir. Seçenekler toplanarak toplam üretilmez.
+- Kaynak `1100-1500 kcal` gibi aralık verdiyse `kcalAralik` yazılır; orta değer uydurulmaz.
+- Öğün dosyadaki diğer öğünlerden farklı bir kaynaktan geldiyse öğüne `kaynak` (adres ve nasıl alındığı) yazılır. Yoksa dosyanın `kaynak` alanı geçerlidir.
 - `durum: "aciklanmadi"` kaynak o öğünü vermediyse kullanılır. Gruplar boş kalır. Yemek uydurulmaz.
 - Kaynakta olmayan gün anahtarı yazılmaz.
 - Yemek adları `tr-TR` ile sadeleştirilir. `İ` / `ı` karıştırılmaz.

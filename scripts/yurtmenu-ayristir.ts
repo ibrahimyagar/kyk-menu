@@ -2,7 +2,7 @@ import { kategoriBul } from "../src/menu/kategori.ts";
 import type { Grup, Ogun, Yemek } from "../src/types/domain.ts";
 import { htmlCoz, slashAyir, yemekAdi } from "./kykyemek-ayristir.ts";
 
-const BOS: Ogun = { durum: "aciklanmadi", toplamKcal: null, gruplar: [] };
+const BOS: Ogun = { durum: "aciklanmadi", toplamKcal: null, kcalAralik: null, gruplar: [] };
 
 function adlarAl(html: string, kart: "breakfast" | "dinner"): string[] {
   const blok = html.match(new RegExp(`menu-card ${kart}-card[\\s\\S]*?<ul[^>]*class="menu-items">([\\s\\S]*?)</ul>`));
@@ -66,7 +66,7 @@ export function yurtmenuOgun(html: string, kart: "breakfast" | "dinner"): Ogun {
     gruplar.push({ baslik: "Yanında", secim: "hepsi", secenekler: yaninda });
   }
   if (gruplar.length === 0) return BOS;
-  return { toplamKcal: null, gruplar };
+  return { toplamKcal: null, kcalAralik: null, gruplar };
 }
 
 export function yurtmenuKayitVar(html: string): boolean {

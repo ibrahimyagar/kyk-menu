@@ -3,7 +3,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ILLER } from "../src/data/iller.ts";
 import { ayDosyasiKur } from "./kykyemek-ayristir.ts";
-import { menuleriYaz } from "./menuler-uret.ts";
 import { yurtmenuKayitVar, yurtmenuOgun } from "./yurtmenu-ayristir.ts";
 
 const kok = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -117,5 +116,4 @@ for (const il of iller) {
   console.log(`${il.slug}: ${dolu} gün → data/menus/${il.slug}/${hedefAy}.json`);
 }
 
-await menuleriYaz();
-console.log("Bitti.");
+console.log("Bitti. Yayına almak için: npm run build:data");

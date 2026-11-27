@@ -1,55 +1,55 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import { AppState } from "react-native";
 import { DATA_BASE_URL } from "../config/veri";
-import { gomuluHarita } from "../data/menuler";
-import { ayAnahtari, istanbulTarih } from "../lib/tarih";
+import { ayAnahtari, gunEkle, istanbulTarih } from "../lib/tarih";
 import { useTercih } from "../tercih/TercihProvider";
 import type { Manifest, MenuDosyasi } from "../types/domain";
 import { manifestIndir, menuIndir } from "./ag";
-import { dahaGuncel, dahaYeni, ertesiAyOndalik, menuGorunumu, type MenuGorunumu } from "./karar";
-import { depoOku, depoYaz } from "./depo";
+import { dahaGuncel, dahaYeni, ertesiAyOndalik, katalogBirlestir, menuGorunumu, type MenuGorunumu } from "./karar";
+import { depoOku, depoYaz, manifestOku, manifestYaz } from "./depo";
 
 interface MenuDepo {
   dosya: (il: string, ay: string) => MenuDosyasi | null;
   ildeKayitVar: (il: string) => boolean;
   gorunum: (il: string, ay: string) => MenuGorunumu;
+  /** Ayı indirir; eldeki kopya varsa önce o gösterilir, arkada sürüm denetlenir. */
   izle: (il: string, ay: string) => void;
+  /** Son denemede yayına ulaşılamadı. Ekrandaki menü cihazdaki kopyadır. */
+  cevrimdisi: boolean;
 }
 
 const MenuBaglami = createContext<MenuDepo | null>(null);
 
-function katalogBaslangic(): Record<string, number> {
-  const harita: Record<string, number> = {};
-  for (const dosya of Object.values(gomuluHarita())) harita[`${dosya.il}/${dosya.ay}`] = dosya.surum;
-  return harita;
+/** Manifest bu süreden eskiyse yeniden sorulur. */
+const MANIFEST_OMRU_MS = 15 * 60 * 1000;
+
+function buAy(): string {
+  return ayAnahtari(istanbulTarih(new Date()));
 }
 
-function katalogBirlestir(eski: Record<string, number>, manifest: Manifest): Record<string, number> {
-  let degisti = false;
-  const yeni = { ...eski };
-  for (const [il, bilgi] of Object.entries(manifest.iller)) {
-    for (const [ay, kayit] of Object.entries(bilgi.aylar)) {
-      const anahtar = `${il}/${ay}`;
-      const surum = Math.max(yeni[anahtar] ?? 0, kayit.surum);
-      if (yeni[anahtar] !== surum) {
-        yeni[anahtar] = surum;
-        degisti = true;
-      }
-    }
-  }
-  return degisti ? yeni : eski;
+function gecenAy(): string {
+  return ayAnahtari(gunEkle(`${buAy()}-01`, -1));
+}
+
+function kumeyeEkle(kume: ReadonlySet<string>, deger: string, ekle: boolean): ReadonlySet<string> {
+  if (kume.has(deger) === ekle) return kume;
+  const yeni = new Set(kume);
+  if (ekle) yeni.add(deger);
+  else yeni.delete(deger);
+  return yeni;
 }
 
 export function MenuProvider({ children }: { children: ReactNode }) {
   const tercih = useTercih();
-  const [dosyalar, setDosyalar] = useState<Record<string, MenuDosyasi>>(() => ({ ...gomuluHarita() }));
-  const [katalog, setKatalog] = useState<Record<string, number>>(katalogBaslangic);
+  const [dosyalar, setDosyalar] = useState<Record<string, MenuDosyasi>>({});
+  const [katalog, setKatalog] = useState<Record<string, number>>({});
   const [agKesik, setAgKesik] = useState(false);
   const [manifestHazir, setManifestHazir] = useState(false);
   const [onbellekHazir, setOnbellekHazir] = useState(false);
   const [bekleyen, setBekleyen] = useState<ReadonlySet<string>>(() => new Set());
   const dosyalarRef = useRef(dosyalar);
   dosyalarRef.current = dosyalar;
-  const manifestRef = useRef<Manifest | null>(null);
+  const manifestRef = useRef<{ manifest: Manifest; alindi: number } | null>(null);
   const manifestUcus = useRef<Promise<Manifest | null> | null>(null);
   const indirme = useRef(new Set<string>());
 
@@ -66,15 +66,12 @@ export function MenuProvider({ children }: { children: ReactNode }) {
     let iptal = false;
     void (async () => {
       try {
-        const saklanan = await depoOku();
+        const [saklanan, manifest] = await Promise.all([depoOku(gecenAy()), manifestOku()]);
         if (iptal) return;
         for (const dosya of saklanan) ekle(dosya);
-        const elde = new Set(saklanan.map((dosya) => `${dosya.il}/${dosya.ay}`));
-        for (const dosya of Object.values(gomuluHarita())) {
-          if (!elde.has(`${dosya.il}/${dosya.ay}`)) void depoYaz(dosya);
-        }
+        if (manifest) setKatalog((eski) => katalogBirlestir(eski, manifest));
       } catch {
-        // Depo okunamazsa gömülü kopya ekranda kalır.
+        // Depo okunamazsa menü ağdan gelir.
       } finally {
         if (!iptal) setOnbellekHazir(true);
       }
@@ -86,14 +83,16 @@ export function MenuProvider({ children }: { children: ReactNode }) {
 
   const manifestAl = useCallback(async (): Promise<Manifest | null> => {
     if (!DATA_BASE_URL) return null;
-    if (manifestRef.current) return manifestRef.current;
-    if (!manifestUcus.current) {
-      manifestUcus.current = manifestIndir().then((gelen) => {
-        manifestUcus.current = null;
-        if (gelen) manifestRef.current = gelen;
-        return gelen;
-      });
-    }
+    const eldeki = manifestRef.current;
+    if (eldeki && Date.now() - eldeki.alindi < MANIFEST_OMRU_MS) return eldeki.manifest;
+    manifestUcus.current ??= manifestIndir().then((gelen) => {
+      manifestUcus.current = null;
+      if (gelen) {
+        manifestRef.current = { manifest: gelen, alindi: Date.now() };
+        void manifestYaz(gelen);
+      }
+      return gelen;
+    });
     return manifestUcus.current;
   }, []);
 
@@ -103,20 +102,10 @@ export function MenuProvider({ children }: { children: ReactNode }) {
       const yerel = dosyalarRef.current[anahtar]?.surum ?? null;
       if (!dahaYeni(yerel, uzak) || indirme.current.has(anahtar)) return;
       indirme.current.add(anahtar);
-      setBekleyen((eski) => {
-        if (eski.has(anahtar)) return eski;
-        const yeni = new Set(eski);
-        yeni.add(anahtar);
-        return yeni;
-      });
+      setBekleyen((eski) => kumeyeEkle(eski, anahtar, true));
       const indirilen = await menuIndir(il, ay, uzak ?? 0);
       indirme.current.delete(anahtar);
-      setBekleyen((eski) => {
-        if (!eski.has(anahtar)) return eski;
-        const yeni = new Set(eski);
-        yeni.delete(anahtar);
-        return yeni;
-      });
+      setBekleyen((eski) => kumeyeEkle(eski, anahtar, false));
       if (!indirilen) {
         setAgKesik(true);
         return;
@@ -150,7 +139,12 @@ export function MenuProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     if (!tercih.hazir || !tercih.il) return;
-    izle(tercih.il, ayAnahtari(istanbulTarih(new Date())));
+    const il = tercih.il;
+    izle(il, buAy());
+    const abone = AppState.addEventListener("change", (durum) => {
+      if (durum === "active") izle(il, buAy());
+    });
+    return () => abone.remove();
   }, [izle, tercih.hazir, tercih.il]);
 
   const deger = useMemo<MenuDepo>(() => {
@@ -176,6 +170,7 @@ export function MenuProvider({ children }: { children: ReactNode }) {
         });
       },
       izle,
+      cevrimdisi: agKesik,
     };
   }, [agKesik, bekleyen, dosyalar, izle, katalog, manifestHazir, onbellekHazir]);
 

@@ -5,10 +5,12 @@
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
-    "validate": "node --experimental-strip-types scripts/validate.ts",
+    "validate": "node --experimental-strip-types --import ./scripts/ts-kayit.mjs scripts/validate.ts",
     "cek:kykyemek": "node --experimental-strip-types --import ./scripts/ts-kayit.mjs scripts/kykyemek-cek.ts",
     "cek:yurtmenu": "node --experimental-strip-types --import ./scripts/ts-kayit.mjs scripts/yurtmenu-cek.ts",
     "build:data": "node --experimental-strip-types scripts/build-data.ts",
+    "serve:data": "node --experimental-strip-types scripts/yayin-sun.ts",
+    "aktar:yurtmenu": "node --experimental-strip-types --import ./scripts/ts-kayit.mjs scripts/kykyurtmenu-aktar.ts",
     "test": "node scripts/test.mjs",
     "gorsel": "node scripts/gorsel-kucult.mjs assets/kaynak-gorsel",
     "typecheck": "tsc --noEmit && tsc -p tsconfig.scripts.json"

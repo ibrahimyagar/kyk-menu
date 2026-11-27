@@ -86,10 +86,11 @@ function kaloriHaritasi(kart: string): Map<string, number> {
   return harita;
 }
 
-function toplamKalori(kart: string): number | null {
-  if (/\d+\s*-\s*\d+\s*kcal/i.test(kart)) return null;
-  const eslesme = kart.match(/[~≈]?\s*(\d+)\s*kcal/i);
-  return eslesme ? Number(eslesme[1]) : null;
+function kartKalori(kart: string): { toplam: number | null; aralik: { min: number; max: number } | null } {
+  const aralik = kart.match(/(\d+)\s*-\s*(\d+)\s*kcal/i);
+  if (aralik) return { toplam: null, aralik: { min: Number(aralik[1]), max: Number(aralik[2]) } };
+  const tek = kart.match(/[~≈]?\s*(\d+)\s*kcal/i);
+  return { toplam: tek ? Number(tek[1]) : null, aralik: null };
 }
 
 function yemekKcal(ad: string, harita: Map<string, number>): number | undefined {
@@ -190,9 +191,10 @@ export function ogunAyristir(kartHtml: string): Ogun {
   }
 
   if (gruplar.length === 0) {
-    return { durum: "aciklanmadi", toplamKcal: null, gruplar: [] };
+    return { durum: "aciklanmadi", toplamKcal: null, kcalAralik: null, gruplar: [] };
   }
-  return { toplamKcal: toplamKalori(kartHtml), gruplar };
+  const kalori = kartKalori(kartHtml);
+  return { toplamKcal: kalori.toplam, kcalAralik: kalori.aralik, gruplar };
 }
 
 export function kartlariAyikla(html: string): { tarih: string; kart: string }[] {
@@ -225,7 +227,7 @@ export function ayDosyasiKur(girdi: {
 }): MenuDosyasi {
   const gunler: Record<string, GunMenu> = {};
   const tarihler = [...new Set([...Object.keys(girdi.kahvalti), ...Object.keys(girdi.aksam)])].sort();
-  const bos: Ogun = { durum: "aciklanmadi", toplamKcal: null, gruplar: [] };
+  const bos: Ogun = { durum: "aciklanmadi", toplamKcal: null, kcalAralik: null, gruplar: [] };
   for (const tarih of tarihler) {
     if (!tarih.startsWith(`${girdi.ay}-`)) continue;
     gunler[tarih] = {

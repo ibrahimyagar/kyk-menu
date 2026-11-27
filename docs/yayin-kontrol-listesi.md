@@ -14,8 +14,10 @@ Sıra önemli: bekleme süresi uzun olan işler en başta duruyor. Google Play k
 ## Veri ve barındırma
 
 - [ ] Statik barındırma hesabı (Cloudflare Pages veya GitHub Pages)
-- [ ] `src/config/veri.ts` içindeki `DATA_BASE_URL` doldurulması
-- [ ] `publish/v1/manifest.json` adresinin 200 döndüğünün doğrulanması
+- [ ] `publish/` klasörünün statik barındırmaya yüklenmesi (`npm run build:data` sonrası)
+- [ ] EAS üretim profilinde `EXPO_PUBLIC_DATA_BASE_URL` tanımlanması (ör. `https://veri.ornek.com`; sonda `/` yok). Tanımsızsa üretim derlemesi menü indiremez; menüler artık uygulamaya gömülü değil
+- [ ] `${EXPO_PUBLIC_DATA_BASE_URL}/v1/manifest.json` adresinin 200 döndüğünün doğrulanması
+- [ ] Barındırmada `manifest.json` için kısa önbellek (ör. 5 dk), `menu/**` için uzun önbellek; menü adresleri `?v=sürüm` ile değişir
 - [ ] Kapsanacak illerin menüleri girilip `npm run validate` ile doğrulanması
 
 ## Uygulama hazırlığı

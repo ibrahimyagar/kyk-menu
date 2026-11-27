@@ -54,6 +54,10 @@ export const PaylasimKarti = forwardRef<View, Props>(function PaylasimKarti({ il
       <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" }}>
         {ogun.toplamKcal != null ? (
           <Text style={{ color: tema.soluk, fontSize: 13 }}>{ogun.toplamKcal} kcal</Text>
+        ) : ogun.kcalAralik ? (
+          <Text style={{ color: tema.soluk, fontSize: 13 }}>
+            {ogun.kcalAralik.min}–{ogun.kcalAralik.max} kcal
+          </Text>
         ) : (
           <View />
         )}

@@ -13,9 +13,18 @@ export interface Grup {
   secenekler: Yemek[];
 }
 
+export interface KcalAralik {
+  min: number;
+  max: number;
+}
+
 export interface Ogun {
   durum?: OgunDurumu;
   toplamKcal?: number | null;
+  /** Kaynak tek sayı yerine aralık verdiyse (ör. 1100-1500). Tahmin üretilmez. */
+  kcalAralik?: KcalAralik | null;
+  /** Öğün dosyanın genel kaynağından farklı bir yerden geldiyse o kaynağın adresi. */
+  kaynak?: string;
   gruplar: Grup[];
 }
 

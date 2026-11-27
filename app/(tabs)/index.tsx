@@ -98,7 +98,10 @@ export default function MenuEkrani() {
         {gorunum === "bekliyor" ? (
           <Iskelet />
         ) : gorunum === "internet" ? (
-          <Bos metin="İlk menüyü indirmek için internete bağlan." />
+          <Bos
+            metin="Menüye ulaşılamadı. İnternet bağlantını kontrol edip tekrar dene."
+            eylem={{ etiket: "Tekrar dene", onBas: () => tercih.il && depo.izle(tercih.il, ay) }}
+          />
         ) : gorunum === "il-yok" ? (
           <Bos metin="Bu ilin menüsü henüz yok. Ayarlardan menü gönderebilirsin." />
         ) : gorunum === "ay-yok" || !dosya ? (
@@ -139,6 +142,7 @@ export default function MenuEkrani() {
         ) : null}
 
         <Text style={{ color: tema.soluk, fontSize: 12, lineHeight: 18, paddingHorizontal: bosluk.x4, paddingTop: bosluk.x2 }}>
+          {dosya && depo.cevrimdisi ? "Çevrimdışı: cihazdaki son kopya gösteriliyor. " : ""}
           {dosya ? `Son güncelleme: ${kisaTarih(dosya.guncellenmeTarihi)}. ` : ""}
           Resmî uygulama değildir. Yemekhanedeki ilan esastır.
         </Text>

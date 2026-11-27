@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 import { bosluk, golge, yaricap } from "../theme/tokens";
 import { useTema } from "../theme/ThemeProvider";
 import type { Ogun } from "../types/domain";
@@ -16,17 +16,34 @@ export function MealCard({ ogun, onKalori }: { ogun: Ogun; onKalori?: () => void
     <View style={[kart(tema.yuzey, tema.kenar), golge(tema)]}>
       <YemekListesi gruplar={ogun.gruplar} />
       <View style={{ borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: tema.kenar, marginTop: bosluk.x2 }}>
-        <KaloriSeridi gruplar={ogun.gruplar} toplamKcal={ogun.toplamKcal} onBas={onKalori} />
+        <KaloriSeridi ogun={ogun} onBas={onKalori} />
       </View>
     </View>
   );
 }
 
-export function Bos({ metin }: { metin: string }) {
+export function Bos({ metin, eylem }: { metin: string; eylem?: { etiket: string; onBas: () => void } }) {
   const tema = useTema();
   return (
-    <View style={[kart(tema.yuzey, tema.kenar), golge(tema), { paddingVertical: bosluk.x6 }]}>
+    <View style={[kart(tema.yuzey, tema.kenar), golge(tema), { paddingVertical: bosluk.x6, gap: bosluk.x4 }]}>
       <Text style={{ color: tema.metin, fontSize: 17, lineHeight: 24 }}>{metin}</Text>
+      {eylem ? (
+        <Pressable
+          accessibilityRole="button"
+          onPress={eylem.onBas}
+          style={({ pressed }) => ({
+            alignSelf: "flex-start",
+            minHeight: 44,
+            justifyContent: "center",
+            paddingHorizontal: bosluk.x4,
+            borderRadius: yaricap.tam,
+            backgroundColor: tema.aksan,
+            opacity: pressed ? 0.8 : 1,
+          })}
+        >
+          <Text style={{ color: tema.aksanMetin, fontSize: 15, fontWeight: "600" }}>{eylem.etiket}</Text>
+        </Pressable>
+      ) : null}
     </View>
   );
 }

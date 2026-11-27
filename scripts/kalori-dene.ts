@@ -1,5 +1,5 @@
 ﻿import assert from "node:assert/strict";
-import { dilimSaydamligi, dilimToplami, grupKcal, kaloriDilimleri } from "../src/menu/kalori.ts";
+import { dilimSaydamligi, dilimToplami, grupKcal, kaloriDilimleri, ogunKaloriOzeti } from "../src/menu/kalori.ts";
 import type { Grup } from "../src/types/domain.ts";
 
 function grup(secim: Grup["secim"], baslik: string | null, kcaller: (number | undefined)[]): Grup {
@@ -22,26 +22,30 @@ assert.equal(grupKcal(grup("hepsi", "Yanında", [])), null);
 
 const gruplar = [
   grup("biri", "Çorba", [120, 120]),
-  grup("biri", "Ana yemek", [400, 410]), // belirsiz: dilime girmez
+  grup("biri", "Ana yemek", [400, 410]), // seçenekler farklı: ilk seçenek + aralık
+  grup("biri", "Tatlı", [300, undefined]), // biri eksik: dilime girmez
   grup("hepsi", "Yanında", [90, 60]),
   grup("biri", null, [70, 70]),
 ];
 const dilimler = kaloriDilimleri(gruplar);
 assert.deepEqual(
-  dilimler.map((dilim) => [dilim.baslik, dilim.kcal]),
+  dilimler.map((dilim) => [dilim.baslik, dilim.kcal, dilim.aralik]),
   [
-    ["Çorba", 120],
-    ["Yanında", 150],
-    ["Diğer", 70],
+    ["Çorba", 120, null],
+    ["Ana yemek", 400, { min: 400, max: 410 }],
+    ["Yanında", 150, null],
+    ["Diğer", 70, null],
   ],
 );
-assert.equal(dilimToplami(dilimler), 340);
+assert.equal(dilimToplami(dilimler), 740);
+// Aralıklı grup varken kaynak toplamı yoksa "toplam" uydurulmaz.
+assert.equal(ogunKaloriOzeti({ toplamKcal: null, gruplar }).toplam, null);
 
 // Başlıktan kategori bulunuyorsa dilim o kategorinin rengini taşır.
 assert.equal(dilimler[0]?.kategori?.kimlik, "corba");
-assert.equal(dilimler[1]?.kategori?.kimlik, "ekmekSu");
+assert.equal(dilimler[2]?.kategori?.kimlik, "ekmekSu");
 // Başlığı ve adı tanınmayan grup kategorisiz kalır; uydurma görsel çizilmez.
-assert.equal(dilimler[2]?.kategori, null);
+assert.equal(dilimler[3]?.kategori, null);
 
 // Kalorisi hiç olmayan ay: şerit çizilmez, tahmin üretilmez.
 assert.deepEqual(kaloriDilimleri([grup("biri", "Çorba", [undefined, undefined])]), []);
@@ -52,5 +56,27 @@ assert.equal(dilimSaydamligi(0, 1), 1);
 assert.equal(dilimSaydamligi(0, 4), 1);
 assert.equal(Number(dilimSaydamligi(3, 4).toFixed(2)), 0.45);
 assert.ok(dilimSaydamligi(1, 4) > dilimSaydamligi(2, 4));
+
+// Eksik satır toplanıp "toplam" diye yazılmaz.
+const eksikToplam = ogunKaloriOzeti({
+  toplamKcal: null,
+  gruplar: [grup("biri", "Çorba", [120, 120]), grup("hepsi", "Yanında", [undefined])],
+});
+assert.equal(eksikToplam.toplam, null);
+assert.equal(eksikToplam.dilimler.length, 1);
+
+const kaynakToplam = ogunKaloriOzeti({
+  toplamKcal: 600,
+  gruplar: [grup("biri", "Çorba", [120, 120]), grup("hepsi", "Yanında", [undefined])],
+});
+assert.equal(kaynakToplam.toplam, 600);
+
+const aralik = ogunKaloriOzeti({
+  toplamKcal: null,
+  kcalAralik: { min: 1100, max: 1500 },
+  gruplar: [grup("biri", "Çorba", [undefined])],
+});
+assert.deepEqual(aralik.aralik, { min: 1100, max: 1500 });
+assert.equal(aralik.toplam, null);
 
 console.log("kalori gecti");

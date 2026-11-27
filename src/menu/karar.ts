@@ -60,6 +60,23 @@ export function menuGorunumu(girdi: {
   return "bekliyor";
 }
 
+/** "il/ay" → sürüm. Yalnızca artan sürüm alınır; değişiklik yoksa aynı nesne döner. */
+export function katalogBirlestir(eski: Record<string, number>, manifest: Manifest): Record<string, number> {
+  let degisti = false;
+  const yeni = { ...eski };
+  for (const [il, bilgi] of Object.entries(manifest.iller)) {
+    for (const [ay, kayit] of Object.entries(bilgi.aylar)) {
+      const anahtar = `${il}/${ay}`;
+      const surum = Math.max(yeni[anahtar] ?? 0, kayit.surum);
+      if (yeni[anahtar] !== surum) {
+        yeni[anahtar] = surum;
+        degisti = true;
+      }
+    }
+  }
+  return degisti ? yeni : eski;
+}
+
 export function manifestMi(veri: unknown): veri is Manifest {
   if (!veri || typeof veri !== "object") return false;
   const dosya = veri as Partial<Manifest>;

@@ -2,13 +2,14 @@
   "sema": 1,
   "il": "siirt",
   "ay": "2026-10",
-  "surum": 1,
+  "surum": 4,
   "kaynak": "https://kykyemek.com/ — site sahibinin verdiği izinle çekildi. Ham yanıt data/raw/kykyemek/ altında.",
-  "guncellenmeTarihi": "2026-10-14",
+  "guncellenmeTarihi": "2026-10-18",
   "gunler": {
     "2026-10-01": {
       "kahvalti": {
         "toplamKcal": 780,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -80,6 +81,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -94,7 +99,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -141,6 +146,7 @@
     "2026-10-02": {
       "kahvalti": {
         "toplamKcal": 840,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -212,6 +218,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -226,7 +236,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -247,7 +257,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Salata",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -256,7 +266,7 @@
             ]
           },
           {
-            "baslik": "İçecek",
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -282,6 +292,10 @@
     "2026-10-03": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -347,6 +361,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -361,7 +379,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -408,6 +426,7 @@
     "2026-10-04": {
       "kahvalti": {
         "toplamKcal": 879,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -483,6 +502,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -497,7 +520,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -544,6 +567,7 @@
     "2026-10-05": {
       "kahvalti": {
         "toplamKcal": 961,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -619,6 +643,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -633,7 +661,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -689,6 +717,7 @@
     "2026-10-06": {
       "kahvalti": {
         "toplamKcal": 869,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -701,7 +730,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -760,6 +789,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -774,7 +807,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -821,6 +854,7 @@
     "2026-10-07": {
       "kahvalti": {
         "toplamKcal": 884,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -896,6 +930,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -957,6 +995,10 @@
     "2026-10-08": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -968,7 +1010,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1022,6 +1064,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1036,7 +1082,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1048,7 +1094,7 @@
             ]
           },
           {
-            "baslik": "Yan yemek",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1057,7 +1103,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": null,
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1083,6 +1129,7 @@
     "2026-10-09": {
       "kahvalti": {
         "toplamKcal": 1024,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1105,7 +1152,7 @@
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1154,6 +1201,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1168,7 +1219,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1218,6 +1269,10 @@
     "2026-10-10": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1229,7 +1284,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1283,6 +1338,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1297,7 +1356,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1344,6 +1403,7 @@
     "2026-10-11": {
       "kahvalti": {
         "toplamKcal": 654,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1415,6 +1475,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1429,7 +1493,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1476,6 +1540,7 @@
     "2026-10-12": {
       "kahvalti": {
         "toplamKcal": 845,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1547,6 +1612,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1561,7 +1630,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1611,6 +1680,10 @@
     "2026-10-13": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1676,6 +1749,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1702,7 +1779,7 @@
             ]
           },
           {
-            "baslik": "Yan yemek",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1737,6 +1814,10 @@
     "2026-10-14": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1805,6 +1886,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1843,7 +1928,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1872,6 +1957,10 @@
     "2026-10-15": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1883,7 +1972,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1892,7 +1981,7 @@
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1937,6 +2026,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -1951,7 +2044,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -1998,6 +2091,7 @@
     "2026-10-16": {
       "kahvalti": {
         "toplamKcal": 791,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2069,6 +2163,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2083,7 +2181,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2113,7 +2211,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2139,6 +2237,10 @@
     "2026-10-17": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2207,6 +2309,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2221,7 +2327,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2268,6 +2374,7 @@
     "2026-10-18": {
       "kahvalti": {
         "toplamKcal": 781,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2280,7 +2387,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2339,6 +2446,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2353,7 +2464,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2403,6 +2514,10 @@
     "2026-10-19": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2423,7 +2538,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2468,6 +2583,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2482,7 +2601,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2529,6 +2648,7 @@
     "2026-10-20": {
       "kahvalti": {
         "toplamKcal": 788,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2600,6 +2720,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2664,6 +2788,10 @@
     "2026-10-21": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2729,6 +2857,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2743,7 +2875,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2790,6 +2922,7 @@
     "2026-10-22": {
       "kahvalti": {
         "toplamKcal": 786,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2802,7 +2935,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2861,6 +2994,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -2875,7 +3012,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2896,7 +3033,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Salata",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2905,7 +3042,7 @@
             ]
           },
           {
-            "baslik": "İçecek",
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2931,6 +3068,10 @@
     "2026-10-23": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2999,6 +3140,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3063,6 +3208,10 @@
     "2026-10-24": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3128,6 +3277,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3142,7 +3295,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -3163,7 +3316,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3189,6 +3342,10 @@
     "2026-10-25": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3254,6 +3411,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3268,7 +3429,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -3318,6 +3479,10 @@
     "2026-10-26": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3329,7 +3494,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3383,6 +3548,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3421,7 +3590,7 @@
             ]
           },
           {
-            "baslik": "İçecek",
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3447,6 +3616,7 @@
     "2026-10-27": {
       "kahvalti": {
         "toplamKcal": 1024,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3469,7 +3639,7 @@
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3518,6 +3688,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3532,7 +3706,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -3588,6 +3762,7 @@
     "2026-10-28": {
       "kahvalti": {
         "toplamKcal": 866,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3600,7 +3775,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3663,6 +3838,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3677,7 +3856,7 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -3727,6 +3906,10 @@
     "2026-10-29": {
       "kahvalti": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 650,
+          "max": 850
+        },
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3792,6 +3975,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3853,6 +4040,7 @@
     "2026-10-30": {
       "kahvalti": {
         "toplamKcal": 670,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3924,6 +4112,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -3962,7 +4154,7 @@
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
@@ -3991,6 +4183,7 @@
     "2026-10-31": {
       "kahvalti": {
         "toplamKcal": 850,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -4066,6 +4259,10 @@
       },
       "aksam": {
         "toplamKcal": null,
+        "kcalAralik": {
+          "min": 1100,
+          "max": 1500
+        },
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -4080,7 +4277,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -4104,7 +4301,7 @@
             ]
           },
           {
-            "baslik": "İçecek",
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {

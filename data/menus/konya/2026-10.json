@@ -2,13 +2,14 @@
   "sema": 1,
   "il": "konya",
   "ay": "2026-10",
-  "surum": 1,
-  "kaynak": "https://kykyemek.com/ — site sahibinin verdiği izinle çekildi. Ham yanıt data/raw/kykyemek/ altında.",
-  "guncellenmeTarihi": "2026-10-14",
+  "surum": 6,
+  "kaynak": "https://kykyemek.com/ — site sahibinin verdiği izinle çekildi. Ham yanıt data/raw/kykyemek/ altında. Aralık verilen akşamlara yemek başına kalori kykyurtmenu.com'dan eklendi. Öğünde kaynak alanı varsa o öğün oradan alındı: https://www.kykyurtmenu.com/ — site sahibinin izniyle (kullanıcı beyanı); tools/kykyurtmenu-export ile alındı.",
+  "guncellenmeTarihi": "2026-10-19",
   "gunler": {
     "2026-10-01": {
       "kahvalti": {
         "toplamKcal": 600,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -21,7 +22,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -79,29 +80,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 898,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Mengen çorba"
+                "ad": "Mengen çorba",
+                "kcal": 78
               }
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk tantuni + lavaş+ezme"
+                "ad": "Tavuk tantuni + lavaş+ezme",
+                "kcal": 458
               },
               {
-                "ad": "Yeşil fasulye yemeği"
+                "ad": "Yeşil fasulye yemeği",
+                "kcal": 150
               }
             ]
           },
@@ -110,7 +116,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı makarna"
+                "ad": "Salçalı makarna",
+                "kcal": 240
               }
             ]
           },
@@ -119,7 +126,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Çoban salata"
+                "ad": "Çoban salata",
+                "kcal": 60
               }
             ]
           },
@@ -141,6 +149,7 @@
     "2026-10-02": {
       "kahvalti": {
         "toplamKcal": 840,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -211,17 +220,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 662,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Arabaşı çorba"
+                "ad": "Arabaşı çorba",
+                "kcal": 188
               },
               {
-                "ad": "Tutmaç çorba"
+                "ad": "Tutmaç çorba",
+                "kcal": 181
               }
             ]
           },
@@ -230,10 +242,12 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Kurufasulye yemeği"
+                "ad": "Kurufasulye yemeği",
+                "kcal": 193
               },
               {
-                "ad": "Kabak mücver + yoğurt"
+                "ad": "Kabak mücver + yoğurt",
+                "kcal": 273
               }
             ]
           },
@@ -242,7 +256,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pirinç pilavı"
+                "ad": "Pirinç pilavı",
+                "kcal": 221
               }
             ]
           },
@@ -251,16 +266,18 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Karışık salata"
+                "ad": "Karışık salata",
+                "kcal": 60
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Trileçe"
+                "ad": "Trileçe",
+                "kcal": 280
               }
             ]
           },
@@ -281,14 +298,16 @@
     },
     "2026-10-03": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 802,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
@@ -297,7 +316,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Karışık kızartma"
+                "ad": "Karışık kızartma",
+                "kcal": 300
               }
             ]
           },
@@ -306,7 +326,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Simit"
+                "ad": "Simit",
+                "kcal": 292
               }
             ]
           },
@@ -315,7 +336,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşar peyniri"
+                "ad": "Kaşar peyniri",
+                "kcal": 140
               }
             ]
           },
@@ -346,29 +368,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1193,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şehriye çorbası"
+                "ad": "Şehriye çorbası",
+                "kcal": 227
               },
               {
-                "ad": "Toyga çorba"
+                "ad": "Toyga çorba",
+                "kcal": 128
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Sac kavurma + köz sebze"
+                "ad": "Sac kavurma + köz sebze",
+                "kcal": 664
               },
               {
-                "ad": "İmam bayıldı"
+                "ad": "İmam bayıldı",
+                "kcal": 194
               }
             ]
           },
@@ -377,7 +404,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bulgur pilavı"
+                "ad": "Bulgur pilavı",
+                "kcal": 228
               }
             ]
           },
@@ -386,7 +414,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Ayran"
+                "ad": "Ayran",
+                "kcal": 74
               }
             ]
           },
@@ -407,7 +436,8 @@
     },
     "2026-10-04": {
       "kahvalti": {
-        "toplamKcal": 879,
+        "toplamKcal": 385,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -424,22 +454,17 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı sosis",
-                "kcal": 250
+                "ad": "Salçalı sosis"
               }
             ]
           },
           {
             "baslik": "Hamur işi",
-            "secim": "biri",
+            "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Peynirli börek",
-                "kcal": 350
-              },
-              {
-                "ad": "Ispanaklı börek",
-                "kcal": 350
+                "ad": "Peynirli ıspanaklı börek",
+                "kcal": 150
               }
             ]
           },
@@ -449,62 +474,42 @@
             "secenekler": [
               {
                 "ad": "Beyaz peynir",
-                "kcal": 124
-              }
-            ]
-          },
-          {
-            "baslik": "Zeytin",
-            "secim": "biri",
-            "secenekler": [
-              {
-                "ad": "Siyah zeytin",
-                "kcal": 40
-              },
-              {
-                "ad": "Yeşil zeytin",
-                "kcal": 40
-              }
-            ]
-          },
-          {
-            "baslik": "Yanında",
-            "secim": "hepsi",
-            "secenekler": [
-              {
-                "ad": "500 ml su"
-              },
-              {
-                "ad": "Çeyrek ekmek"
+                "kcal": 120
               }
             ]
           }
-        ]
+        ],
+        "kaynak": "https://www.kykyurtmenu.com/ — site sahibinin izniyle (kullanıcı beyanı); tools/kykyurtmenu-export ile alındı."
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1164,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Anadolu çorba"
+                "ad": "Anadolu çorba",
+                "kcal": 124
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk ızgara + fırın sebze"
+                "ad": "Tavuk ızgara + fırın sebze",
+                "kcal": 480
               },
               {
-                "ad": "Karışık dolma + yoğurt"
+                "ad": "Karışık dolma + yoğurt",
+                "kcal": 340
               }
             ]
           },
@@ -513,7 +518,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Soslu spagetti"
+                "ad": "Soslu spagetti",
+                "kcal": 310
               }
             ]
           },
@@ -522,7 +528,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kısır+marul"
+                "ad": "Kısır+marul",
+                "kcal": 260
               }
             ]
           },
@@ -544,6 +551,7 @@
     "2026-10-05": {
       "kahvalti": {
         "toplamKcal": 961,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -618,7 +626,8 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 980,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
@@ -637,13 +646,16 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Rosto köfte + patates püresi+mor lahana"
+                "ad": "Rosto köfte + patates püresi+mor lahana",
+                "kcal": 320
               },
               {
-                "ad": "Tavuk şiş + patates püresi+mor lahana"
+                "ad": "Tavuk şiş + patates püresi+mor lahana",
+                "kcal": 362
               },
               {
-                "ad": "Mevsim türlü"
+                "ad": "Mevsim türlü",
+                "kcal": 104
               }
             ]
           },
@@ -652,16 +664,18 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Garnitürlü pirinç pilavı"
+                "ad": "Garnitürlü pirinç pilavı",
+                "kcal": 260
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Limonlu revani"
+                "ad": "Limonlu revani",
+                "kcal": 260
               }
             ]
           },
@@ -683,6 +697,7 @@
     "2026-10-06": {
       "kahvalti": {
         "toplamKcal": 869,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -695,7 +710,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -753,17 +768,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 980,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Mahluta çorba"
+                "ad": "Mahluta çorba",
+                "kcal": 250
               }
             ]
           },
@@ -772,7 +790,8 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk pirzola + köz sebze"
+                "ad": "Tavuk pirzola + köz sebze",
+                "kcal": 320
               },
               {
                 "ad": "Kabak yemeği"
@@ -784,7 +803,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı bulgur pilavı"
+                "ad": "Salçalı bulgur pilavı",
+                "kcal": 250
               }
             ]
           },
@@ -793,7 +813,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Akdeniz salata"
+                "ad": "Akdeniz salata",
+                "kcal": 42
               }
             ]
           },
@@ -815,6 +836,7 @@
     "2026-10-07": {
       "kahvalti": {
         "toplamKcal": 884,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -889,17 +911,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1073,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Kremalı mantar çorba"
+                "ad": "Kremalı mantar çorba",
+                "kcal": 169
               }
             ]
           },
@@ -911,7 +936,8 @@
                 "ad": "Köfteli tirit yemeği"
               },
               {
-                "ad": "Tepsi kumpir"
+                "ad": "Tepsi kumpir",
+                "kcal": 340
               }
             ]
           },
@@ -920,7 +946,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Soslu makarna"
+                "ad": "Soslu makarna",
+                "kcal": 310
               }
             ]
           },
@@ -929,7 +956,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Çiğ köfte+marul"
+                "ad": "Çiğ köfte+marul",
+                "kcal": 140
               }
             ]
           },
@@ -950,23 +978,26 @@
     },
     "2026-10-08": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 709,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sucuklu yumurta"
+                "ad": "Sucuklu yumurta",
+                "kcal": 175
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pişi"
+                "ad": "Pişi",
+                "kcal": 244
               }
             ]
           },
@@ -975,7 +1006,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kakaolu kek"
+                "ad": "Kakaolu kek",
+                "kcal": 170
               }
             ]
           },
@@ -984,7 +1016,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yöresel peynir"
+                "ad": "Yöresel peynir",
+                "kcal": 120
               }
             ]
           },
@@ -1015,26 +1048,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 897,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şehriye çorbası"
+                "ad": "Şehriye çorbası",
+                "kcal": 227
               },
               {
-                "ad": "Cennet çorba"
+                "ad": "Cennet çorba",
+                "kcal": 159
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Köri soslu tavuk + söğüş"
+                "ad": "Köri soslu tavuk + söğüş",
+                "kcal": 290
               },
               {
                 "ad": "Bamya yemeği"
@@ -1046,7 +1083,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pirinç pilavı"
+                "ad": "Pirinç pilavı",
+                "kcal": 221
               }
             ]
           },
@@ -1077,6 +1115,7 @@
     "2026-10-09": {
       "kahvalti": {
         "toplamKcal": 1024,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1099,7 +1138,7 @@
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1147,26 +1186,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 918,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Domates çorba"
+                "ad": "Domates çorba",
+                "kcal": 75
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Et kavurma + fırın sebze"
+                "ad": "Et kavurma + fırın sebze",
+                "kcal": 345
               },
               {
                 "ad": "Tavuklu sultan kebabı"
@@ -1181,7 +1224,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sebzeli bulgur pilavı"
+                "ad": "Sebzeli bulgur pilavı",
+                "kcal": 240
               }
             ]
           },
@@ -1190,7 +1234,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haydari"
+                "ad": "Haydari",
+                "kcal": 140
               }
             ]
           },
@@ -1212,6 +1257,7 @@
     "2026-10-10": {
       "kahvalti": {
         "toplamKcal": 714,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1224,7 +1270,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1282,26 +1328,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1373,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Çeşmi nigar çorba"
+                "ad": "Çeşmi nigar çorba",
+                "kcal": 213
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Çıtır tavuk + patates kroket+soğan halkası"
+                "ad": "Çıtır tavuk + patates kroket+soğan halkası",
+                "kcal": 600
               },
               {
                 "ad": "Lahana sarma + yoğurt"
@@ -1313,7 +1363,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Köri soslu makarna"
+                "ad": "Köri soslu makarna",
+                "kcal": 340
               }
             ]
           },
@@ -1322,7 +1373,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşık salata"
+                "ad": "Kaşık salata",
+                "kcal": 80
               }
             ]
           },
@@ -1344,6 +1396,7 @@
     "2026-10-11": {
       "kahvalti": {
         "toplamKcal": 654,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1414,29 +1467,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1487,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuklu şehriye çorba"
+                "ad": "Tavuklu şehriye çorba",
+                "kcal": 227
               },
               {
-                "ad": "Sebze çorbası"
+                "ad": "Sebze çorbası",
+                "kcal": 95
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Nohut yemeği"
+                "ad": "Nohut yemeği",
+                "kcal": 320
               },
               {
-                "ad": "Karışık kızartma + yoğurt"
+                "ad": "Karışık kızartma + yoğurt",
+                "kcal": 300
               }
             ]
           },
@@ -1445,7 +1503,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Şehriyeli pirinç pilavı"
+                "ad": "Şehriyeli pirinç pilavı",
+                "kcal": 260
               }
             ]
           },
@@ -1454,7 +1513,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Cevizli baklava"
+                "ad": "Cevizli baklava",
+                "kcal": 285
               }
             ]
           },
@@ -1476,6 +1536,7 @@
     "2026-10-12": {
       "kahvalti": {
         "toplamKcal": 845,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -1546,32 +1607,38 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1467,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Tavuk suyu çorba"
+                "ad": "Tavuk suyu çorba",
+                "kcal": 75
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Et çökertme"
+                "ad": "Et çökertme",
+                "kcal": 380
               },
               {
-                "ad": "Tavuk çökertme"
+                "ad": "Tavuk çökertme",
+                "kcal": 330
               },
               {
-                "ad": "Bamya yemeği"
+                "ad": "Bamya yemeği",
+                "kcal": 160
               }
             ]
           },
@@ -1580,7 +1647,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yeşil mercimekli bulgur pilavı"
+                "ad": "Yeşil mercimekli bulgur pilavı",
+                "kcal": 348
               }
             ]
           },
@@ -1589,7 +1657,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bahçe salata"
+                "ad": "Bahçe salata",
+                "kcal": 60
               }
             ]
           },
@@ -1610,14 +1679,16 @@
     },
     "2026-10-13": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 482,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
@@ -1635,7 +1706,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sade poğaça"
+                "ad": "Sade poğaça",
+                "kcal": 292
               }
             ]
           },
@@ -1644,7 +1716,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yöresel peynir"
+                "ad": "Yöresel peynir",
+                "kcal": 120
               }
             ]
           },
@@ -1675,26 +1748,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1221,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şehriye çorbası"
+                "ad": "Şehriye çorbası",
+                "kcal": 227
               },
               {
-                "ad": "Toyga çorba"
+                "ad": "Toyga çorba",
+                "kcal": 128
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk külbastı + mevsim salata"
+                "ad": "Tavuk külbastı + mevsim salata",
+                "kcal": 400
               },
               {
                 "ad": "Patlıcan çığırtma"
@@ -1706,7 +1783,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Mısırlı pirinç pilavı"
+                "ad": "Mısırlı pirinç pilavı",
+                "kcal": 260
               }
             ]
           },
@@ -1715,7 +1793,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Meyveli yaş pasta"
+                "ad": "Meyveli yaş pasta",
+                "kcal": 206
               }
             ]
           },
@@ -1736,14 +1815,16 @@
     },
     "2026-10-14": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 925,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşarlı omlet"
+                "ad": "Kaşarlı omlet",
+                "kcal": 215
               }
             ]
           },
@@ -1752,7 +1833,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Karışık kızartma"
+                "ad": "Karışık kızartma",
+                "kcal": 300
               }
             ]
           },
@@ -1764,7 +1846,8 @@
                 "ad": "Zeytinli açma"
               },
               {
-                "ad": "Peynirli açma"
+                "ad": "Peynirli açma",
+                "kcal": 290
               }
             ]
           },
@@ -1773,7 +1856,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Beyaz peynir"
+                "ad": "Beyaz peynir",
+                "kcal": 120
               }
             ]
           },
@@ -1804,26 +1888,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1088,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Tarhana çorba"
+                "ad": "Tarhana çorba",
+                "kcal": 150
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Izgara köfte + fırın sebze"
+                "ad": "Izgara köfte + fırın sebze",
+                "kcal": 334
               },
               {
                 "ad": "Tavuk sarma + fırın sebze"
@@ -1838,19 +1926,22 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sebzeli makarna"
+                "ad": "Sebzeli makarna",
+                "kcal": 290
               }
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ayran"
+                "ad": "Ayran",
+                "kcal": 74
               },
               {
-                "ad": "Meyve suyu"
+                "ad": "Meyve suyu",
+                "kcal": 100
               }
             ]
           },
@@ -1871,28 +1962,31 @@
     },
     "2026-10-15": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 350,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Patates salatası"
+                "ad": "Patates salatası",
+                "kcal": 140
               }
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -1905,7 +1999,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşar peyniri"
+                "ad": "Kaşar peyniri",
+                "kcal": 140
               }
             ]
           },
@@ -1936,26 +2031,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 866,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Yüksük çorbası"
+                "ad": "Yüksük çorbası",
+                "kcal": 180
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk fajita + lavaş+ezme"
+                "ad": "Tavuk fajita + lavaş+ezme",
+                "kcal": 280
               },
               {
                 "ad": "Bezelye yemeği"
@@ -1967,7 +2066,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bulgur pilavı"
+                "ad": "Bulgur pilavı",
+                "kcal": 228
               }
             ]
           },
@@ -1976,7 +2076,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Ege salata"
+                "ad": "Ege salata",
+                "kcal": 60
               }
             ]
           },
@@ -1998,6 +2099,7 @@
     "2026-10-16": {
       "kahvalti": {
         "toplamKcal": 791,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2068,29 +2170,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1640,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Arabaşı çorba"
+                "ad": "Arabaşı çorba",
+                "kcal": 188
               },
               {
-                "ad": "Mantar çorba"
+                "ad": "Mantar çorba",
+                "kcal": 129
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Kurufasulye yemeği"
+                "ad": "Kurufasulye yemeği",
+                "kcal": 193
               },
               {
-                "ad": "Karnabahar kızartması + yoğurt"
+                "ad": "Karnabahar kızartması + yoğurt",
+                "kcal": 370
               }
             ]
           },
@@ -2099,7 +2206,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Şehriyeli pirinç pilavı"
+                "ad": "Şehriyeli pirinç pilavı",
+                "kcal": 260
               }
             ]
           },
@@ -2108,7 +2216,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Rus salatası"
+                "ad": "Rus salatası",
+                "kcal": 220
               }
             ]
           },
@@ -2117,7 +2226,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kalburabastı"
+                "ad": "Kalburabastı",
+                "kcal": 280
               }
             ]
           },
@@ -2139,6 +2249,7 @@
     "2026-10-17": {
       "kahvalti": {
         "toplamKcal": 850,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2213,22 +2324,25 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 418,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Anadolu çorba"
+                "ad": "Anadolu çorba",
+                "kcal": 124
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
@@ -2240,7 +2354,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2253,7 +2367,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Mercimek köftesi+marul"
+                "ad": "Mercimek köftesi+marul",
+                "kcal": 180
               }
             ]
           },
@@ -2275,6 +2390,7 @@
     "2026-10-18": {
       "kahvalti": {
         "toplamKcal": 781,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2287,7 +2403,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2345,26 +2461,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 905,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Domates çorba"
+                "ad": "Domates çorba",
+                "kcal": 75
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Çoban kavurma + köz sebze"
+                "ad": "Çoban kavurma + köz sebze",
+                "kcal": 330
               },
               {
                 "ad": "Kabak mücver + yoğurt"
@@ -2376,7 +2496,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Domatesli bulgur pilavı"
+                "ad": "Domatesli bulgur pilavı",
+                "kcal": 240
               }
             ]
           },
@@ -2385,7 +2506,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Cacık"
+                "ad": "Cacık",
+                "kcal": 120
               }
             ]
           },
@@ -2406,14 +2528,16 @@
     },
     "2026-10-19": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 454,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
@@ -2427,11 +2551,12 @@
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pişi+reçel"
+                "ad": "Pişi+reçel",
+                "kcal": 244
               }
             ]
           },
@@ -2440,7 +2565,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşar peyniri"
+                "ad": "Kaşar peyniri",
+                "kcal": 140
               }
             ]
           },
@@ -2471,26 +2597,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1144,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Köz biber çorba"
+                "ad": "Köz biber çorba",
+                "kcal": 116
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk biftek + karışık salata"
+                "ad": "Tavuk biftek + karışık salata",
+                "kcal": 320
               },
               {
                 "ad": "Mevsim türlü"
@@ -2502,16 +2632,18 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı makarna"
+                "ad": "Salçalı makarna",
+                "kcal": 240
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Cevizli kadayıf"
+                "ad": "Cevizli kadayıf",
+                "kcal": 350
               }
             ]
           },
@@ -2533,6 +2665,7 @@
     "2026-10-20": {
       "kahvalti": {
         "toplamKcal": 788,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2603,17 +2736,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1090,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şehriye çorbası"
+                "ad": "Şehriye çorbası",
+                "kcal": 227
               },
               {
-                "ad": "Brokoli çorba"
+                "ad": "Brokoli çorba",
+                "kcal": 65
               }
             ]
           },
@@ -2622,7 +2758,8 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "İnegöl köfte + lavaş+söğüş"
+                "ad": "İnegöl köfte + lavaş+söğüş",
+                "kcal": 398
               },
               {
                 "ad": "Kremalı mantarlı tavuk"
@@ -2637,7 +2774,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bahar pilavı"
+                "ad": "Bahar pilavı",
+                "kcal": 280
               }
             ]
           },
@@ -2646,7 +2784,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Cacık"
+                "ad": "Cacık",
+                "kcal": 120
               }
             ]
           },
@@ -2667,14 +2806,16 @@
     },
     "2026-10-21": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 700,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
@@ -2683,7 +2824,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Patates kızartması"
+                "ad": "Patates kızartması",
+                "kcal": 300
               }
             ]
           },
@@ -2692,7 +2834,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sade poğaça"
+                "ad": "Sade poğaça",
+                "kcal": 292
               }
             ]
           },
@@ -2701,7 +2844,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Labne peynir"
+                "ad": "Labne peynir",
+                "kcal": 38
               }
             ]
           },
@@ -2732,26 +2876,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 908,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Kremalı sebze çorbası"
+                "ad": "Kremalı sebze çorbası",
+                "kcal": 112
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şinitzel + kroket+soğan halkası"
+                "ad": "Şinitzel + kroket+soğan halkası",
+                "kcal": 330
               },
               {
                 "ad": "Karışık dolma + yoğurt"
@@ -2763,7 +2911,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Soslu spagetti"
+                "ad": "Soslu spagetti",
+                "kcal": 310
               }
             ]
           },
@@ -2772,7 +2921,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Akdeniz salata"
+                "ad": "Akdeniz salata",
+                "kcal": 42
               }
             ]
           },
@@ -2794,6 +2944,7 @@
     "2026-10-22": {
       "kahvalti": {
         "toplamKcal": 786,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -2806,7 +2957,7 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -2864,29 +3015,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1728,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Arabaşı çorba"
+                "ad": "Arabaşı çorba",
+                "kcal": 188
               },
               {
-                "ad": "Tarhana çorba"
+                "ad": "Tarhana çorba",
+                "kcal": 150
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Nohut yemeği"
+                "ad": "Nohut yemeği",
+                "kcal": 320
               },
               {
-                "ad": "Karnabahar kızartması + yoğurt"
+                "ad": "Karnabahar kızartması + yoğurt",
+                "kcal": 370
               }
             ]
           },
@@ -2895,7 +3051,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Şehriyeli bulgur pilavı"
+                "ad": "Şehriyeli bulgur pilavı",
+                "kcal": 280
               }
             ]
           },
@@ -2904,16 +3061,18 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Şakşuka"
+                "ad": "Şakşuka",
+                "kcal": 220
               }
             ]
           },
           {
-            "baslik": "İçecek",
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sütlaç"
+                "ad": "Sütlaç",
+                "kcal": 200
               }
             ]
           },
@@ -2935,6 +3094,7 @@
     "2026-10-23": {
       "kahvalti": {
         "toplamKcal": 934,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3009,32 +3169,38 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1325,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Şehriye çorbası"
+                "ad": "Şehriye çorbası",
+                "kcal": 227
               },
               {
-                "ad": "Çeşmi nigar çorba"
+                "ad": "Çeşmi nigar çorba",
+                "kcal": 213
               }
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Patlıcan musakka"
+                "ad": "Patlıcan musakka",
+                "kcal": 124
               },
               {
-                "ad": "Tavuk çökertme"
+                "ad": "Tavuk çökertme",
+                "kcal": 330
               },
               {
-                "ad": "Yeşil fasulye yemeği"
+                "ad": "Yeşil fasulye yemeği",
+                "kcal": 150
               }
             ]
           },
@@ -3043,7 +3209,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pirinç pilavı"
+                "ad": "Pirinç pilavı",
+                "kcal": 221
               }
             ]
           },
@@ -3052,7 +3219,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Çoban salata"
+                "ad": "Çoban salata",
+                "kcal": 60
               }
             ]
           },
@@ -3073,14 +3241,16 @@
     },
     "2026-10-24": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 635,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşarlı omlet"
+                "ad": "Kaşarlı omlet",
+                "kcal": 215
               }
             ]
           },
@@ -3089,7 +3259,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Karışık kızartma"
+                "ad": "Karışık kızartma",
+                "kcal": 300
               }
             ]
           },
@@ -3107,7 +3278,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yöresel peynir"
+                "ad": "Yöresel peynir",
+                "kcal": 120
               }
             ]
           },
@@ -3138,29 +3310,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1295,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Domates çorba"
+                "ad": "Domates çorba",
+                "kcal": 75
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Sebzeli fırın tavuk"
+                "ad": "Sebzeli fırın tavuk",
+                "kcal": 340
               },
               {
-                "ad": "Lahana sarma"
+                "ad": "Lahana sarma",
+                "kcal": 280
               }
             ]
           },
@@ -3169,7 +3346,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yoğurtlu makarna"
+                "ad": "Yoğurtlu makarna",
+                "kcal": 320
               }
             ]
           },
@@ -3178,7 +3356,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Çiğ köfte+marul"
+                "ad": "Çiğ köfte+marul",
+                "kcal": 140
               }
             ]
           },
@@ -3199,32 +3378,16 @@
     },
     "2026-10-25": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 962,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Haşlanmış yumurta"
-              }
-            ]
-          },
-          {
-            "baslik": "Ekmek ve su",
-            "secim": "hepsi",
-            "secenekler": [
-              {
-                "ad": "Peynirli su böreği"
-              }
-            ]
-          },
-          {
-            "baslik": "Hamur işi",
-            "secim": "hepsi",
-            "secenekler": [
-              {
-                "ad": "Simit"
+                "ad": "Haşlanmış yumurta",
+                "kcal": 70
               }
             ]
           },
@@ -3233,7 +3396,28 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Beyaz peynir"
+                "ad": "Peynirli su böreği",
+                "kcal": 480
+              }
+            ]
+          },
+          {
+            "baslik": "Hamur işi",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Simit",
+                "kcal": 292
+              }
+            ]
+          },
+          {
+            "baslik": "Peynir",
+            "secim": "hepsi",
+            "secenekler": [
+              {
+                "ad": "Beyaz peynir",
+                "kcal": 120
               }
             ]
           },
@@ -3264,17 +3448,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1168,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Yüksük çorbası"
+                "ad": "Yüksük çorbası",
+                "kcal": 180
               }
             ]
           },
@@ -3283,7 +3470,8 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Et tantuni + lavaş+ezme"
+                "ad": "Et tantuni + lavaş+ezme",
+                "kcal": 310
               },
               {
                 "ad": "Tavuk tantuni + lavaş+ezme"
@@ -3298,16 +3486,18 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Sebzeli bulgur pilavı"
+                "ad": "Sebzeli bulgur pilavı",
+                "kcal": 240
               }
             ]
           },
           {
-            "baslik": null,
+            "baslik": "Tatlı",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kemalpaşa tatlısı"
+                "ad": "Kemalpaşa tatlısı",
+                "kcal": 320
               }
             ]
           },
@@ -3328,7 +3518,8 @@
     },
     "2026-10-26": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 480,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3340,11 +3531,12 @@
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Sıcak",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Patates salatası"
+                "ad": "Patates salatası",
+                "kcal": 140
               }
             ]
           },
@@ -3353,7 +3545,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Dere otlu poğaça"
+                "ad": "Dere otlu poğaça",
+                "kcal": 292
               }
             ]
           },
@@ -3362,7 +3555,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Krem peynir"
+                "ad": "Krem peynir",
+                "kcal": 48
               }
             ]
           },
@@ -3393,26 +3587,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 975,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Tutmaç çorba"
+                "ad": "Tutmaç çorba",
+                "kcal": 181
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk ızgara + köz sebze"
+                "ad": "Tavuk ızgara + köz sebze",
+                "kcal": 300
               },
               {
                 "ad": "Ispanak yemeği + yoğurt"
@@ -3424,7 +3622,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Fırın makarna"
+                "ad": "Fırın makarna",
+                "kcal": 320
               }
             ]
           },
@@ -3433,7 +3632,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Pancar salatası"
+                "ad": "Pancar salatası",
+                "kcal": 60
               }
             ]
           },
@@ -3455,6 +3655,7 @@
     "2026-10-27": {
       "kahvalti": {
         "toplamKcal": 1024,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3477,7 +3678,7 @@
             ]
           },
           {
-            "baslik": "Tatlı",
+            "baslik": "Hamur işi",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3525,29 +3726,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1670,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Arabaşı çorba"
+                "ad": "Arabaşı çorba",
+                "kcal": 188
               },
               {
-                "ad": "Kremalı mantar çorba"
+                "ad": "Kremalı mantar çorba",
+                "kcal": 169
               }
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": null,
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Kurufasulye yemeği"
+                "ad": "Kurufasulye yemeği",
+                "kcal": 193
               },
               {
-                "ad": "Falafel + dip sos"
+                "ad": "Falafel + dip sos",
+                "kcal": 300
               }
             ]
           },
@@ -3556,7 +3762,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Şehriyeli pirinç pilavı"
+                "ad": "Şehriyeli pirinç pilavı",
+                "kcal": 260
               }
             ]
           },
@@ -3565,7 +3772,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Yoğurt"
+                "ad": "Yoğurt",
+                "kcal": 120
               }
             ]
           },
@@ -3574,7 +3782,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Mozaik pasta"
+                "ad": "Mozaik pasta",
+                "kcal": 440
               }
             ]
           },
@@ -3596,6 +3805,7 @@
     "2026-10-28": {
       "kahvalti": {
         "toplamKcal": 866,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3608,7 +3818,7 @@
             ]
           },
           {
-            "baslik": "Sıcak",
+            "baslik": "Ana yemek",
             "secim": "hepsi",
             "secenekler": [
               {
@@ -3670,26 +3880,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 932,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Tarhana çorba"
+                "ad": "Tarhana çorba",
+                "kcal": 150
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Izgara köfte + brokoli-havuç salata"
+                "ad": "Izgara köfte + brokoli-havuç salata",
+                "kcal": 334
               },
               {
                 "ad": "Tavuk şiş + brokoli-havuç salata"
@@ -3704,7 +3918,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bulgur pilavı"
+                "ad": "Bulgur pilavı",
+                "kcal": 228
               }
             ]
           },
@@ -3713,7 +3928,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kaşık salata"
+                "ad": "Kaşık salata",
+                "kcal": 80
               }
             ]
           },
@@ -3734,14 +3950,16 @@
     },
     "2026-10-29": {
       "kahvalti": {
-        "toplamKcal": null,
+        "toplamKcal": 918,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Menemen"
+                "ad": "Menemen",
+                "kcal": 148
               }
             ]
           },
@@ -3750,7 +3968,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Gül böreği"
+                "ad": "Gül böreği",
+                "kcal": 400
               }
             ]
           },
@@ -3759,7 +3978,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Mozaik kek"
+                "ad": "Mozaik kek",
+                "kcal": 250
               }
             ]
           },
@@ -3768,7 +3988,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Beyaz peynir"
+                "ad": "Beyaz peynir",
+                "kcal": 120
               }
             ]
           },
@@ -3799,17 +4020,20 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1128,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Yayla çorbası"
+                "ad": "Yayla çorbası",
+                "kcal": 118
               },
               {
-                "ad": "Mahluta çorba"
+                "ad": "Mahluta çorba",
+                "kcal": 250
               }
             ]
           },
@@ -3818,7 +4042,8 @@
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tavuk pirzola + fırın sebze"
+                "ad": "Tavuk pirzola + fırın sebze",
+                "kcal": 320
               },
               {
                 "ad": "Karışık sebze graten"
@@ -3830,7 +4055,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı spagetti"
+                "ad": "Salçalı spagetti",
+                "kcal": 240
               }
             ]
           },
@@ -3839,7 +4065,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Kısır+marul"
+                "ad": "Kısır+marul",
+                "kcal": 200
               }
             ]
           },
@@ -3861,6 +4088,7 @@
     "2026-10-30": {
       "kahvalti": {
         "toplamKcal": 670,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -3931,26 +4159,30 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 972,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ezogelin çorba"
+                "ad": "Ezogelin çorba",
+                "kcal": 114
               },
               {
-                "ad": "Anadolu çorba"
+                "ad": "Anadolu çorba",
+                "kcal": 124
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Sivas köfte + domates+marul+kornişon turşu"
+                "ad": "Sivas köfte + domates+marul+kornişon turşu",
+                "kcal": 310
               },
               {
                 "ad": "Patlıcan çığırtma"
@@ -3962,19 +4194,22 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Salçalı bulgur pilavı"
+                "ad": "Salçalı bulgur pilavı",
+                "kcal": 250
               }
             ]
           },
           {
-            "baslik": "Ekmek ve su",
+            "baslik": "İçecek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Ayran"
+                "ad": "Ayran",
+                "kcal": 74
               },
               {
-                "ad": "Meyve suyu"
+                "ad": "Meyve suyu",
+                "kcal": 100
               }
             ]
           },
@@ -3996,6 +4231,7 @@
     "2026-10-31": {
       "kahvalti": {
         "toplamKcal": 850,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Yumurta",
@@ -4070,29 +4306,34 @@
         ]
       },
       "aksam": {
-        "toplamKcal": null,
+        "toplamKcal": 1365,
+        "kcalAralik": null,
         "gruplar": [
           {
             "baslik": "Çorba",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Mercimek çorbası"
+                "ad": "Mercimek çorbası",
+                "kcal": 140
               },
               {
-                "ad": "Domates çorba"
+                "ad": "Domates çorba",
+                "kcal": 75
               }
             ]
           },
           {
-            "baslik": "Salata",
+            "baslik": "Ana yemek",
             "secim": "biri",
             "secenekler": [
               {
-                "ad": "Tas kebabı"
+                "ad": "Tas kebabı",
+                "kcal": 378
               },
               {
-                "ad": "Tavuk fajita + mevsim salata"
+                "ad": "Tavuk fajita + mevsim salata",
+                "kcal": 280
               },
               {
                 "ad": "Kabak mücver + yoğurt"
@@ -4104,7 +4345,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Bezelyeli pirinç pilavı"
+                "ad": "Bezelyeli pirinç pilavı",
+                "kcal": 242
               }
             ]
           },
@@ -4113,7 +4355,8 @@
             "secim": "hepsi",
             "secenekler": [
               {
-                "ad": "Islak kek"
+                "ad": "Islak kek",
+                "kcal": 250
               }
             ]
           },

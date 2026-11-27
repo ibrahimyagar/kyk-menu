@@ -1,14 +1,27 @@
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ILLER } from "../src/data/iller.ts";
+import type { MenuDosyasi } from "../src/types/domain.ts";
 import { ayDosyasiKur, htmlCoz, ogunHaritasi } from "./kykyemek-ayristir.ts";
+
+async function yazmaKarari(hedef: string, yeni: MenuDosyasi): Promise<{ surum: number; atla: boolean }> {
+  try {
+    const eski = JSON.parse(await readFile(hedef, "utf8")) as MenuDosyasi;
+    const { surum: _s1, guncellenmeTarihi: _g1, kaynak: _k1, ...eskiGovde } = eski;
+    const { surum: _s2, guncellenmeTarihi: _g2, kaynak: _k2, ...yeniGovde } = yeni;
+    if (JSON.stringify(eskiGovde) === JSON.stringify(yeniGovde)) return { surum: eski.surum, atla: true };
+    return { surum: eski.surum + 1, atla: false };
+  } catch {
+    return { surum: 1, atla: false };
+  }
+}
 
 const kok = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const AJAN = "kyk-menu-arastirma/0.1 (+iletisim: yafestahl@gmail.com)";
 const KOK_ADRES = "https://kykyemek.com";
 const BEKLE_MS = 1500;
-const KILITLI = new Set(["istanbul/2026-09", "istanbul/2026-10"]);
+const KILITLI = new Set(["istanbul/2026-09"]);
 const KAYNAK = "https://kykyemek.com/ — site sahibinin verdiği izinle çekildi. Ham yanıt data/raw/kykyemek/ altında.";
 
 function arguman(ad: string): string | undefined {
@@ -76,46 +89,6 @@ async function ogunGetir(cerez: string, ilAd: string, aksam: boolean, kaydir: nu
   return JSON.parse(metin);
 }
 
-function kimlik(il: string, ay: string): string {
-  return `${il.replace(/-/g, "_")}_${ay.replace("-", "_")}`;
-}
-
-async function menuleriYaz(): Promise<void> {
-  const menuKok = path.join(kok, "data", "menus");
-  const ilKlasorleri = await readdir(menuKok, { withFileTypes: true });
-  const kayitlar: { il: string; ay: string }[] = [];
-  for (const il of ilKlasorleri) {
-    if (!il.isDirectory()) continue;
-    const dosyalar = await readdir(path.join(menuKok, il.name));
-    for (const ad of dosyalar) {
-      if (ad.endsWith(".json")) kayitlar.push({ il: il.name, ay: ad.replace(/\.json$/, "") });
-    }
-  }
-  kayitlar.sort((a, b) => `${a.il}/${a.ay}`.localeCompare(`${b.il}/${b.ay}`, "tr"));
-  const importlar = kayitlar.map((k) => `import ${kimlik(k.il, k.ay)} from "../../data/menus/${k.il}/${k.ay}.json";`);
-  const satirlar = kayitlar.map((k) => `  "${k.il}/${k.ay}": ${kimlik(k.il, k.ay)} as MenuDosyasi,`);
-  const icerik = `${importlar.join("\n")}
-import type { MenuDosyasi } from "../types/domain";
-
-const dosyalar: Record<string, MenuDosyasi> = {
-${satirlar.join("\n")}
-};
-
-export function gomuluHarita(): Record<string, MenuDosyasi> {
-  return dosyalar;
-}
-
-export function ayMenusu(il: string, ay: string): MenuDosyasi | null {
-  return dosyalar[\`\${il}/\${ay}\`] ?? null;
-}
-
-export function ildeKayitVar(il: string): boolean {
-  return Object.keys(dosyalar).some((anahtar) => anahtar.startsWith(\`\${il}/\`));
-}
-`;
-  await writeFile(path.join(kok, "src", "data", "menuler.ts"), icerik, "utf8");
-}
-
 const hedefAy = arguman("--ay") ?? istanbulBugun().ay;
 const sadeceIl = arguman("--il");
 const kuru = bayrak("--kuru");
@@ -161,7 +134,10 @@ for (const ilAd of secilen) {
     await writeFile(path.join(hamKok, `${hedefAy}-kahvalti.json`), JSON.stringify(kahvaltiHam), "utf8");
     await writeFile(path.join(hamKok, `${hedefAy}-aksam.json`), JSON.stringify(aksamHam), "utf8");
 
-    const dosya = ayDosyasiKur({
+    const kilit = `${slug}/${hedefAy}`;
+    const hedefKok = KILITLI.has(kilit) ? path.join(kok, "data", "taslak", slug) : path.join(kok, "data", "menus", slug);
+    const hedef = path.join(hedefKok, `${hedefAy}.json`);
+    const taslak = ayDosyasiKur({
       il: slug,
       ay: hedefAy,
       kahvalti: ogunHaritasi(kahvaltiHam),
@@ -169,14 +145,14 @@ for (const ilAd of secilen) {
       kaynak: KAYNAK,
       guncellenmeTarihi: bugun,
     });
+    const { surum, atla } = await yazmaKarari(hedef, taslak);
+    const dosya = { ...taslak, surum };
     const kahvaltiSayi = Object.values(dosya.gunler).filter((g) => g.kahvalti.durum !== "aciklanmadi").length;
     const aksamSayi = Object.values(dosya.gunler).filter((g) => g.aksam.durum !== "aciklanmadi").length;
-
-    const kilit = `${slug}/${hedefAy}`;
-    const hedefKok = KILITLI.has(kilit) ? path.join(kok, "data", "taslak", slug) : path.join(kok, "data", "menus", slug);
-    const hedef = path.join(hedefKok, `${hedefAy}.json`);
     if (kuru) {
       console.log(`${slug}: kahvaltı ${kahvaltiSayi}, akşam ${aksamSayi} (yazılmadı)`);
+    } else if (atla && !KILITLI.has(kilit)) {
+      console.log(`${slug}: kahvaltı ${kahvaltiSayi}, akşam ${aksamSayi} (değişmedi)`);
     } else {
       await mkdir(hedefKok, { recursive: true });
       await writeFile(hedef, `${JSON.stringify(dosya, null, 2)}\n`, "utf8");
@@ -196,9 +172,7 @@ for (const ilAd of secilen) {
   }
 }
 
-if (!kuru) await menuleriYaz();
-
 const ozetYol = path.join(kok, "data", "raw", "kykyemek", `ozet-${hedefAy}.json`);
 await mkdir(path.dirname(ozetYol), { recursive: true });
 await writeFile(ozetYol, `${JSON.stringify({ ay: hedefAy, tarih: bugun, iller: ozet }, null, 2)}\n`, "utf8");
-console.log(`Bitti. ${ozet.length} il.`);
+console.log(`Bitti. ${ozet.length} il. Yayına almak için: npm run build:data`);

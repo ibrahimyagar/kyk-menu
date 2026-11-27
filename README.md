@@ -17,12 +17,22 @@ Bekleyen: yayın adresi (hosting), geri bildirim formu adresleri, marka adı, ma
 | `npm start` | Expo geliştirme sunucusu |
 | `npm run validate` | Menü dosyalarını şemaya göre doğrular |
 | `npm run build:data` | `publish/v1` statik çıktısını üretir |
+| `npm run serve:data` | `publish/` klasörünü yerel ağda 8090 portunda sunar (geliştirme) |
+| `npm run aktar:yurtmenu -- --kuru --oncelik yurtmenu` | kykyurtmenu dışa aktarımını `data/menus`e aktarır; `--kuru` yazmadan sayar |
 | `npm test` | Tarih, önbellek ve bildirim mantığı testleri |
 | `npm run typecheck` | Uygulama ve betikler için TypeScript kontrolü |
 
 ## Veri
 
 Tek doğruluk kaynağı `data/menus/{il}/{YYYY-MM}.json`. Menüler elle girilir; resmî açık bir KYK servisi yok.
+
+Menüler uygulamaya gömülmez. Uygulama `publish/v1/manifest.json` ve `publish/v1/menu/{il}/{YYYY-MM}.json` dosyalarını ihtiyaç oldukça indirir ve cihazda saklar; son açılan ay internet olmadan da açılır. Yayın kökü `EXPO_PUBLIC_DATA_BASE_URL` ile verilir. Geliştirmede tanımsızsa Metro'nun çalıştığı bilgisayarın `8090` portu kullanılır:
+
+```
+npm run build:data
+npm run serve:data   # ayrı terminalde açık kalır
+npm start
+```
 
 Kaynakta olmayan öğün `durum: "aciklanmadi"` kalır, yemek ve kalori uydurulmaz. Ayrıntılar için `docs/veri-sozlesmesi.md` ve `docs/aylik-menu-giris.md`.
 

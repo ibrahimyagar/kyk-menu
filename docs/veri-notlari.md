@@ -57,7 +57,7 @@ Eylül'de kaynak 14–30 arası 17 gün veriyor; 1–13 yazılmadı. Ekim 2026 b
 
 Ham kayıt: `data/raw/istanbul/2026-10/kaynak.json`. Menü: `data/menus/istanbul/2026-10.json`. Kaynak kullanıcıya göre `https://kykyemek.com/`.
 
-31 günün kahvaltısı var. Akşam yalnızca 1 Ekim'de var. 2–31 Ekim akşamı kaynakta `null`; bu günlere yemek yazılmadı, `durum: "aciklanmadi"`.
+İlk girişte 31 günün kahvaltısı vardı, akşam yalnızca 1 Ekim'de. 18 Ekim 2026'da kykyemek.com çekimiyle 2–31 Ekim akşamı da yazıldı (`surum` 2).
 
 Bu kaynakta kalori yok. `kcal` ve `toplamKcal` uydurulmadı; toplam `null`.
 

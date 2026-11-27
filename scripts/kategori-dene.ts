@@ -19,6 +19,13 @@ assert.equal(kategoriBul(grup("Ek", ["Turşu"]))?.kimlik, "salata");
 assert.equal(kategoriBul(grup(null, ["Pirinç pilavı"]))?.kimlik, "pilav");
 assert.equal(kategoriBul(grup(null, ["Sade omlet"]))?.kimlik, "yumurta");
 assert.equal(kategoriBul(grup(null, ["Ayran"]))?.kimlik, "icecek");
+// "fasulye" içindeki "su" ekmek-su sayılmaz; garnitür ana yemeği ezmez.
+assert.equal(kategoriBul(grup(null, ["Zeytinyağlı taze fasulye"]))?.kimlik, "anaYemek");
+assert.equal(kategoriBul(grup(null, ["Tavuk pirzola + patates kızartma"]))?.kimlik, "anaYemek");
+assert.equal(kategoriBul(grup(null, ["Soslu pideli köfte", "Mevsim türlü"]))?.kimlik, "anaYemek");
+assert.equal(kategoriBul(grup(null, ["Karnabahar kızartması + yoğurt"]))?.kimlik, "kizartma");
+assert.equal(kategoriBul(grup(null, ["Sucuklu yumurta"]))?.kimlik, "yumurta");
+assert.equal(kategoriBul(grup(null, ["500 ml su"]))?.kimlik, "ekmekSu");
 
 // Hiçbir kurala uymayan grup kategorisiz kalır; görsel uydurulmaz.
 assert.equal(kategoriBul(grup(null, ["Tanımsız bir şey"])), null);

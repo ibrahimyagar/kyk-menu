@@ -59,25 +59,50 @@ const baslikHaritasi: Record<string, KategoriKimlik> = {
   "al götür": "alGotur",
 };
 
-/** Başlık tanınmazsa yemek adındaki anahtar kelime. Sıra önemli: özel olandan genele. */
-const adAnahtarlari: [string, KategoriKimlik][] = [
+/**
+ * Başlık tanınmazsa yemek adındaki anahtar kelime. Anahtar kelime başında
+ * aranır ("fasulye" içindeki "su" eşleşmez); `tamKelime` olanlar tek başına.
+ * Sıra önemli: ana yemek, içindeki garnitürden ("+ patates", "pideli") önce gelir.
+ */
+const adAnahtarlari: [anahtar: string, kimlik: KategoriKimlik, tamKelime?: boolean][] = [
   ["çorba", "corba"],
   ["omlet", "yumurta"],
   ["menemen", "yumurta"],
   ["yumurta", "yumurta"],
+  ["pirzola", "anaYemek"],
+  ["köfte", "anaYemek"],
+  ["kebap", "anaYemek"],
+  ["kebab", "anaYemek"],
+  ["hamburger", "anaYemek"],
+  ["güveç", "anaYemek"],
+  ["dolma", "anaYemek"],
+  ["beğendi", "anaYemek"],
+  ["kavurma", "anaYemek"],
+  ["nohut", "anaYemek"],
+  ["beşamel", "anaYemek"],
+  ["tavuk", "anaYemek"],
+  ["türlü", "anaYemek"],
+  ["fasulye", "anaYemek"],
+  ["külbastı", "anaYemek"],
+  ["sote", "anaYemek"],
+  ["musakka", "anaYemek"],
+  ["mantı", "anaYemek"],
   ["pilav", "pilav"],
   ["makarna", "pilav"],
   ["erişte", "pilav"],
-  ["salata", "salata"],
-  ["turşu", "salata"],
-  ["cacık", "salata"],
-  ["haydari", "salata"],
-  ["yoğurt", "salata"],
-  ["ekmek", "ekmekSu"],
-  ["su", "ekmekSu"],
-  ["ayran", "icecek"],
-  ["süt", "icecek"],
-  ["meyve suyu", "icecek"],
+  ["sütlaç", "tatli"],
+  ["baklava", "tatli"],
+  ["kek", "tatli", true],
+  ["pasta", "tatli"],
+  ["muhallebi", "tatli"],
+  ["puding", "tatli"],
+  ["revani", "tatli"],
+  ["tatlı", "tatli"],
+  ["kadayıf", "tatli"],
+  ["trileçe", "tatli"],
+  ["şekerpare", "tatli"],
+  ["pembe sultan", "tatli"],
+  ["pankek", "hamurIsi"],
   ["börek", "hamurIsi"],
   ["poğaça", "hamurIsi"],
   ["açma", "hamurIsi"],
@@ -85,24 +110,35 @@ const adAnahtarlari: [string, KategoriKimlik][] = [
   ["pizza", "hamurIsi"],
   ["pide", "hamurIsi"],
   ["tost", "hamurIsi"],
-  ["peynir", "peynir"],
-  ["zeytin", "zeytin"],
-  ["pirzola", "anaYemek"],
-  ["köfte", "anaYemek"],
-  ["kebap", "anaYemek"],
-  ["hamburger", "anaYemek"],
-  ["güveç", "anaYemek"],
-  ["dolma", "anaYemek"],
+  ["pişi", "hamurIsi"],
   ["patates", "kizartma"],
   ["kızartma", "kizartma"],
   ["sosis", "kizartma"],
-  ["baklava", "tatli"],
-  ["kek", "tatli"],
-  ["pasta", "tatli"],
-  ["muhallebi", "tatli"],
+  ["salata", "salata"],
+  ["turşu", "salata"],
+  ["cacık", "salata"],
+  ["haydari", "salata"],
+  ["tarator", "salata"],
+  ["babagan", "salata"],
+  ["ezme", "salata"],
+  ["yoğurt", "salata"],
+  ["peynir", "peynir"],
+  ["zeytin", "zeytin"],
+  ["ayran", "icecek"],
+  ["meyve suyu", "icecek"],
+  ["süt", "icecek", true],
+  ["çay", "icecek", true],
+  ["ekmek", "ekmekSu"],
+  ["su", "ekmekSu", true],
   ["karpuz", "meyve"],
   ["kavun", "meyve"],
 ];
+
+const AYRAC = "[\\s+/(),-]";
+const adKurallari = adAnahtarlari.map(([anahtar, kimlik, tamKelime]) => ({
+  desen: new RegExp(`(?:^|${AYRAC})${anahtar}${tamKelime ? `(?:$|${AYRAC})` : ""}`, "u"),
+  kimlik,
+}));
 
 function sadelestir(metin: string): string {
   return metin.trim().toLocaleLowerCase("tr-TR");
@@ -117,8 +153,8 @@ export function kategoriBul(grup: Grup): Kategori | null {
   if (baslik) return KATEGORILER[baslik];
 
   const adlar = grup.secenekler.map((secenek) => sadelestir(secenek.ad));
-  for (const [anahtar, kimlik] of adAnahtarlari) {
-    if (adlar.some((ad) => ad.includes(anahtar))) return KATEGORILER[kimlik];
+  for (const { desen, kimlik } of adKurallari) {
+    if (adlar.some((ad) => desen.test(ad))) return KATEGORILER[kimlik];
   }
   return null;
 }
